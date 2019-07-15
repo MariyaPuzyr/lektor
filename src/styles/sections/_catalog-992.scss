@@ -1,0 +1,12 @@
+.catalog {
+  margin-top: 50px;
+  &-list {
+    padding: 0 15px;
+    &__item-content {
+      margin-bottom: 30px;
+    }
+  }
+  &--header--title {
+    padding: 0 15px;
+  }
+}

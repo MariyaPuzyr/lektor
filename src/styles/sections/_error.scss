@@ -1,0 +1,34 @@
+.error {
+  margin-top: 165px;
+  margin-bottom: 70px;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $title;
+    text-align: center;
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      line-height: 33px;
+      font-family: $font-b;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 25px;
+      font-family: $font;
+    }
+    .product-link {
+      width: 330px;
+    }
+  }
+  &--title {
+    width: 676px;
+    height: 227px;
+    background: url('../img/svg/error.svg') no-repeat center;
+    margin-bottom: 25px;
+  }
+}

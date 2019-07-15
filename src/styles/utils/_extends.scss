@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.default-btn {
+  color: $white;
+  background: $default;
+  border: 1px solid $small-title;
+  margin-left: 60px;
+  margin-right: 45px;
+  transition: .3s;
+  border-radius: 5px;
+  padding: 7px 58px;
+  font-size: 14px;
+  line-height: normal;
+  font-family: $font;
+  text-decoration: none;
+  &:hover {
+    background: $title;
+    border-color: transparent;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.content {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.login-form--control {
+  background: #F6F6F6;
+  border-radius: 5px;
+  padding: 12px 10px;
+  border: 2px solid #DEDEDE;
+  transition: .3s;
+  color: $title;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: $font;
+  width: 100%;
+  &::placeholder {
+    color: $price;
+  }
+}
+
+.cart-amount--buy {
+  max-width: 400px;
+  width: 100%;
+  color: $white;
+  background: $small-title;
+  border: 1px solid $small-title;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: $font;
+  padding: 11px 0;
+  margin: 20px auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  &:hover {
+    background: $white;
+    color: $title;
+  }
+}
+
+.cart-amount--buy-mobile {
+  width: 222px;
+  color: $white;
+  background: $small-title;
+  border: 1px solid $small-title;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-family: $font;
+  padding: 9px 0;
+  margin: 25px auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  &:hover {
+    background: $white;
+    color: $title;
+  }
+}
+
+.d-center {
+  display: flex;
+  align-items: center;
+}
+
+.button-filters {
+  border-radius: 5px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  font-family: $font;
+  background: $default;
+  border: 1px solid $default;
+  color: $white;
+  transition: .3s;
+  cursor: pointer;
+  width: 100%;
+  &:hover {
+    color: $title;
+    background: $white;
+  }
+}
+
+.cart-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: $title;
+  mask: url('../img/svg/close.svg') no-repeat center;
+  mask-size: cover;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+*:focus {
+  outline: none;
+}

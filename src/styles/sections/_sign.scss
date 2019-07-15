@@ -1,0 +1,251 @@
+.sign {
+  .tabs {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &__header {
+      display: flex;
+      &--title {
+        background: transparent;
+        color: $white;
+        cursor: pointer;
+        padding: 15px 40px;
+        border: 2px solid $white;
+        border-radius: 0 5px 0 0;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        font-family: $font;
+        transition: .3s;
+        &:first-child {
+          border-radius: 5px 0 0 0;
+          border-right: none;
+        }
+        &.active {
+          background: $white;
+          color: $title;
+        }
+      }
+    }
+    &__content {
+      background: $white;
+      display: none;
+      box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
+      min-height: 385px;
+      border-radius: 0 5px 5px;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .form-item {
+    display: flex;
+    padding: 30px 70px;
+  }
+  .login {
+    &-form {
+      color: $title;
+      &--title {
+        font-size: 24px;
+        line-height: 33px;
+        font-family: $font-b;
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+      &--group {
+        margin-bottom: 30px;
+      }
+      &--control {
+        @extend .login-form--control;
+        margin-right: 25px;
+        width: 285px;
+      }
+      &--restore-pass {
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        font-family: $font-l;
+        color: $price;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &--btns {
+        display: flex;
+        align-items: center;
+      }
+      &--sign {
+        color: $white;
+        border-radius: 5px;
+        border: 2px solid $title;
+        background: $title;
+        padding: 6px 10px 8px;
+        height: 50px;
+        width: 205px;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        line-height: 30px;
+        font-family: $font;
+        margin-right: 30px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          background: $small-title;
+          border-color: $small-title;
+        }
+      }
+      &--registration {
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        font-family: $font-l;
+        color: $price;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &-text {
+      padding-bottom: 60px;
+      margin-right: 65px;
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 25px;
+      color: $title;
+      font-family: $font-b;
+    }
+    &-with {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      &--title {
+        font-size: 18px;
+        line-height: 25px;
+        font-family: $font-b;
+        color: $title;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .recovery-password {
+    display: none;
+    padding: 30px 70px;
+    &.open {
+      display: block;
+    }
+    .login-form {
+      &--title {
+        margin-left: 0;
+        margin-bottom: 25px;
+      }
+      &--group {
+        display: flex;
+        align-items: center;
+      }
+      &--control {
+        margin-right: 20px;
+      }
+      &--remembered-pass {
+        text-decoration: underline;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: $font-l;
+        color: $price;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &--btns {
+        margin-left: 0;
+      }
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      line-height: 21px;
+      color: $title;
+      font-family: $font;
+    }
+  }
+  .instructions {
+    padding: 30px 70px;
+    .login-form {
+      &--btns {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &--restore-pass {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
+    &--title {
+      font-size: 24px;
+      line-height: 33px;
+      font-family: $font-b;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+      font-family: $font;
+      font-weight: normal;
+      color: $title;
+      margin: 0;
+    }
+    .no-email {
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+      font-family: $font;
+      font-style: italic;
+      color: $default;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.sign, .gallery-popup, .aviable-popup {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  &-out {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba($title, .5);
+    top: 0;
+    left: 0;
+  }
+  &.open {
+    display: flex;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,64 @@
+.order-items
+  .content
+    form(action='#')
+      .order-item
+        .order-item--delivery
+          .order-item--title Способ доставки
+          .radio__container
+            .radio-inline
+              input#pickup.radio(name='radio', type='radio', checked='')
+              label.radio__label(for='pickup') Самовывоз
+            .radio-inline
+              input#delivery.radio(name='radio', type='radio')
+              label.radio__label(for='delivery') Доставка по Киеву
+            .radio-inline
+              input#new-mail.radio(name='radio', type='radio')
+              label.radio__label(for='new-mail') Новая почта
+            .radio-inline
+              input#courier-delivery.radio(name='radio', type='radio')
+              label.radio__label(for='courier-delivery') Доставка курьером НП
+
+          .order-item--title Способ оплаты
+          .radio__container
+            .radio-inline
+              input#awesome-item-1.radio(name='delivery', type='radio', checked='')
+              label.radio__label(for='awesome-item-1') Наличными
+            .radio-inline
+              input#awesome-item-2.radio(name='delivery', type='radio')
+              label.radio__label(for='awesome-item-2') Банковской картой
+            .radio-inline
+              input#awesome-item-3.radio(name='delivery', type='radio')
+              label.radio__label(for='awesome-item-3') Счет-фактура
+
+        .order-item--details
+          .order-item--title Контактные данные
+          input(type='text' placeholder='Имя').order-item--details-control
+          input(type='text' placeholder='Фамилия').order-item--details-control
+          input(type='phone' placeholder='+38 0__ ___ __ __ ').order-item--details-control
+          input(type='email' placeholder='Email').order-item--details-control
+          input(type='text' placeholder='Область').order-item--details-control
+          input(type='text' placeholder='Город').order-item--details-control
+          input(type='text' placeholder='Отделение новой почты').order-item--details-control
+        .order-item--order
+          .order-item--order-title Сумма заказа: 10 293 грн
+          .order-item--order__items
+            .order-item--order-position
+              .order-item--order-position-item
+                a(href='#').cart-item--img__link
+                  img(src='./img/product.png' alt='')
+                a(href='#').cart-item--info__name 96188  SALOBRENA 1
+              .order-item--order__count Х 1
+            .order-item--order-position
+              .order-item--order-position-item
+                a(href='#').cart-item--img__link
+                  img(src='./img/product.png' alt='')
+                a(href='#').cart-item--info__name 96188  Светильник настенно-потолочный LANCIANO
+              .order-item--order__count Х 1
+            .order-item--order-position
+              .order-item--order-position-item
+                a(href='#').cart-item--img__link
+                  img(src='./img/product.png' alt='')
+                a(href='#').cart-item--info__name 96188  SALOBRENA 1
+              .order-item--order__count Х 1
+          a(href='#').cart-amount--buy Подтвердить заказ
+          a(href='cart.html').back-to-cart назад в корзину

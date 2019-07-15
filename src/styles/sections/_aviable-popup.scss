@@ -1,0 +1,62 @@
+.aviable {
+  &-item {
+    background: $white;
+    border-radius: 5px;
+    padding: 60px 55px;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    p {
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      color: $title;
+      font-family: $font;
+      max-width: 400px;
+      margin: auto auto 35px;
+    }
+    &--control {
+      width: 290px;
+      margin: auto auto 30px;
+      height: 60px;
+      background: #F6F6F6;
+      border: 1px solid #F0F0F0;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 21px;
+      color: $title;
+      font-family: $font;
+      display: flex;
+      text-align: center;
+      transition: .3s;
+      &::placeholder {
+        color: $price;
+      }
+    }
+    &--btn {
+      margin: auto;
+      border: 1px solid #A0A0A0;
+      border-radius: 5px;
+      font-size: 15px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.05em;
+      color: $title;
+      font-family: $font;
+      padding: 12px 65px;
+      background: $white;
+      transition: .3s;
+      cursor: pointer;
+      &:hover {
+        background: $small-title;
+        border-color: $small-title;
+        color: $white;
+      }
+    }
+    .cart-close {
+      @extend .cart-close;
+    }
+  }
+}

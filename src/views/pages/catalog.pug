@@ -1,0 +1,12 @@
+extends ../extends/layout
+block variables
+  - var title = "Catalog"
+
+block content
+  header
+    include ../includes/top-info
+    include ../sections/header-top-menu
+    include ../sections/header-catalog-menu
+  main
+    include ../sections/catalog-list
+    include ../sections/contacts

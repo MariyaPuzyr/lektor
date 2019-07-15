@@ -1,0 +1,13 @@
+.cart {
+  &-body {
+    padding-right: 20px;
+    padding-left: 15px;
+  }
+  &-item--info__price {
+    text-align: right;
+  }
+  &-order-info {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+}

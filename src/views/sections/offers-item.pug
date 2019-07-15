@@ -1,0 +1,119 @@
+.offers
+  .content
+    .grid-produstion--header
+      include ../components/breadcrumbs
+      .offers-top
+        .offers-title Скидки на линейку DAVIDA 1. От -10% до -60%.
+        .offers-date
+          span от 10.12.2018
+          span до 01.04.2019
+    .offers-item
+      .offers-slider
+        div
+          img(src='./img/offers.jpg').offers-slide__img
+        div
+          img(src='./img/offers.jpg').offers-slide__img
+        div
+
+          img(src='./img/offers.jpg').offers-slide__img
+        div
+          img(src='./img/offers.jpg').offers-slide__img
+      .offers-description З того моменту як людина почала використовувати освітлювальні прилади, вона почала замислюватися про те, як би раціональніше використовувати наявні можливості. Це питання стало найбільш актуальним під час сучасного технічного розвитку, що дозволяє здійснити навіть самі цікаві і сміливі ідеї по управлінню джерелом світла.
+      a(href='#').go-back вернуться назад
+
+    .grid-produstion--body
+      .filters
+        .catalog-top.mobile
+          .catalog-top--result Результатов:
+            span 634 товара
+        .filters-title Фильтры:
+        .filters-body
+          #secondary.widget-area(role='complementary')
+            #woocommerce_price_filter-2.widget.woocommerce.widget_price_filter
+              span.gamma.widget-title Фильтр по цене
+              form(method='get', action='https://egloshop.com/shop/lustru/')
+                .price_slider_wrapper
+                  .price_slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all
+                    .ui-slider-range.ui-widget-header.ui-corner-all(style='left: 0%; width: 100%;')
+                    span.ui-slider-handle.ui-state-default.ui-corner-all(tabindex='0', style='left: 0%;')
+                    span.ui-slider-handle.ui-state-default.ui-corner-all(tabindex='0', style='left: 100%;')
+                  .price_slider_amount(data-step='10')
+                    input#min_price(type='text', name='min_price', value='350', data-min='350', placeholder='Минимальная цена', style='display: none;')
+                    input#max_price(type='text', name='max_price', value='600', data-max='600', placeholder='Максимальная цена', style='display: none;')
+                    button.button(type='submit') Фильтровать
+                    .price_label
+                      | Цена:
+                      span.from 350₴
+                      |  —
+                      span.to 600₴
+                    .clear
+            #woocommerce_layered_nav-2.widget.woocommerce.widget_layered_nav.woocommerce-widget-layered-nav
+              span.gamma.widget-title Фильтр по LM
+              ul.woocommerce-widget-layered-nav-list
+                li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term
+                  a(rel='nofollow', href='https://egloshop.com/shop/lustru/?filter_lm=2100lm') 2100lm
+                  span.count (1)
+                li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term
+                  a(rel='nofollow', href='https://egloshop.com/shop/lustru/?filter_lm=4300lm') 4300lm
+                  span.count (3)
+                li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term
+                  a(rel='nofollow', href='https://egloshop.com/shop/lustru/?filter_lm=8600lm') 8600lm
+                  span.count (1)
+            #woocommerce_layered_nav-3.widget.woocommerce.widget_layered_nav.woocommerce-widget-layered-nav
+              span.gamma.widget-title Фильтр по цоколь
+              form.woocommerce-widget-layered-nav-dropdown(method='get', action='https://egloshop.com/shop/lustru/')
+                select.woocommerce-widget-layered-nav-dropdown.dropdown_layered_nav_tsokol.select2-hidden-accessible(tabindex='-1', aria-hidden='true')
+                  option(value='') Любой Цоколь
+                  option(value='30h') 30H
+                  option(value='50h') 50H
+                  option(value='70h') 70H
+                span.select2.select2-container.select2-container--default(dir='ltr', style='width: 100%;')
+                  span.selection
+                    span.select2-selection.select2-selection--single(aria-haspopup='true', aria-expanded='false', tabindex='0', aria-labelledby='select2-ofzn-container', role='combobox')
+                      span#select2-ofzn-container.select2-selection__rendered(role='textbox', aria-readonly='true')
+                        span.select2-selection__placeholder Любой Цоколь
+                      span.select2-selection__arrow(role='presentation')
+                        b(role='presentation')
+                  span.dropdown-wrapper(aria-hidden='true')
+                input(type='hidden', name='filter_tsokol', value='')
+
+          .catalog-top--filters.mobile
+            form.woocommerce-ordering(method='get')
+              select.orderby(name='orderby', aria-label='Заказ в магазине')
+                option(value='menu_order', selected='selected') Исходная сортировка
+                option(value='popularity') По популярности
+                option(value='rating') По рейтингу
+                option(value='date') Сортировка по более позднему
+                option(value='price') Цены: по возрастанию
+                option(value='price-desc') Цены: по убыванию
+              input(type='hidden', name='paged', value='1')
+              input(type='hidden', name='filter_lm', value='2100lm')
+
+      .catalog
+        .catalog-items
+          .catalog-top
+            .catalog-top--result Результатов:
+              span 634 товара
+            .catalog-top--filters
+              .catalog-top--filters__view
+                span Вид:
+                .views.column.active
+                .views.grid
+              form.woocommerce-ordering(method='get')
+                select.orderby(name='orderby', aria-label='Заказ в магазине')
+                  option(value='menu_order', selected='selected') Исходная сортировка
+                  option(value='popularity') По популярности
+                  option(value='rating') По рейтингу
+                  option(value='date') Сортировка по более позднему
+                  option(value='price') Цены: по возрастанию
+                  option(value='price-desc') Цены: по убыванию
+                input(type='hidden', name='paged', value='1')
+                input(type='hidden', name='filter_lm', value='2100lm')
+
+          .catalog-body
+            +product
+            +product
+            +product
+            +product
+        .catalog-pagination
+          include ../components/pagination

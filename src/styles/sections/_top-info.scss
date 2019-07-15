@@ -1,0 +1,29 @@
+.top-info {
+  text-transform: uppercase;
+  color: $white;
+  background: url('../img/top-info.jpg');
+  font-size: 12px;
+  font-family: $font;
+  .close {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    &-ico {
+      fill: $white;
+      width: 11px;
+      height: 11px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    position: relative;
+    b {
+      font-family: $font-b;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+}

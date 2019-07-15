@@ -1,0 +1,246 @@
+.sign {
+  .tabs {
+    margin: 50px 8px 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &__header {
+      display: flex;
+      &--title {
+        background: transparent;
+        color: $white;
+        cursor: pointer;
+        padding: 15px 30px;
+        border: 2px solid $white;
+        border-radius: 0 5px 0 0;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        font-family: $font;
+        transition: .3s;
+        width: 100%;
+        text-align: center;
+        &:first-child {
+          border-radius: 5px 0 0 0;
+          border-right: none;
+        }
+        &.active {
+          background: $white;
+          color: $title;
+        }
+      }
+    }
+    &__content {
+      background: $white;
+      display: none;
+      box-shadow: 7px 4px 10px rgba(14, 16, 31, 0.1);
+      border-radius: 0 0 5px 5px;
+      margin-top: -1px;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .form-item {
+    display: flex;
+    padding: 20px 50px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .login {
+    &-form {
+      color: $title;
+      &--title {
+        font-size: 18px;
+        line-height: 25px;
+        font-family: $font-b;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      &--group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      &--control {
+        width: 100%;
+        background: #F6F6F6;
+        border: 1px solid #F0F0F0;
+        border-radius: 5px;
+        padding: 0 10px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 21px;
+        font-family: $font;
+        color: $title;
+        &::placeholder {
+          color: $price;
+        }
+      }
+      &--restore-pass {
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration-line: underline;
+        font-family: $font-l;
+        color: $price;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &--btns {
+        display: flex;
+        flex-direction: column;
+      }
+      &--sign {
+        color: $white;
+        border-radius: 5px;
+        border: 2px solid $title;
+        background: $title;
+        padding: 8px 10px;
+        width: 100%;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: $font;
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          background: $small-title;
+          border-color: $small-title;
+        }
+      }
+      &--registration {
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        text-decoration-line: underline;
+        font-family: $font-l;
+        color: $price;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &-text {
+      display: none;
+    }
+    &-with {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      &--title {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        font-family: $font-b;
+        color: $title;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .recovery-password {
+    display: none;
+    padding: 20px 35px 30px;
+    color: $title;
+    &.open {
+      display: block;
+    }
+    .login-form {
+      &--group {
+        padding: 0 15px;
+      }
+      &--remembered-pass {
+        text-decoration: underline;
+        font-size: 10px;
+        line-height: 14px;
+        font-family: $font-l;
+        color: $price;
+        cursor: pointer;
+        transition: .3s;
+        margin-top: 15px;
+        text-align: center;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    p {
+      display: none;
+    }
+  }
+  .instructions {
+    padding: 20px 20px 30px;
+    color: $title;
+    .login-form {
+      &--restore-pass {
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    }
+    &--title {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      font-family: $font-b;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+      font-family: $font;
+      font-weight: normal;
+      color: $title;
+      margin: 0;
+    }
+    .no-email {
+      font-size: 12px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+      font-family: $font;
+      font-style: italic;
+      color: $default;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.sign, .gallery-popup, .aviable-popup {
+  display: none;
+  position: fixed;
+  align-items: flex-start;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  &-out {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba($title, .5);
+    top: 0;
+    left: 0;
+  }
+  &.open {
+    display: flex;
+    z-index: 6;
+    overflow: auto;
+  }
+}

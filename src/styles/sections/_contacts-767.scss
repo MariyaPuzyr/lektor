@@ -1,0 +1,159 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  &__form {
+    order: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    &--title {
+      font-size: 15px;
+      line-height: 20px;
+      font-family: $font-s;
+      color: $title;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+    &--description {
+      font-size: 10px;
+      line-height: 21px;
+      font-family: $font;
+      letter-spacing: 0.05em;
+      color: $title;
+      text-align: center;
+      padding: 0 30px;
+      margin-bottom: 25px;
+    }
+    &-item {
+      margin-bottom: 20px;
+    }
+    &--btn {
+      width: 192px;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      letter-spacing: 0.05em;
+      font-family: $font;
+      color: $title;
+      border: 1px solid $title;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background: $white;
+      justify-content: center;
+      padding: 9px 0;
+      transition: .3s;
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        border-color: $small-title;
+        background: $small-title;
+      }
+      &:hover {
+        cursor: pointer;
+        transition-delay: .1s;
+        color: $white;
+        z-index: 8;
+        border-color: $small-title;
+        &:before {
+          transform: translateX(25%);
+        }
+        &:after {
+          transform: translateX(-25%);
+        }
+      }
+      &.wpcf7-form-control.wpcf7-submit {
+        border-color: #A0A0A0;
+        background-color: $white;
+        color: $title;
+        &:hover {
+          cursor: pointer;
+          color: $white;
+          border-color: $small-title;
+          background: $small-title;
+        }
+      }
+    }
+    &-control {
+      background: #F6F6F6;
+      border: 1px solid #F0F0F0;
+      border-radius: 5px;
+      padding: 10px 10px;
+      font-size: 10px;
+      line-height: 21px;
+      color: $price;
+      font-family: $font;
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+  &-items, &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    padding: 20px 15px 0;
+    color: $title;
+    &--sity {
+      letter-spacing: 0.1em;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: $font-b;
+      margin-bottom: 5px;
+    }
+    &--address {
+      font-size: 12px;
+      line-height: 16px;
+      font-family: $font;
+      margin-bottom: 5px;
+      letter-spacing: 0.05em;
+    }
+    &--marker {
+      color: $price;
+      font-size: 10px;
+      line-height: 14px;
+      font-family: $font-l;
+    }
+    &--phone {
+      color: $price;
+      font-family: $font;
+      font-size: 12px;
+      line-height: 21px;
+      margin-bottom: 5px;
+      &:nth-child(3) {
+        margin-bottom: 15px;
+      }
+    }
+    &--copy {
+      text-transform: uppercase;
+      color: $price;
+      font-size: 12px;
+      line-height: 21px;
+      font-family: $font;
+      margin-bottom: 20px;
+      &:not(.mobile) {
+        display: none;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      .icon {
+        width: 21px;
+        height: auto;
+        max-height: 21px;
+        opacity: .4;
+        transition: .3s;
+        margin-right: 20px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

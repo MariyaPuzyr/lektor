@@ -1,0 +1,14 @@
+.popular-items {
+  padding: 0 15px;
+  &--title {
+    color: $title;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: $font-m-b;
+    opacity: .7;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    text-shadow: none;
+  }
+}

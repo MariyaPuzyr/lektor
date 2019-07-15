@@ -1,0 +1,189 @@
+.filters {
+  padding: 0 10px;
+  min-width: 260px;
+  &-title {
+    font-size: 24px;
+    line-height: 33px;
+    font-family: $font-b;
+    letter-spacing: 0.05em;
+    color: #fb992f;
+  }
+  .widget-title {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $font-b;
+    color: $title;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .price_slider_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .widget_price_filter {
+    .price_slider_amount {
+      display: flex;
+      flex-direction: column-reverse;
+      .button {
+        @extend .button-filters;
+      }
+      .price_label {
+        font-size: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+        span {
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          color: $price;
+          font-family: $font;
+          width: 100px;
+          height: 50px;
+          background: #F6F6F6;
+          border: 1px solid #F0F0F0;
+          border-radius: 5px;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          &:first-child {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+    .price_slider_wrapper {
+      .ui-widget-content {
+        &::before, &::after {
+          content: '';
+          width: 1px;
+          height: 15px;
+          background: #c4c4c4;
+          position: absolute;
+          top: 0;
+        }
+        &::before {
+          left: 0;
+        }
+        &::after {
+          right: 0;
+        }
+      }
+    }
+    .ui-slider {
+      .ui-slider-range {
+        border-radius: 0;
+        background: $default;
+      }
+      .ui-slider-handle {
+        top: -15px;
+        border-radius: 0;
+        background: $default;
+        width: 11px;
+        height: 21px;
+        mask: url("../img/svg/slider-point.svg") no-repeat center;
+        mask-size: contain;
+        &:last-child {
+          margin-left: -.5rem;
+        }
+      }
+    }
+  }
+  .widget_layered_nav li {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: $title;
+    font-family: $font;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    &::before {
+      opacity: 1;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $price;
+      border-radius: 4px;
+      box-sizing: border-box;
+      line-height: 15px;
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+    a {
+      color: $title;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+    span {
+      font-size: 13px;
+      line-height: 18px;
+      font-family: $font-l;
+      opacity: .7;
+      margin: auto 0 auto auto;
+    }
+    &::before {
+      //content: "\f00c";
+      content: "";
+      font-size: 13px;
+    }
+    &.chosen::before {
+      content: "\f00c";
+    }
+  }
+  .select2-container--default {
+    margin-bottom: 20px;
+    .select2-selection--single {
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+      color: $title;
+      font-family: $font;
+      height: 50px;
+      background: #F6F6F6;
+      border: 1px solid #F0F0F0;
+      border-radius: 5px;
+      padding: 0 10px;
+      .select2-selection__rendered {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .select2-selection__arrow {
+        height: 100%;
+      }
+    }
+  }
+
+  .show_filter {
+    background: none;
+    margin-left: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 21px;
+    border: none;
+    border-bottom: 1px solid;
+    color: $title;
+    font-family: $font;
+    text-transform: lowercase;
+    cursor: pointer;
+    margin-top: 10px;
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 4px 0 4px;
+      border-color: #4eb1aa transparent transparent transparent;
+      margin-left: 5px;
+    }
+  }
+  .woocommerce-widget-layered-nav-list {
+    max-height: 300px;
+    overflow: auto;
+  }
+}

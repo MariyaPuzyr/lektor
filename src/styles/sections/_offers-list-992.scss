@@ -1,0 +1,126 @@
+.offers {
+  padding: 0 15px;
+  &-list {
+    .news-item__info--top {
+      margin-top: 5px;
+      margin-bottom: 0;
+      .date {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &-slide {
+    &__img {
+      max-width: 100%;
+      height: auto;
+      max-height: 739px;
+    }
+    &r {
+      .slick {
+        &-arrow {
+          border: 1px solid rgba(0, 0, 0, 0.31);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          bottom: -75px;
+          &::before {
+            width: 13px;
+            height: 7px;
+            background: $title;
+          }
+        }
+        &-prev {
+          left: 165px;
+        }
+        &-next {
+          right: auto;
+          left: 230px;
+        }
+        &-dots {
+          bottom: -55px;
+          left: 0;
+          width: auto;
+          display: flex;
+          align-items: center;
+          li {
+            width: 20px;
+            height: auto;
+            margin: 0 10px;
+            &.slick-active {
+              border-top: 3px solid $title;
+            }
+            button {
+              width: 20px;
+              height: auto;
+              border-radius: 0;
+              border-top: 1px solid $title;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .grid-produstion--header {
+    align-items: flex-start;
+    margin-top: 65px;
+  }
+  .breadcrumbs {
+    margin-bottom: 15px;
+    li {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+  &-title {
+    font-size: 32px;
+    line-height: 38px;
+    color: $title;
+    font-family: $font;
+  }
+  &-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &-date {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 19px;
+    color: $title;
+    font-family: $font-b;
+    margin: auto 0 auto auto;
+  }
+  &-description {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $font;
+    color: $title;
+    margin-bottom: 55px;
+    margin-left: 300px;
+  }
+  .go-back {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: $font;
+    color: $title;
+    margin-bottom: 90px;
+    &::before {
+      content: '';
+      width: 80px;
+      height: 16px;
+      background: url('../img/svg/arrow.svg') no-repeat center;
+      margin-right: 20px;
+      background-size: cover;
+    }
+  }
+}

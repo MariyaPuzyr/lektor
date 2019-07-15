@@ -1,0 +1,37 @@
+.contacts
+  .content
+    .contacts-items
+      .contacts__info
+        .contacts__info--sity Киев
+        .contacts__info--address бульвар В. Гавела 6/7А (І. Лепсе)
+        .contacts__info--marker Магазин, Пункт выдачи
+        .contacts__info--copy 2003 - 2018 &copy; EGLO UKRAINE
+      .contacts__form
+        .contacts__form--title Остались вопросы?
+        p.contacts__form--description Отправьте контактные данные и наш консультант с вами свяжется в ближайшее время
+        form(action='#')
+          .contacts__form-item
+            input(type='text' placeholder='Ваше имя').contacts__form-control
+          .contacts__form-item
+            input(type='text' placeholder='+38 0__ ___ __ __ ').contacts__form-control
+          .contacts__form-item
+            button(type='submit').contacts__form--btn Отправить
+      .contacts__info
+        .contacts__info--sity Телефон
+        .contacts__info--phone +38 976 0875 9922
+        .contacts__info--phone +38 976 0875 9922
+        .contacts__info--sity Мы в соцсетях
+        ul
+          li
+            a(href='#')
+              +sprite('icon facebook-ico', 'facebook')
+          li
+            a(href='#')
+              +sprite('icon youtube-ico', 'youtube')
+          li
+            a(href='#')
+              +sprite('icon pinterest-ico', 'pinterest')
+          li
+            a(href='#')
+              +sprite('icon twitter-ico', 'twitter')
+        .contacts__info--copy.mobile 2003 - 2018 &copy; EGLO UKRAINE

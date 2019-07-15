@@ -1,0 +1,23 @@
+.cart-items
+  .content
+    .cart-item
+      .cart-body
+        +cart-position
+        +cart-position
+        +cart-position
+        +cart-position
+        +cart-position
+      .cart-order-info
+        .cart-order-info--top
+          .cart-item--total-price Сумма заказа: 12 110 грн
+          .cart-order-info--discount Скидка: 15%
+        .cart-item--total-pay Итого к оплате: 10 293 грн
+        .cart-order-info--discount-price Скидка -1 817 грн
+        a(href='#').cart-amount--buy Купить в один клик
+        .cart-order-without-registration
+          .cart-order-without-registration__title Заказать без оформления
+          p Можно не заполнять никаких форм, просто оставить телефон и консультант решит все вопросы по оформлению заказа.
+          form(action='#')
+            .cart-order-without-registration__form
+              input(type='text' placeholder='+38 (0__) ___-__-__')
+              button(type='submit').cart-order-without-registration__form--btn Отправить
