@@ -134,6 +134,7 @@ gulp.task('copyScripts', function () {
 gulp.task('libs', function () {
   return gulp.src([
     './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
     './node_modules/slick-carousel/slick/slick.min.js'
   ])
       .pipe(concat('libs.min.js'))
