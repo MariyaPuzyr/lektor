@@ -1,0 +1,45 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 0.625C0.25 0.210786 0.585786 -0.125 1 -0.125H29C29.4142 -0.125 29.75 0.210786 29.75 0.625V29.375C29.75 29.7892 29.4142 30.125 29 30.125H1C0.585786 30.125 0.25 29.7892 0.25 29.375V0.625ZM1.75 1.375V4.875H28.25V1.375H1.75ZM28.25 6.375H1.75V28.625H28.25V6.375Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 0.625C0.25 0.210786 0.585786 -0.125 1 -0.125H29C29.4142 -0.125 29.75 0.210786 29.75 0.625V29.375C29.75 29.7892 29.4142 30.125 29 30.125H1C0.585786 30.125 0.25 29.7892 0.25 29.375V0.625ZM1.75 1.375V4.875H28.25V1.375H1.75ZM28.25 6.375H1.75V28.625H28.25V6.375Z" fill="url(#paint0_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 8.25H26.25V22.75H3.75V8.25ZM5.25 9.75V21.25H24.75V9.75H5.25ZM12.25 11.2366L20.0662 15.5L12.25 19.7634V11.2366ZM13.75 13.7634V17.2366L16.9338 15.5L13.75 13.7634Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 8.25H26.25V22.75H3.75V8.25ZM5.25 9.75V21.25H24.75V9.75H5.25ZM12.25 11.2366L20.0662 15.5L12.25 19.7634V11.2366ZM13.75 13.7634V17.2366L16.9338 15.5L13.75 13.7634Z" fill="url(#paint1_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.25 25.25V24H7.75V25.25H26V26.75H7.75V28H6.25V26.75H4V25.25H6.25Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.25 25.25V24H7.75V25.25H26V26.75H7.75V28H6.25V26.75H4V25.25H6.25Z" fill="url(#paint2_linear)"/>
+<path d="M3.25 2.5H4.5V3.75H3.25V2.5Z" fill="white"/>
+<path d="M3.25 2.5H4.5V3.75H3.25V2.5Z" fill="url(#paint3_linear)"/>
+<path d="M5.75 2.5H7V3.75H5.75V2.5Z" fill="white"/>
+<path d="M5.75 2.5H7V3.75H5.75V2.5Z" fill="url(#paint4_linear)"/>
+<path d="M8.25 2.5H9.5V3.75H8.25V2.5Z" fill="white"/>
+<path d="M8.25 2.5H9.5V3.75H8.25V2.5Z" fill="url(#paint5_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="15" y1="-0.125" x2="15" y2="30.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="15" y1="-0.125" x2="15" y2="30.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="15" y1="-0.125" x2="15" y2="30.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="15" y1="-0.125" x2="15" y2="30.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="15" y1="-0.125" x2="15" y2="30.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint5_linear" x1="15" y1="-0.125" x2="15" y2="30.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>
