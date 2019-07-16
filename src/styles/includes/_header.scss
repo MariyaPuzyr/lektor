@@ -1,0 +1,18 @@
+.header {
+  &-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .navbar {
+      &-top {
+        width: 100%;
+      }
+      &-header {
+        &__top, &__info {
+          width: 100%;
+          display: flex;
+        }
+      }
+    }
+  }
+}

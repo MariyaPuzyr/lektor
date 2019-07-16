@@ -1,40 +1,42 @@
-nav.navbar.navbar-expand-md.flex-md-column
+nav.navbar.navbar-expand-md
   .container
-    .navbar-header__top
-      #navbarCollapse.navbar-collapse.collapse(style='')
-        .navbar-top.d-flex
+    .header-item
+      .navbar-header__top
+        #navbarCollapse.navbar-collapse.collapse(style='')
+          .navbar-top.d-flex
+            ul.navbar-nav.mr-auto
+              li
+                a(href='#') Правила
+              li
+                a(href='#') FAQ
+              li
+                a(href='#') О нас
+              li
+                a(href='#') О ресурсе
+              li
+                form.form-inline.form-navbar.my-2.my-lg-0.order-2(action='#')
+                  input.form-control(name='s' type='text' placeholder='Search')
+            ul.navbar-nav.ml-auto
+              li.nav-item.active
+                a.nav-link(href='#') Вход
+              li.nav-item
+                a.nav-link(href='#') Регистрация
+      .navbar-header__info
+        .navbar-header__logo
+          a.navbar-brand(href='#')
+            img(src='./img/svg/lektor_logo2.svg').logo.d-none.d-md-flex
+            img(src='./img/svg/mobile-logo.svg').mobile-logo.d-flex.d-md-none
+          button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarCollapse.navbar-collapse.collapse(style='')
           ul.navbar-nav.mr-auto
-            li
-              a(href='#') Правила
-            li
-              a(href='#') FAQ
-            li
-              a(href='#') О нас
-            li
-              a(href='#') О ресурсе
-            li
-              form.form-inline.form-navbar.my-2.my-lg-0.order-2(action='#')
-                input.form-control(name='s' type='text' placeholder='Search')
-          ul.navbar-nav.ml-auto
             li.nav-item.active
-              a.nav-link(href='#') Вход
+              a.nav-link(href='#') Актуальные тренинги
             li.nav-item
-              a.nav-link(href='#') Регистрация
-    .navbar-header__logo
-      a.navbar-brand(href='#')
-        img(src='./img/svg/lektor_logo2.svg').logo.d-none.d-md-flex
-        img(src='./img/svg/mobile-logo.svg').mobile-logo.d-flex.d-md-none
-      button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-    #navbarCollapse.navbar-collapse.collapse(style='')
-      ul.navbar-nav.mr-auto
-        li.nav-item.active
-          a.nav-link(href='#') Актуальные тренинги
-        li.nav-item
-          a.nav-link(href='#') Каталог Лекторов
-        li.nav-item
-          a.nav-link(href='#') Архив
-        li.nav-item
-          a.nav-link(href='#') Тарифы
-        li.nav-item
-          a.nav-link(href='#') Статьи
+              a.nav-link(href='#') Каталог Лекторов
+            li.nav-item
+              a.nav-link(href='#') Архив
+            li.nav-item
+              a.nav-link(href='#') Тарифы
+            li.nav-item
+              a.nav-link(href='#') Статьи
