@@ -5,7 +5,6 @@ $font_main: 'ProximaNova-Regular';
 $font_semibold: 'ProximaNova-Semibold';
 $font_bold: 'ProximaNova-Bold';
 
-
 /* font sizes*/
 $size_smaller_font: 10px;
 $size_small_font: 12px;
@@ -16,14 +15,23 @@ $size_title_description_font: 30px;
 $size_title_big_font: 36px;
 
 /* color */
-$white: #ffffff;
-$default: #4EB1AA;
-$title: #121B1B;
-$price: #8F8F8F;
-$order: #EE7F06;
-$stock: #21A697;
-$hit: #FF0000;
-$new: #009BA5;
-$small-title: #59C7BF;
-$bg: #F9F9F9;
-$border: #EAEAEA;
+$color_selected: #67B930;
+$color_underline: #23AAEA;
+
+$color_darkblue: #2A58AD;
+
+$color_dark: #1D4C9E;
+$color_description: #6F7B8E;
+
+$color_main_bg: #E7EBEE;
+$color_main_bg_light: #F5F9FB;
+$color_link: #0C2947;
+$color_white: #ffffff;
+$color_blue: #EAF5FE;
+$color_border: #C8D0D9;
+$color_price_gradient: linear-gradient(to right, rgba(35, 170, 234, 1) 0%, rgba(63, 113, 209, 1) 100%);
+$color_alert: #FF8F00;
+
+$color_count: #3D66B4;
+$color_border: #3D66B4;
+$color_error: #E64A19;
