@@ -1,62 +1,53 @@
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans-Regular.eot');
-  src: local('../fonts/OpenSans Regular'), local('OpenSans-Regular'),
-  url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Regular.woff') format('woff'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: local('../fonts/ProximaNova Regular'), local('ProximaNova-Regular'),
+  url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans-Bold.eot');
-  src: local('../fonts/OpenSans Bold'), local('OpenSans-Bold'),
-  url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Bold.woff') format('woff'),
-  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: local('../fonts/ProximaNova Bold'), local('ProximaNova-Bold'),
+  url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'OpenSans-SemiBold';
-  src: url('../fonts/OpenSans-SemiBold.eot');
-  src: local('../fonts/OpenSans SemiBold'), local('OpenSans-SemiBold'),
-  url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-SemiBold.woff') format('woff'),
-  url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-Light';
-  src: url('../fonts/OpenSans-Light.eot');
-  src: local('../fonts/OpenSans Light'), local('OpenSans-Light'),
-  url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Light.woff') format('woff'),
-  url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/ProximaNova-Semibold.eot');
+  src: local('../fonts/ProximaNova Semibold'), local('ProximaNova-Semibold'),
+  url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+  url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('../fonts/Montserrat-Bold.eot');
-  src: local('../fonts/Montserrat-Bold'), local('Montserrat-Bold'),
-  url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Montserrat-Bold.woff') format('woff'),
-  url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: local('../fonts/ProximaNova Light'), local('ProximaNova-Light'),
+  url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Light.woff') format('woff'),
+  url('../fonts/ProximaNova-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Montserrat-Medium';
-  src: url('../fonts/Montserrat-Medium.eot');
-  src: local('../fonts/Montserrat-Medium'), local('Montserrat-Medium'),
-  url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-family: 'ProximaNova-Thin';
+  src: url('../fonts/ProximaNova-Thin.eot');
+  src: local('../fonts/ProximaNova-Thin'), local('ProximaNova-Thin'),
+  url('../fonts/ProximaNova-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Thin.woff') format('woff'),
+  url('../fonts/ProximaNova-Thin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
