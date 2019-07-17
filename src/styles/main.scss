@@ -12,7 +12,22 @@ h1, h2, h3, h4, ul {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   text-align: left;
+  font-weight: normal;
   box-shadow: none;
+}
+
+body {
+  position: relative;
+  &::before {
+    content: '';
+    mask: url('../img/svg/main-bg.svg') no-repeat top right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 965px;
+    height: 989px;
+    background: $color_main;
+  }
 }

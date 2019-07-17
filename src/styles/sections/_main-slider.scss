@@ -1,0 +1,44 @@
+.main-slider {
+  font-family: $font_main;
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  &__info, &__img {
+    flex: 0 0 50%;
+  }
+  &__info {
+    h2 {
+      font-size: $size_title_big_font;
+      color: $color_link;
+      line-height: 44px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: $size_link_font;
+      line-height: 24px;
+      color: $color_description;
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    color: $color_white;
+    padding: 10px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto auto 0;
+    border-radius: 24px;
+    font-family: $font_bold;
+    font-size: $size_link_font;
+    line-height: 19px;
+    background: $color_underline;
+    transition: 0.3s;
+    &-item {
+      display: flex;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
