@@ -6,11 +6,86 @@
     .navbar {
       &-top {
         width: 100%;
+        .navbar-nav {
+          display: flex;
+          align-items: center;
+        }
       }
       &-header {
         &__top, &__info {
           width: 100%;
           display: flex;
+        }
+      }
+    }
+
+    .navigation {
+      &-link, &-entry {
+        color: $color_description;
+        font-size: $size_link_font;
+        font-family: $font_main;
+        line-height: 19px;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+      }
+      &-entry {
+        color: $color_link;
+      }
+      &-login {
+        &::before {
+          content: '';
+          mask: url('../img/svg/icon-user.svg') no-repeat center;
+          background: $color_link;
+          margin-right: 10px;
+          width: 16px;
+          height: 16px;
+          mask-size: contain;
+        }
+      }
+      &-registration {
+        margin-right: 0;
+        border: 1px solid $color_selected;
+        border-radius: 19px;
+        padding: 9px 37px;
+      }
+      &-form {
+        position: relative;
+        &:focus {
+          outline: nones;
+        }
+        &::before {
+          content: '';
+          mask: url('../img/svg/icon-search.svg') no-repeat center;
+          mask-size: contain;
+          width: 16px;
+          height: 16px;
+          background: $color_border;
+          position: absolute;
+          z-index: 1;
+          margin-left: 15px;
+          top: 50%;
+          transform: translateY(-50%)
+        }
+        .form-control {
+          transition: 250ms;
+          position: relative;
+          z-index: 2;
+          width: 20px;
+          border: 1px solid transparent;
+          background: transparent;
+          font-size: $size_link_font;
+          font-family: $font_main;
+          color: $color_description;
+          padding: 5px 15px 5px 40px;
+          box-shadow: none;
+          border-radius: 19px;
+          line-height: 19px;
+          &:focus {
+            width: 255px;
+            border-color: $color_main_bg;
+            outline: none;
+          }
         }
       }
     }

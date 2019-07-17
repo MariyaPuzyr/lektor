@@ -6,21 +6,21 @@ nav.navbar.navbar-expand-md
           .navbar-top.d-flex
             ul.navbar-nav.mr-auto
               li
-                a(href='#') Правила
+                a(href='#').navigation-link Правила
               li
-                a(href='#') FAQ
+                a(href='#').navigation-link FAQ
               li
-                a(href='#') О нас
+                a(href='#').navigation-link О нас
               li
-                a(href='#') О ресурсе
+                a(href='#').navigation-link О ресурсе
               li
-                form.form-inline.form-navbar.my-2.my-lg-0.order-2(action='#')
+                form.navigation-form(action='#')
                   input.form-control(name='s' type='text' placeholder='Search')
             ul.navbar-nav.ml-auto
-              li.nav-item.active
-                a.nav-link(href='#') Вход
-              li.nav-item
-                a.nav-link(href='#') Регистрация
+              li
+                a.navigation-entry.navigation-login(href='#' data-toggle="modal" data-target="#login") Вход
+              li
+                a.navigation-entry.navigation-registration(href='#') Регистрация
       .navbar-header__info
         .navbar-header__logo
           a.navbar-brand(href='#')

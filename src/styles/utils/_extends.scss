@@ -1,0 +1,17 @@
+@keyframes openSearchField {
+  30% {
+    border-radius: 4px;
+  }
+  100% {
+    width: 300px;
+    height: 34px;
+    border-radius: 4px;
+  }
+}
+@keyframes showSearchSubmit {
+  100% {
+    width: auto;
+    padding: 5px 8px;
+    opacity: 1;
+  }
+}
