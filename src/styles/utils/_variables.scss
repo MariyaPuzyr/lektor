@@ -1,9 +1,19 @@
 /* fonts */
-$font-t: 'ProximaNova-Thin';
-$font-l: 'ProximaNova-Light';
-$font: 'ProximaNova-Regular';
-$font-s: 'ProximaNova-Semibold';
-$font-b: 'ProximaNova-Bold';
+$font_thin: 'ProximaNova-Thin';
+$font_light: 'ProximaNova-Light';
+$font_main: 'ProximaNova-Regular';
+$font_semibold: 'ProximaNova-Semibold';
+$font_bold: 'ProximaNova-Bold';
+
+
+/* font sizes*/
+$size_smaller_font: 10px;
+$size_small_font: 12px;
+$size_main_font: 14px;
+$size_link_font: 16px;
+$size_title_font: 20px;
+$size_title_description_font: 30px;
+$size_title_big_font: 36px;
 
 /* color */
 $white: #ffffff;
