@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   position: relative;
   &::before {
