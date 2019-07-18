@@ -3,10 +3,14 @@
   &__items {
     display: flex;
     align-items: center;
+    min-height: 420px;
   }
   &__info, &__img {
     flex: 0 0 50%;
     padding: 0 15px;
+  }
+  &__img img {
+    margin: auto;
   }
   &__info {
     h2 {
