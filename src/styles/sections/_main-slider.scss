@@ -83,12 +83,18 @@
     text-align: left;
     max-width: 1140px;
     margin: auto;
+    padding: 0 25px;
     li {
       width: 13px;
       height: 13px;
       &.slick-active {
         button {
           border: 2px solid #BAC1CC;
+          width: 13px;
+          height: 13px;
+          &::before {
+            display: block;
+          }
         }
       }
       button {
@@ -98,6 +104,8 @@
         background: #bac1cc;
         transition: .3s;
         display: flex;
+        justify-content: center;
+        margin: auto;
         align-items: center;
         padding: 0;
         position: relative;
@@ -106,10 +114,12 @@
           top: auto;
           left: auto;
           opacity: 1;
-          width: 11px;
-          height: 11px;
+          width: 9px;
+          height: 9px;
           border-radius: 50%;
           background: $color_white;
+          transition: .3s;
+          display: none;
         }
       }
     }
