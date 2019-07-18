@@ -1,0 +1,29 @@
+.countdown {
+  color: $color_selected;
+  margin: auto;
+  display: flex;
+  font-size: 64px;
+  line-height: 78px;
+  font-family: $font_thin;
+  margin-bottom: 30px;
+  &-item {
+    border-right: 1px solid #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    padding-right: 30px;
+    &:last-child {
+      border-right: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &-title {
+    color: $color_link;
+    font-size: $size_link_font;
+    line-height: 19px;
+    font-family: $font_main;
+  }
+
+}
