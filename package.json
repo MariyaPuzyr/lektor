@@ -44,6 +44,7 @@
     "highcharts": "^7.0.3",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
+    "jquery-countdown": "^2.2.0",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "nouislider": "^13.1.4",
     "particles.js": "^2.0.0",
