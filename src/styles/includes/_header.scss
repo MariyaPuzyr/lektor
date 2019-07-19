@@ -38,7 +38,7 @@
               }
             }
             .nav-link {
-              font-family: $font_main;
+              font-family: $font_semibold;
               font-size: $size_title_font;
               line-height: 24px;
               color: $color_link;
@@ -63,6 +63,7 @@
         }
         &-entry {
           color: $color_link;
+          transition: .3s;
         }
         &-login {
           &::before {
@@ -80,6 +81,11 @@
           border: 1px solid $color_selected;
           border-radius: 19px;
           padding: 9px 37px;
+          &:hover {
+            background: $color_selected;
+            color: $color_white;
+            text-decoration: none;
+          }
         }
         &-form {
           position: relative;

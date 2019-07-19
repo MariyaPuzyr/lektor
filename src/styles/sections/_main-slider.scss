@@ -6,7 +6,7 @@
     min-height: 420px;
   }
   &__info, &__img {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
     padding: 0 15px;
   }
   &__img img {
@@ -39,12 +39,14 @@
     font-size: $size_link_font;
     line-height: 19px;
     background: $color_underline;
-    transition: 0.3s;
+    transition: .3s;
     &-item {
       display: flex;
     }
     &:hover {
       text-decoration: none;
+      background: $color_darkblue;
+      color: $color_white;
     }
   }
   .slick-arrow {
@@ -96,6 +98,9 @@
             display: block;
           }
         }
+        &:hover {
+          border-color: $color_selected;
+        }
       }
       button {
         width: 11px;
@@ -120,6 +125,9 @@
           background: $color_white;
           transition: .3s;
           display: none;
+        }
+        &:hover {
+          background: $color_selected;
         }
       }
     }
