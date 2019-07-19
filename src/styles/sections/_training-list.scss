@@ -1,0 +1,43 @@
+.training-list {
+  background: url('../img/svg/bg.svg') no-repeat top left;
+  padding-top: 60px;
+  &__title {
+    font-size: $size_title_description_font;
+    font-family: $font_main;
+    line-height: 37px;
+    color: $color_link;
+    position: relative;
+    margin-bottom: 60px;
+    span {
+      color: $color_selected;
+      margin-left: 5px;
+    }
+    &::after {
+      content: '';
+      background: $color_underline;
+      width: 160px;
+      height: 2px;
+      bottom: -10px;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  &__calendar {
+    width: 40%;
+    flex: 1 0 40%;
+  }
+  &__slider-item {
+    width: 60%;
+    flex: 1 0 60%;
+
+    .slick-arrow {
+      top: 0;
+      transform: none;
+      background: #000000;
+    }
+  }
+}

@@ -209,6 +209,7 @@ $(document).ready(function () {
         return $('.calendar-2');
     }
   }
+
   /* calendar end*/
 
   /* calendar slider */
@@ -216,6 +217,7 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+    arrows: true,
     responsive: [
       {
         breakpoint: 640,
