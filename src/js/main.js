@@ -31,6 +31,7 @@ $(document).ready(function () {
   /* calendar */
   $(".responsive-calendar").responsiveCalendar({
     time: '2019-07',
+    translateMonths: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
     events: {
       "2019-07-30": {
         "number": 2,
@@ -47,7 +48,8 @@ $(document).ready(function () {
             "hour": "08:15"
           }
         ]
-      }}
+      }},
+    monthChangeAnimation: false
   });
   /* calendar end*/
 
