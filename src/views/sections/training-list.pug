@@ -4,17 +4,26 @@
       span 245 тренингов
     .training-list__item
       .training-list__calendar
-        .calendar-head
-          .control
-            span.prev p
-            span.next n
-        .day-list
-          .item.item1
-            .inner.calendar.calendar-1(data='1')
-          .item.item2
-            .inner.calendar.calendar-2.current(data='2')
-          .item.item3
-            .inner.calendar.calendar-3(data='3')
+        .responsive-calendar
+          .controls
+            a.pull-left(data-go='prev')
+              .btn.btn-primary Prev
+            h4
+              span(data-head-year='')
+              span(data-head-month='')
+            a.pull-right(data-go='next')
+              .btn.btn-primary Next
+          hr
+          .day-headers
+            .day.header Mon
+            .day.header Tue
+            .day.header Wed
+            .day.header Thu
+            .day.header Fri
+            .day.header Sat
+            .day.header Sun
+          .days(data-group='days')
+          // Responsive calendar - END
       .training-list__slider-item
         .training-list__slider.slider
           div
@@ -60,3 +69,5 @@
               p.training-item__description Вебинар не ограничивает число участников конференции, но не предоставляет возможности видео диалога. Если участник хочет задать вопрос докладчику - используется чат или через кабинет лектора может...
               .main-slider__link-item
                 a(href='#').main-slider__link Записаться
+    .training-list__all-training-item
+      a(href='#').training-list__all-training Смотреть все за сегодня
