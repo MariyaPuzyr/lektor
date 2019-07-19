@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 
   /* countdown */
-  $('[data-countdown]').each(function () {
+  $('.countdown').each(function () {
     var $this = $(this), finalDate = $(this).data('countdown');
     $this.countdown(finalDate, function (event) {
       $this.html(event.strftime("<span class='countdown-item'>" + '%D' + "<span class='countdown-title'>дней</span></span>" + "<span class='countdown-item'>" + '%H' + "<span class='countdown-title'>часов</span></span>" + "<span class='countdown-item'>" + '%M' + "<span class='countdown-title'>минут</span></span>" + "<span class='countdown-item'>" + '%S' + "<span class='countdown-title'>секунд</span></span>"));
@@ -56,9 +56,6 @@ $(document).ready(function () {
       }
 
       table += ('<h3 id="current-month">' + monthNames[month] + ' ' + year + '</h3>');
-      // uncomment the following lines if you'd like to display calendar month based on 'month' and 'view' paramaters from the URL
-      //table += ('<div class="nav-prev">'+ prev_month +'</div>');
-      //table += ('<div class="nav-next">'+ next_month +'</div>');
       table += ('<table class="calendar-month " ' + 'id="calendar-month' + i + ' " cellspacing="0">');
 
       table += '<tr>';
@@ -110,7 +107,6 @@ $(document).ready(function () {
       }
     }
 
-
     // jQuery plugin initialisation
     $.fn.calendarWidget = function (params) {
       calendarWidget(this, params);
@@ -119,9 +115,6 @@ $(document).ready(function () {
 
   })(jQuery);
 
-
-  var colors = ['#CB5050', '#44ADE1', '#60C84F', '#E07B57'];
-  var nowColor = 0;
   var deg = 0;
   var now = new Date();
   var thismonth = now.getMonth();
@@ -143,7 +136,6 @@ $(document).ready(function () {
       year: thisyear
     });
     setHead(nowMonth);
-    rotate(-120);
   }
 
   function prev() {
@@ -153,7 +145,6 @@ $(document).ready(function () {
       year: thisyear
     });
     setHead(nowMonth);
-    rotate(120);
   }
 
   $('.prev').click(function () {
@@ -237,4 +228,13 @@ $(document).ready(function () {
   });
 
   /* calendar slider end*/
+
+  /* calendar countdown */
+  $('.training-item__countdown').each(function () {
+    var $this = $(this), finalDate = $(this).data('countdown');
+    $this.countdown(finalDate, function (event) {
+      $this.html(event.strftime('%I' + "<span class='countdown-title'>часов</span>" + '%M' + "<span class='countdown-title'>минут</span>"));
+    });
+  });
+  /* calendar countdown end*/
 });
