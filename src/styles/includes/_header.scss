@@ -124,6 +124,7 @@
             position: relative;
             z-index: 2;
             width: 20px;
+            height: 30px;
             border: 1px solid transparent;
             background: transparent;
             font-size: $size_link_font;
@@ -135,8 +136,14 @@
             line-height: 19px;
             &:focus {
               width: 255px;
-              border-color: $color_main_bg;
+              border-color: $color_selected;
               outline: none;
+            }
+            &:hover{
+              cursor: pointer;
+              & ~ .navigation-form {
+                background: $color_selected;
+              }
             }
           }
         }
