@@ -1,44 +1,96 @@
 .training-list__calendar {
+  background: $color_white;
+  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  border-radius: 4px;
+  width: 40%;
+  flex: 1 0 40%;
+  margin: 0 auto auto;
+  padding: 35px 20px;
   .controls {
-    text-align: center;
-    a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    .calendar-control {
       cursor: pointer;
       position: relative;
       z-index: 10;
+      margin-bottom: 25px;
+      &::after {
+        content: '';
+        mask: url('../img/svg/arrow-select.svg') no-repeat center;
+        background: $color_description;
+        width: 16px;
+        height: 16px;
+        transform: rotate(90deg);
+        display: block;
+      }
+      &:hover::after {
+        background: $color_underline;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .pull-right::after {
+      transform: rotate(-90deg);
     }
     h4 {
-      display: inline;
+      font-family: $font_semibold;
+      font-size: $size_title_font;
+      color: $color_link;
+      line-height: 24px;
+      span {
+        margin: 0 3px;
+      }
     }
   }
   .day-headers, .days {
     font-size: 0;
   }
+  .day-headers {
+    margin-bottom: 10px;
+    .header {
+      color: $color_link;
+      cursor: pointer;
+      font-family: $font_bold;
+      font-size: $size_main_font;
+      line-height: 17px;
+      background: $color_white;
+      &.day-off {
+        color: $color_underline;
+      }
+    }
+  }
   .day {
     display: inline-block;
     position: relative;
-    font-size: 14px;
+    font-size: $size_main_font;
+    line-height: 17px;
     width: 14.285714285714286%;
     text-align: center;
     a {
-      color: #000000;
+      color: $color_darkblue;
       display: block;
       cursor: pointer;
       padding: 20% 0 20% 0;
+      font-family: $font_main;
+      font-size: $size_link_font;
+      line-height: 19px;
+      border: 1px solid #F9F9F9;
+      background: #F9F9F9;
+      border-radius: 3px;
+      margin: 2px;
       &:hover {
-        background-color: #eee;
+        border-color: $color_selected;
+        color: $color_darkblue;
         text-decoration: none;
       }
     }
-    &.header {
-      border-bottom: 1px gray solid;
-    }
     &.active {
       a {
-        background-color: #1d86c8;
-        color: #ffffff;
-        &:hover {
-          background-color: #36a0e2;
-        }
+        background-color: $color_selected;
+        border-color: $color_selected;
+        color: $color_white;
       }
       .not-current {
         background-color: #8fcaef;
@@ -49,13 +101,18 @@
       }
     }
     &.not-current a {
-      color: #ddd;
+      color: #BAC1CC;
     }
     .badge {
       position: absolute;
-      top: 2px;
-      right: 2px;
+      right: 5px;
+      bottom: 4px;
       z-index: 1;
+      font-size: $size_smaller_font;
+      font-family: $font_main;
+      color: $color_white;
+      padding: 0;
+      font-weight: normal;
     }
   }
 }

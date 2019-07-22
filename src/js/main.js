@@ -33,11 +33,8 @@ $(document).ready(function () {
     time: '2019-07',
     translateMonths: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
     events: {
-      "2019-07-30": {
-        "number": 2,
-        "badgeClass":
-            "badge-warning",
-        "url": "http://w3widgets.com/responsive-calendar",
+      "2019-07-15": {
+        "number": 245,
         "dayEvents": [
           {
             "name": "Important meeting",
@@ -48,7 +45,38 @@ $(document).ready(function () {
             "hour": "08:15"
           }
         ]
-      }},
+      },
+      "2019-07-30": {
+        "number": 2,
+        "dayEvents": [
+          {
+            "name": "Important meeting",
+            "hour": "17:30"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          }
+        ]
+      },
+      "2019-08-02": {
+        "number": 3,
+        "dayEvents": [
+          {
+            "name": "Important meeting",
+            "hour": "17:30"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          }
+        ]
+      }
+    },
     monthChangeAnimation: false
   });
   /* calendar end*/
