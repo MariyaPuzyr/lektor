@@ -1,0 +1,85 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-family: $font_main;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &-logo {
+    width: 160px;
+    height: auto;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &-copy-info {
+    p {
+      margin-bottom: 0;
+      font-size: $size_small_font;
+      line-height: 15px;
+      color: $color_description;
+    }
+  }
+  &-menu {
+    display: inline-block;
+    column-count: 2;
+    column-width: 250px;
+    a {
+      color: $color_description;
+      font-size: $size_link_font;
+      line-height: 19px;
+      margin-bottom: 10px;
+      display: block;
+      transition: .3s;
+    }
+  }
+  &-social {
+    &__title {
+      font-family: $font_light;
+      font-size: $size_title_font;
+      line-height: 24px;
+      color: $color_description;
+      margin-bottom: 10px;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      &-ico {
+        border: 1px solid $color_underline;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        transition: .3s;
+        &::after {
+          content: '';
+          mask: url('../img/svg/icon-fa.svg') no-repeat center;
+          width: 24px;
+          height: 24px;
+          background: $color_link;
+          transition: .3s;
+        }
+        &:hover::after {
+          background: $color_underline;
+        }
+        &.vk::after {
+          mask: url('../img/svg/icon-vk.svg') no-repeat center;
+        }
+        &.twitter::after {
+          mask: url('../img/svg/icon-tw.svg') no-repeat center;
+        }
+        &.od::after {
+          mask: url('../img/svg/icon-od.svg') no-repeat center;
+        }
+        &.rss::after {
+          mask: url('../img/svg/icon-rss.svg') no-repeat center;
+        }
+      }
+
+    }
+  }
+}
