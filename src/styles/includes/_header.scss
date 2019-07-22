@@ -31,7 +31,10 @@
             align-items: baseline;
             .nav-item {
               &.active .nav-link, .nav-link:hover {
-                border-bottom-color: $color_underline;
+                &::after {
+                  width: 100%;
+                  left: 0;
+                }
               }
               &:last-child .nav-link {
                 margin-right: 0;
@@ -44,8 +47,19 @@
               color: $color_link;
               margin: 0 20px;
               padding: 0 0 10px;
-              border-bottom: 2px solid transparent;
               transition: .3s;
+              position: relative;
+              &::after {
+                content: "";
+                bottom: 0;
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $color_underline;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+              }
             }
           }
         }
@@ -90,7 +104,7 @@
         &-form {
           position: relative;
           &:focus {
-            outline: nones;
+            outline: none;
           }
           &::before {
             content: '';
