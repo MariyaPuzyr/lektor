@@ -1,0 +1,42 @@
+.training-archive {
+  background: url('../img/bg-mountain.jpg') no-repeat bottom;
+  background-size: cover;
+  margin-top: 40px;
+  padding: 50px 0 20px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    flex: 1 0 33.33%;
+    margin-bottom: 5px;
+    &--count {
+      font-family: $font_thin;
+      font-size: 64px;
+      line-height: 78px;
+      color: $color_selected;
+      &.training {
+        &-lectors {
+          color: $color_underline;
+        }
+        &-studets {
+          color: $color_darkblue;
+        }
+      }
+    }
+    &--name {
+      font-family: $font_light;
+      font-size: $size_title_font;
+      line-height: 24px;
+      color: $color_link;
+    }
+  }
+  &_ico {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+}
