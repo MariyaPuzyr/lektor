@@ -29,7 +29,7 @@ $(document).ready(function () {
   /* countdown end*/
 
   /* calendar */
-  $(".responsive-calendar").responsiveCalendar({
+  $(".training-list__calendar").responsiveCalendar({
     time: '2019-07',
     translateMonths: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
     events: {

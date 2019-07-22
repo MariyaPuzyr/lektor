@@ -4,25 +4,23 @@
       span 245 тренингов
     .training-list__item
       .training-list__calendar
-        .responsive-calendar
-          .controls
-            a.pull-left(data-go='prev')
-              .btn.btn-primary Prev
-            h4
-              span(data-head-month='')
-              span(data-head-year='')
-            a.pull-right(data-go='next')
-              .btn.btn-primary Next
-          .day-headers
-            .day.header Пн
-            .day.header Вт
-            .day.header Ср
-            .day.header Чт
-            .day.header Пт
-            .day.header.day-off Сб
-            .day.header.day-off Вс
-          .days(data-group='days')
-          // Responsive calendar - END
+        .controls
+          a.pull-left(data-go='prev')
+
+          h4
+            span(data-head-month='')
+            span(data-head-year='')
+          a.pull-right(data-go='next')
+        .day-headers
+          .day.header Пн
+          .day.header Вт
+          .day.header Ср
+          .day.header Чт
+          .day.header Пт
+          .day.header.day-off Сб
+          .day.header.day-off Вс
+        .days(data-group='days')
+        // Responsive calendar - END
       .training-list__slider-item
         .training-list__slider.slider
           div
