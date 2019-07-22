@@ -1,0 +1,48 @@
+.articles {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background: linear-gradient(244.2deg, #EAF5FE 0%, #C9DBEB 96.88%);
+  .site-features__title::after {
+    background: $color_selected;
+  }
+  &__item {
+    background: $color_white;
+    box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 30px 20px 40px;
+    font-family: $font_main;
+    font-size: $size_link_font;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    &--date {
+      color: #bac1cc;
+      margin-bottom: 5px;
+    }
+    &--name {
+      font-family: $font_semibold;
+      font-size: $size_title_font;
+      margin-bottom: 15px;
+      color: $color_darkblue;
+    }
+    p {
+      color: $color_description;
+      margin-bottom: 15px;
+    }
+    &--link {
+      padding: 10px 35px;
+      border: 1px solid $color_selected;
+      border-radius: 19px;
+      line-height: 19px;
+      color: $color_link;
+      margin: auto auto auto 0;
+      transition: .3s;
+      &:hover {
+        text-decoration: none;
+        background: $color_selected;
+        color: $color_white;
+      }
+    }
+  }
+}
