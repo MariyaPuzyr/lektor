@@ -1,3 +1,123 @@
 .site-features {
-
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  font-family: $font_main;
+  &::after {
+    content: '';
+    background: url('../img/svg/bg.svg') no-repeat top right;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    top: 45px;
+    right: 50px;
+    width: 802px;
+    height: 822px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: $size_title_description_font;
+    line-height: 37px;
+    color: $color_link;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    &::after {
+      content: '';
+      width: 160px;
+      height: 2px;
+      background: $color_underline;
+    }
+  }
+  &__list-item {
+    h4 {
+      font-size: $size_title_font;
+      line-height: 24px;
+      color: $color_link;
+      margin-bottom: 35px;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: flex-start;
+      font-family: $font_light;
+      font-size: $size_title_font;
+      line-height: 24px;
+      color: $color_link;
+      margin-bottom: 20px;
+      &::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: url('../img/svg/checkbox.svg');
+        margin-right: 15px;
+        flex: 0 0 auto;
+      }
+      &:last-child {
+        margin-left: 45px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  &__item {
+    background: $color_white;
+    box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+    border-radius: 4px;
+    padding: 30px 15px;
+    height: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &-ico {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 20px;
+    }
+    &-name {
+      font-family: $font_bold;
+      font-size: $size_link_font;
+      line-height: 19px;
+      color: $color_dark;
+      margin-bottom: 20px;
+    }
+    &-link {
+      padding: 10px 35px;
+      font-size: $size_link_font;
+      line-height: 19px;
+      color: $color_link;
+      transition: .3s;
+      border: 1px solid $color_selected;
+      border-radius: 19px;
+      &:hover {
+        background: $color_selected;
+        color: $color_white;
+        text-decoration: none;
+      }
+    }
+  }
+  &__info {
+    margin-top: 50px;
+    p {
+      font-size: $size_link_font;
+      line-height: 24px;
+      color: $color_description;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: $size_title_description_font;
+      line-height: 37px;
+      color: $color_link;
+      margin-bottom: 15px;
+    }
+  }
 }
