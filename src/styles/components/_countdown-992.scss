@@ -1,0 +1,9 @@
+.countdown {
+  font-size: 64px;
+  line-height: 78px;
+  margin-bottom: 30px;
+  &-item {
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+}

@@ -5,15 +5,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 420px;
   }
   &__info, &__img {
     flex: 1 0 50%;
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
   }
   &__img img {
-    margin: auto;
+    margin: auto auto 20px;
     border-radius: 4px;
   }
   &__info {
@@ -43,6 +42,7 @@
     line-height: 19px;
     background: $color_underline;
     transition: .3s;
+    margin-bottom: 15px;
     &-item {
       display: flex;
     }
@@ -75,10 +75,10 @@
     }
   }
   .slick-prev {
-    left: 30px;
+    left: 10px;
   }
   .slick-next {
-    right: 30px;
+    right: 10px;
     &::before {
       transform: rotate(-90deg);
     }

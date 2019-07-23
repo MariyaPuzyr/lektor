@@ -2,17 +2,17 @@
   color: $color_selected;
   margin: auto;
   display: flex;
-  font-size: 64px;
-  line-height: 78px;
+  font-size: $size_title_description_font;
+  line-height: 34px;
   font-family: $font_thin;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   &-item {
     border-right: 1px solid #C4C4C4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 30px;
-    padding-right: 30px;
+    margin-right: 15px;
+    padding-right: 15px;
     &:last-child {
       border-right: none;
       padding: 0;
@@ -25,5 +25,4 @@
     line-height: 19px;
     font-family: $font_main;
   }
-
 }

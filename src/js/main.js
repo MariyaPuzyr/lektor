@@ -14,7 +14,16 @@ $(document).ready(function () {
     dots: true,
     arrows: true,
     infinite: true,
-    slidesToShow: 1
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          adaptiveHeight: true,
+          arrows: false
+        }
+      }
+    ]
   });
   /* slider end */
 

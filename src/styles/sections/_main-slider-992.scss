@@ -2,11 +2,27 @@
   margin-top: 0;
   &__items {
     flex-direction: row;
+    min-height: 420px;
+  }
+  &__info, &__img {
+    padding: 0 15px;
+  }
+  &__img img {
+    margin: auto;
   }
   &__info {
     h2 {
       font-size: $size_title_big_font;
       line-height: 44px;
     }
+  }
+  &__link {
+    margin-bottom: 0;
+  }
+  .slick-prev {
+    left: 30px;
+  }
+  .slick-next {
+    right: 30px;
   }
 }
