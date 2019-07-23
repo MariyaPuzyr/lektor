@@ -3,19 +3,38 @@
     .modal-content
       .modal-body
         button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
+          +sprite('', 'close-icon')
         h5.modal-title Вход
         form(action='#')
           .form-row
             .col
-              label.sr-only(for='inlineFormInputGroup') Username
               .input-group
                 .input-group-prepend
-                  +sprite('', 'icon-user')
-                input#inlineFormInputGroup.form-control(type='text' placeholder='Username')
+                  .input-group-text
+                    +sprite('', 'icon-user')
+                input.form-control(type='text' placeholder='Введите e-mail')
             .col
-              label.sr-only(for='inlineFormInputGroup1') Username
               .input-group
                 .input-group-prepend
-                  .input-group-text @
-                input#inlineFormInputGroup1.form-control(type='text' placeholder='Username')
+                  .input-group-text
+                    +sprite('', 'icon-password')
+                input.form-control(type='text' placeholder='Введите пароль')
+            .col
+              .form-link
+                button(type='submit').form-link__login Войти
+                a(href='#').form-link__forgot-pass Забыли пароль?
+            .col
+              .sign-social
+                .sign-social__title Или войдите с помощью соцсетей:
+                ul
+                  li
+                    a(href='#')
+                      +sprite('icon facebook', 'icon-fa')
+                      | Facebook
+                  li
+                    a(href='#')
+                      +sprite('icon facebook', 'icon-google')
+                      | Google
+            .col
+              .registration-link У вас еще нет аккаунта?
+                a(href='#') Зарегистрируйтесь
