@@ -123,9 +123,9 @@
             transition: 250ms;
             position: relative;
             z-index: 2;
-            width: 20px;
+            width: 100%;
             height: 30px;
-            border: 1px solid transparent;
+            border: 1px solid $color_selected;
             background: transparent;
             font-size: $size_link_font;
             font-family: $font_main;
@@ -135,11 +135,9 @@
             border-radius: 19px;
             line-height: 19px;
             &:focus {
-              width: 255px;
-              border-color: $color_selected;
               outline: none;
             }
-            &:hover{
+            &:hover {
               cursor: pointer;
             }
           }

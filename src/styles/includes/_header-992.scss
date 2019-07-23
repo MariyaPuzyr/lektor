@@ -1,0 +1,17 @@
+.navbar {
+  &-toggle {
+    display: none;
+  }
+  .header-item {
+    .navigation-form {
+      .form-control {
+        width: 20px;
+        border: 1px solid transparent;
+        &:focus {
+          border-color: $color_selected;
+          width: 255px;
+        }
+      }
+    }
+  }
+}

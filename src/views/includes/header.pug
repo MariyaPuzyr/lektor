@@ -1,10 +1,10 @@
-nav.navbar.navbar-expand-md
+nav.navbar.navbar-expand-lg
   .container
     header.header-item
       .navbar-header__top
         #navbarCollapse.navbar-collapse.collapse(style='')
           .navbar-top.d-flex
-            ul.navbar-nav.mr-auto
+            ul.navbar-nav.mr-lg-auto
               li
                 a(href='#').navigation-link Правила
               li
@@ -16,7 +16,7 @@ nav.navbar.navbar-expand-md
               li
                 form.navigation-form(action='#')
                   input.form-control(name='s' type='text' placeholder='Search')
-            ul.navbar-nav.ml-auto
+            ul.navbar-nav.ml-lg-auto
               li
                 a.navigation-entry.navigation-login(href='#' data-toggle="modal" data-target="#login") Вход
               li
@@ -26,10 +26,13 @@ nav.navbar.navbar-expand-md
           a.navbar-brand(href='#')
             img(src='./img/svg/lektor_logo2.svg' alt='').logo.d-none.d-md-flex
             img(src='./img/svg/mobile-logo.svg' alt='').mobile-logo.d-flex.d-md-none
-          button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
-            span.navbar-toggler-icon
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbarCollapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
         #navbarCollapse.navbar-collapse.collapse(style='')
-          ul.navbar-nav.ml-auto
+          ul.navbar-nav.ml-lg-auto
             li.nav-item.active
               a.nav-link(href='#') Актуальные тренинги
             li.nav-item
