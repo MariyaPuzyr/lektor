@@ -141,9 +141,6 @@
             }
             &:hover{
               cursor: pointer;
-              & ~ .navigation-form {
-                background: $color_selected;
-              }
             }
           }
         }
