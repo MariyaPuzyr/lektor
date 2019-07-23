@@ -1,0 +1,23 @@
+.training-list {
+  padding-top: 60px;
+  &__title {
+    font-size: $size_title_description_font;
+    line-height: 37px;
+  }
+  &__item {
+    flex-direction: row;
+  }
+  &__slider-item {
+    width: 60%;
+    margin-top: 0;
+    .slick-arrow {
+      top: -98px;
+    }
+    .slick-slide {
+      padding-left: 30px;
+    }
+  }
+  &__all-training {
+    font-size: $size_title_font;
+  }
+}

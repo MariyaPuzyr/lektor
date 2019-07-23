@@ -1,10 +1,11 @@
 .training-list {
   background: url('../img/svg/bg.svg') no-repeat top left;
-  padding-top: 60px;
+  position: relative;
+  z-index: 1;
   &__title {
-    font-size: $size_title_description_font;
+    font-size: $size_title_font;
     font-family: $font_main;
-    line-height: 37px;
+    line-height: 24px;
     color: $color_link;
     position: relative;
     margin-bottom: 60px;
@@ -25,16 +26,17 @@
   }
   &__item {
     display: flex;
+    flex-direction: column;
   }
   &__slider-item {
-    width: 60%;
+    width: 100%;
     flex: 1 0 60%;
-
+    margin-top: 70px;
     .slick-slide {
-      padding-left: 30px;
+      padding: 0 5px;
     }
     .slick-arrow {
-      top: -98px;
+      top: -50px;
       transform: none;
       width: 60px;
       height: 38px;
@@ -82,6 +84,7 @@
     }
     &__img {
       border-radius: 4px;
+      margin: auto;
     }
     &__lection-name {
       font-family: $font_semibold;
@@ -113,7 +116,7 @@
     align-items: center;
     justify-content: center;
     font-family: $font_main;
-    font-size: $size_title_font;
+    font-size: $size_link_font;
     line-height: 24px;
     color: $color_link;
     transition: .3s;

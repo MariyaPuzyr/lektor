@@ -17,7 +17,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 992,
         settings: {
           adaptiveHeight: true,
           arrows: false
@@ -98,7 +98,7 @@ $(document).ready(function () {
     arrows: true,
     responsive: [
       {
-        breakpoint: 640,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
