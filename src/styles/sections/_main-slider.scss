@@ -1,12 +1,15 @@
 .main-slider {
+  margin-top: 30px;
   font-family: $font_main;
   &__items {
     display: flex;
     align-items: center;
+    flex-direction: column;
     min-height: 420px;
   }
   &__info, &__img {
     flex: 1 0 50%;
+    width: 100%;
     padding: 0 15px;
   }
   &__img img {
@@ -15,9 +18,9 @@
   }
   &__info {
     h2 {
-      font-size: $size_title_big_font;
+      font-size: $size_title_font;
+      line-height: 24px;
       color: $color_link;
-      line-height: 44px;
       margin-bottom: 15px;
     }
     p {

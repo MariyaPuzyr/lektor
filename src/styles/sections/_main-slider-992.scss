@@ -1,0 +1,12 @@
+.main-slider {
+  margin-top: 0;
+  &__items {
+    flex-direction: row;
+  }
+  &__info {
+    h2 {
+      font-size: $size_title_big_font;
+      line-height: 44px;
+    }
+  }
+}
