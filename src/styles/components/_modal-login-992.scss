@@ -1,0 +1,17 @@
+.modal-login {
+  .form-link {
+    flex-direction: row;
+    &__login {
+      margin-bottom: 0;
+    }
+  }
+  .sign-social {
+    ul {
+      flex-direction: row;
+    }
+    &__link {
+      margin-bottom: 0;
+      width: 160px;
+    }
+  }
+}
