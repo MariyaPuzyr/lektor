@@ -43,17 +43,14 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    padding-left: 10%;
-    padding-right: 10%;
     font-family: $font_main;
     &__title {
       display: flex;
       flex-direction: column;
-      font-size: $size_title_description_font;
-      line-height: 37px;
+      font-size: $size_title_font;
+      line-height: 24px;
       color: $color_link;
-      margin-top: 75px;
-      margin-bottom: 50px;
+      margin: 20px 15px;
       &::after {
         content: '';
         width: 160px;
@@ -65,11 +62,9 @@
     &-row {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
     }
     &--col {
-      flex: 1 0 50%;
+      flex: 1 0 100%;
       padding: 0 15px;
     }
     &__group {
@@ -86,6 +81,7 @@
         color: $color_description;
         left: 15px;
         top: 10px;
+        white-space: nowrap;
         span {
           color: $color_selected;
           margin-left: 3px;
@@ -160,6 +156,7 @@
         border-radius: 4px;
         background-color: $color_white;
         margin-right: 20px;
+        flex: 0 0 30px;
         &::after {
           content: '';
           width: 30px;
@@ -178,7 +175,8 @@
     &__link {
       display: flex;
       align-items: center;
-      margin-bottom: 85px;
+      flex-direction: column;
+      margin-bottom: 30px;
       &-registration {
         padding: 9px 45px;
         background: $color_selected;
@@ -189,7 +187,9 @@
         line-height: 19px;
         font-family: $font_bold;
         transition: .3s;
-        margin-right: 30px;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
         &:hover {
           background: $color_white;
           color: $color_selected;

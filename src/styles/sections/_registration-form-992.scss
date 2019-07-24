@@ -1,0 +1,27 @@
+.registration {
+  &-form {
+    padding-left: 10%;
+    padding-right: 10%;
+    &__title {
+      font-size: $size_title_description_font;
+      line-height: 37px;
+      margin: 75px 0 50px;
+    }
+    &-row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    &--col {
+      flex: 1 0 50%;
+    }
+    &__link {
+      flex-direction: row;
+      margin-bottom: 85px;
+      &-registration {
+        margin-right: 30px;
+        width: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
