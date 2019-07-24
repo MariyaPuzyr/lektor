@@ -14,21 +14,21 @@
         .registration-form__group
           input.registration-form-control(type='text' placeholder='Отчество')
       .registration-form--col
-        .registration-form__group
+        .registration-form__group.registration-form__ico
           .input-group-prepend
             .input-group-text
               +sprite('icon', 'icon-user')
           .placeholder Введите e-mail
             span *
           input.registration-form-control(type='text')
-        .registration-form__group
+        .registration-form__group.registration-form__ico
           .input-group-prepend
             .input-group-text
               +sprite('icon', 'icon-password')
           .placeholder Введите пароль
             span *
           input.registration-form-control(type='text')
-        .registration-form__group
+        .registration-form__group.registration-form__ico
           .input-group-prepend
             .input-group-text
               +sprite('icon', 'icon-password')
@@ -44,9 +44,9 @@
     .registration-form-row
       .registration-form--col
         .registration-form__group
-          textarea
           .placeholder О себе
             span *
+          textarea.registration-form-control(rows='5')
     .registration-form-row
       .registration-form--col
         .g-recaptcha(data-sitekey='6LejRq8UAAAAANl1a-LA38-zgxZJBSxdQ5UAxgNL')
@@ -57,3 +57,10 @@
           span Я согласен с
             a(href='#') пользовательским соглашением
               span *
+    .registration-form-row
+      .registration-form--col
+        .registration-form__link
+          button(type='submit').registration-form__link-registration Зарегистрироваться
+          .registration-form__link-login У вас уже есть аккаунт?
+            a(href='#' data-toggle="modal" data-target="#login") Войти
+        .registration-form-copyright &copy; 2013 All rights reserved.
