@@ -4,11 +4,13 @@
     .registration-form-row
       .registration-form--col
         .registration-form__group
-          input.registration-form-control(type='text' placeholder='Фамилия')
-          .placeholder *
+          .placeholder Фамилия
+            span *
+          input.registration-form-control(type='text')
         .registration-form__group
-          input.registration-form-control(type='text' placeholder='Имя')
-          .placeholder *
+          .placeholder Имя
+            span *
+          input.registration-form-control(type='text')
         .registration-form__group
           input.registration-form-control(type='text' placeholder='Отчество')
       .registration-form--col
@@ -16,30 +18,35 @@
           .input-group-prepend
             .input-group-text
               +sprite('icon', 'icon-user')
-          input.registration-form-control(type='text' placeholder='Введите e-mail')
-          .placeholder *
+          .placeholder Введите e-mail
+            span *
+          input.registration-form-control(type='text')
         .registration-form__group
           .input-group-prepend
             .input-group-text
               +sprite('icon', 'icon-password')
-          input.registration-form-control(type='text' placeholder='Введите пароль')
-          .placeholder *
+          .placeholder Введите пароль
+            span *
+          input.registration-form-control(type='text')
         .registration-form__group
           .input-group-prepend
             .input-group-text
               +sprite('icon', 'icon-password')
-          input.registration-form-control(type='text' placeholder='Введите пароль')
-          .placeholder *
+          .placeholder Введите пароль
+            span *
+          input.registration-form-control(type='text')
     .registration-form-row
       .registration-form--col
         .registration-form__group
-          input.registration-form-control(type='text' placeholder='Должность - преподаватель, репетитор, бизнес-тренер...')
-          .placeholder *
+          .placeholder Должность - преподаватель, репетитор, бизнес-тренер...
+            span *
+          input.registration-form-control(type='text')
     .registration-form-row
       .registration-form--col
         .registration-form__group
-          textarea(placeholder='О себе *')
-          .placeholder *
+          textarea
+          .placeholder О себе
+            span *
     .registration-form-row
       .registration-form--col
         .g-recaptcha(data-sitekey='6LejRq8UAAAAANl1a-LA38-zgxZJBSxdQ5UAxgNL')

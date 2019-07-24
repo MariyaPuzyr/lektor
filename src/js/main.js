@@ -154,4 +154,19 @@ $(document).ready(function () {
     });
     /* training archive countdown init end */
   }
+
+  /* registration form */
+  if ($(".placeholder").length > 0) {
+    $(".placeholder + .registration-form-control").keyup(function () {
+      if ($(this).val().length) {
+        $(this).prev('.placeholder').hide();
+      } else {
+        $(this).prev('.placeholder').show();
+      }
+    });
+    $(".placeholder").click(function () {
+      $(this).next().focus();
+    });
+  }
+  /* registration form end*/
 });

@@ -42,6 +42,70 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    padding-left: 175px;
+    padding-right: 160px;
+    font-family: $font_main;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      font-size: $size_title_description_font;
+      line-height: 37px;
+      color: $color_link;
+      margin-top: 75px;
+      margin-bottom: 50px;
+      &::after {
+        content: '';
+        width: 160px;
+        height: 2px;
+        margin-top: 10px;
+        background: $color_underline;
+      }
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    &--col {
+      flex: 0 0 50%;
+      padding: 0 15px;
+    }
+    &__group {
+      position: relative;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      .placeholder {
+        position: absolute;
+        font-size: $size_link_font;
+        line-height: 19px;
+        font-family: $font_main;
+        color: $color_description;
+        left: 15px;
+        span {
+          color: $color_selected;
+          margin-left: 3px;
+        }
+      }
+    }
+    &-control {
+      width: 100%;
+      padding: 10px 15px;
+      height: 38px;
+      background: $color_white;
+      border: 1px solid $color_border;
+      border-radius: 3px;
+      font-size: $size_link_font;
+      line-height: 19px;
+      font-family: $font_main;
+      color: $color_description;
+      transition: .3s;
+      &:focus {
+        border-color: $color_selected;
+      }
+    }
     .ans-label {
       color: #4a4b4b;
       font-weight: 600;
