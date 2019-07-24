@@ -1,1 +1,52 @@
 .registration-form
+  h2.registration-form__title Регистрация новой учетной записи
+  form(action='#')
+    .registration-form-row
+      .registration-form--col
+        .registration-form__group
+          input.registration-form-control(type='text' placeholder='Фамилия')
+          .placeholder *
+        .registration-form__group
+          input.registration-form-control(type='text' placeholder='Имя')
+          .placeholder *
+        .registration-form__group
+          input.registration-form-control(type='text' placeholder='Отчество')
+      .registration-form--col
+        .registration-form__group
+          .input-group-prepend
+            .input-group-text
+              +sprite('icon', 'icon-user')
+          input.registration-form-control(type='text' placeholder='Введите e-mail')
+          .placeholder *
+        .registration-form__group
+          .input-group-prepend
+            .input-group-text
+              +sprite('icon', 'icon-password')
+          input.registration-form-control(type='text' placeholder='Введите пароль')
+          .placeholder *
+        .registration-form__group
+          .input-group-prepend
+            .input-group-text
+              +sprite('icon', 'icon-password')
+          input.registration-form-control(type='text' placeholder='Введите пароль')
+          .placeholder *
+    .registration-form-row
+      .registration-form--col
+        .registration-form__group
+          input.registration-form-control(type='text' placeholder='Должность - преподаватель, репетитор, бизнес-тренер...')
+          .placeholder *
+    .registration-form-row
+      .registration-form--col
+        .registration-form__group
+          textarea(placeholder='О себе *')
+          .placeholder *
+    .registration-form-row
+      .registration-form--col
+        .g-recaptcha(data-sitekey='6LejRq8UAAAAANl1a-LA38-zgxZJBSxdQ5UAxgNL')
+    .registration-form-row
+      .registration-form--col
+        label.ans-label.ng-binding
+          input#asdActive.checkbox.square(type='checkbox')
+          span Я согласен с
+            a(href='#') пользовательским соглашением
+              span *
