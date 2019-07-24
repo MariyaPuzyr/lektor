@@ -1,0 +1,45 @@
+nav.navbar.navbar-expand-lg
+  .container
+    header.header-item
+      .navbar-header__top
+        #menu.navbar-collapse.collapse(style='')
+          .navbar-top.d-flex
+            ul.navbar-nav.mr-lg-auto
+              li
+                a(href='rules.html').navigation-link Правила
+              li
+                a(href='faq.html').navigation-link FAQ
+              li
+                a(href='about.html').navigation-link О нас
+              li
+                a(href='about-resource.html').navigation-link О ресурсе
+              li
+                form.navigation-form(action='#')
+                  input.form-control(name='s' type='text' placeholder='Search')
+            ul.navbar-nav.ml-lg-auto
+              li
+                a.navigation-entry.navigation-login(href='#') Василий Фамилиялектора
+              li
+                a.navigation-entry.navigation-registration(href='#') Выйти
+      .navbar-header__info
+        .navbar-header__logo
+          a.navbar-brand(href='index.html')
+            img(src='./img/svg/lektor_logo2.svg' alt='').logo.d-none.d-md-flex
+            img(src='./img/svg/mobile-logo.svg' alt='').mobile-logo.d-flex.d-md-none
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#menu')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+        #menu.navbar-collapse.collapse(style='')
+          ul.navbar-nav.ml-lg-auto
+            li.nav-item.active
+              a.nav-link(href='trainings.html') Актуальные тренинги
+            li.nav-item
+              a.nav-link(href='catalog.html') Каталог Лекторов
+            li.nav-item
+              a.nav-link(href='archive.html') Архив
+            li.nav-item
+              a.nav-link(href='tariff.html') Тарифы
+            li.nav-item
+              a.nav-link(href='articles.html') Статьи
