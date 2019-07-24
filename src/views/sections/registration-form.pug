@@ -52,8 +52,8 @@
         .g-recaptcha(data-sitekey='6LejRq8UAAAAANl1a-LA38-zgxZJBSxdQ5UAxgNL')
     .registration-form-row
       .registration-form--col
-        label.ans-label.ng-binding
-          input#asdActive.checkbox.square(type='checkbox')
+        label.registration-form__checkbox
+          input(type='checkbox')
           span Я согласен с
             a(href='#') пользовательским соглашением
               span *
@@ -63,4 +63,4 @@
           button(type='submit').registration-form__link-registration Зарегистрироваться
           .registration-form__link-login У вас уже есть аккаунт?
             a(href='#' data-toggle="modal" data-target="#login") Войти
-        .registration-form-copyright &copy; 2013 All rights reserved.
+        .registration-form__copyright &copy; 2013 All rights reserved.
