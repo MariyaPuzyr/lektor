@@ -1,2 +1,36 @@
 .profile-user-info
   .container
+    nav.navbar.navbar-expand-lg
+      .profile-user-info__top
+        .user-info
+          .user-info__avatar
+            img(src='./img/avatar.jpg' alt='')
+            a(href='#').user-info__settings-link
+              +sprite('icon', 'icon-edit')
+          .user-info__info
+            a(href='#').user-info__name Василий Фамимлмялектора
+            .user-info__tarif.d-lg-flex.flex-column.d-none
+              .user-info__tarif--info Тариф 30 слушателей
+                span (осталось 30 дней)
+              a(href='#').user-info__tarif--change Изменить тариф
+        .user-info__notifications
+          a(href='#').user-info__notifications-link
+            +sprite('icon', 'icon-settings')
+          a(href='#').user-info__notifications-link
+            +sprite('icon', 'icon-alarm')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample05', aria-controls='navbarsExample05', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExample05.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='#') Личный кабинет
+          li.nav-item
+            a.nav-link(href='#') Расписание
+          li.nav-item
+            a.nav-link(href='#') Пригласить на лекцию
+          li.nav-item
+            a.nav-link(href='#') Финансы
+          li.nav-item
+            a.nav-link(href='#') Рефералы
+          li.nav-item
+            a.nav-link(href='#') Мой архив
