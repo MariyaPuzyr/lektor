@@ -5,12 +5,52 @@
   color: $color_white;
   padding: 30px;
   font-family: $font_light;
+  display: flex;
+  flex-direction: column;
   &__title {
     font-size: $size_title_big_font;
     line-height: 44px;
     margin-bottom: 5px;
   }
-  &__info {
-
+  &__item {
+    font-size: $size_title_big_font;
+    line-height: 44px;
+    margin-bottom: 5px;
+    span {
+      font-size: $size_title_font;
+      line-height: 24px;
+      margin-left: 3px;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: baseline;
+    font-size: $size_title_font;
+    line-height: 24px;
+    margin-bottom: 20px;
+    span:first-child {
+      margin-right: 30px;
+    }
+    .tooltip-item {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 1px solid $color_white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $size_link_font;
+      line-height: 24px;
+      margin-left: 10px;
+      flex: 0 0 auto;
+      cursor: pointer;
+    }
+  }
+  &__change-info {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-family: $font_main;
+    font-size: $size_link_font;
+    line-height: 19px;
   }
 }
