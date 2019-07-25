@@ -4,29 +4,6 @@ mixin sprite(name, id)
   svg(class=name)
     use(xlink:href=path + id)
 
-mixin product
-  .product__item.item
-    .product__item__info
-      a(href='product.html').product__item__ico(style="background-image: url('img/product.png')")
-      .product__popup
-        a.product__title Sendero
-        .product__price 96 188 грн
-        .product__price.old-price 96 188 грн
-        .availability.under-order под заказаказ
-        a(href='#').add-cart В корзину
-        a(href='#').buy Оформление заказа
-  .product__item.item
-    .product__item__info
-      a(href='product.html').product__item__ico(style="background-image: url('img/product-2.png')")
-      .product__popup
-        a.product__title Sendero
-        .product__price 96 188 грн
-        .product__price.old-price 96 188 грн
-        .availability в наличии
-        a(href='#').add-cart В корзину
-        a(href='#').buy Оформление заказа
-
-
 mixin lector-info
   .lector-info
     .lector-info__avatar
