@@ -1,0 +1,82 @@
+.profile-user-info {
+  background: $color_darkblue;
+  color: $color_white;
+  mix-blend-mode: multiply;
+  font-family: $font_main;
+  a {
+    color: $color_white;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 25px 0 0;
+  }
+  &__top {
+    display: flex;
+    width: 100%;
+    margin-bottom: 35px;
+    .user-info {
+      display: flex;
+      align-items: center;
+      &__avatar {
+        margin-right: 15px;
+        position: relative;
+        img {
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &__settings-link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color_selected;
+        border-radius: 19px;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &__name {
+        font-size: $size_title_description_font;
+        line-height: 37px;
+        transition: .3s;
+        margin-bottom: 5px;
+        display: block;
+        &:hover {
+          color: $color_selected;
+          text-decoration: none;
+        }
+      }
+      &__tarif {
+        align-items: center;
+        &--info {
+          display: flex;
+          flex-direction: column;
+          font-family: $font_bold;
+          font-size: $size_link_font;
+          line-height: 19px;
+          margin-right: 14px;
+          span {
+            font-size: $size_main_font;
+            line-height: 17px;
+            font-family: $font_main;
+          }
+        }
+      }
+      &__notifications {
+        display: flex;
+        margin-left: auto;
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

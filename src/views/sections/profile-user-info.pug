@@ -9,18 +9,18 @@
               +sprite('icon', 'icon-edit')
           .user-info__info
             a(href='#').user-info__name Василий Фамимлмялектора
-            .user-info__tarif.d-lg-flex.flex-column.d-none
+            .user-info__tarif.d-lg-flex.flex-row.d-none
               .user-info__tarif--info Тариф 30 слушателей
                 span (осталось 30 дней)
-              a(href='#').user-info__tarif--change Изменить тариф
+              a(href='#').user-info__tarif--change.default-blue Изменить тариф
         .user-info__notifications
           a(href='#').user-info__notifications-link
-            +sprite('icon', 'icon-settings')
+            +sprite('icon', 'icon-settigs')
           a(href='#').user-info__notifications-link
             +sprite('icon', 'icon-alarm')
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample05', aria-controls='navbarsExample05', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
-      #navbarsExample05.collapse.navbar-collapse
+      #navbarsExample05.collapse.navbar-collapse.w-100
         ul.navbar-nav
           li.nav-item.active
             a.nav-link(href='#') Личный кабинет

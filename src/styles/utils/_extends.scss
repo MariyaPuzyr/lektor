@@ -15,3 +15,23 @@
     opacity: 1;
   }
 }
+
+.default-blue {
+  color: $color_white;
+  padding: 9px 15px;
+  min-width: 160px;
+  background: $color_underline;
+  border: 1px solid $color_underline;
+  border-radius: 24px;
+  font-family: $font_bold;
+  font-size: $size_link_font;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  &:hover {
+    background: $color_white;
+    color: $color_underline;
+    text-decoration: none;
+  }
+}
