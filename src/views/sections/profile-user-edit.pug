@@ -3,7 +3,7 @@
     h2.profile-user-edit__title Редактировать профиль
       span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
     .profile-user-edit__form
-      form(action='#')
+      form(action='#').was-validated
         .row
           .col-md-4
             .row
@@ -11,8 +11,8 @@
                 .registration-form__group
                   .placeholder Фамилия
                     span *
-                  input.registration-form-control(type='text' required)
-                .invalid-feedback Заполните поле
+                  input.registration-form-control.form-control.is-invalid(type='text' required)
+                  .invalid-feedback Заполните поле
               .col-md-12
                 .registration-form__group
                   input.registration-form-control(type='text' placeholder='Имялектора')
