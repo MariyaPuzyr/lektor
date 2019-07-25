@@ -1,0 +1,16 @@
+.your-tariff {
+  background: linear-gradient(180deg, #23AAEA 0%, #3F71D1 100%);
+  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  border-radius: 4px;
+  color: $color_white;
+  padding: 30px;
+  font-family: $font_light;
+  &__title {
+    font-size: $size_title_big_font;
+    line-height: 44px;
+    margin-bottom: 5px;
+  }
+  &__info {
+
+  }
+}
