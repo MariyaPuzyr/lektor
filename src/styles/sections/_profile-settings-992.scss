@@ -1,0 +1,28 @@
+.profile-user-info {
+  margin-top: 0;
+  .navbar {
+    padding: 25px 0 0;
+  }
+  &__top {
+    flex-direction: row;
+    margin-bottom: 35px;
+    .user-info {
+      &__avatar img {
+        width: 80px;
+        height: 80px;
+      }
+      &__name {
+        font-size: $size_title_description_font;
+        line-height: 37px;
+      }
+      &__notifications {
+        order: initial;
+        margin-right: 0;
+        .icon {
+          margin-right: 0;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
