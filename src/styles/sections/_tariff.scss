@@ -54,3 +54,57 @@
     line-height: 19px;
   }
 }
+
+.tariff-includes {
+  border-radius: 4px;
+  background: $color_white;
+  border: 1px solid $color_border;
+  padding: 30px;
+  font-family: $font_main;
+  &__title {
+    font-size: $size_title_font;
+    line-height: 24px;
+    color: $color_link;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: inline-block;
+    column-count: 2;
+    column-width: 300px;
+    li {
+      display: inline-flex;
+      align-items: center;
+      font-size: $size_title_font;
+      line-height: 24px;
+      font-family: $font_light;
+      color: $color_link;
+      margin-bottom: 20px;
+      .icon-sound {
+        mask: url('../img/svg/icon-sound.svg') no-repeat center;
+      }
+      .icon-video {
+        mask: url('../img/svg/icon-video.svg') no-repeat center;
+      }
+      .icon-doc {
+        mask: url('../img/svg/icon-doc.svg') no-repeat center;
+      }
+      .icon-rec {
+        mask: url('../img/svg/icon-rec.svg') no-repeat center;
+      }
+      .icon-date {
+        mask: url('../img/svg/icon-date.svg') no-repeat center;
+      }
+      .icon-infinityconference {
+        mask: url('../img/svg/icon-infinityconference.svg') no-repeat center;
+        margin: 0 10px auto auto;
+      }
+      .icon {
+        background: #bac1cc;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        mask-size: contain;
+      }
+    }
+  }
+}
