@@ -18,9 +18,11 @@
             +sprite('icon', 'icon-settigs')
           a(href='#').user-info__notifications-link
             +sprite('icon', 'icon-alarm')
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample05', aria-controls='navbarsExample05', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarsExample05.collapse.navbar-collapse.w-100
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#profile-menu')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      #profile-menu.collapse.navbar-collapse.w-100
         ul.navbar-nav
           li.nav-item.active
             a.nav-link(href='#') Личный кабинет
