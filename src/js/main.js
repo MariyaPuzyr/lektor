@@ -169,4 +169,8 @@ $(document).ready(function () {
     });
   }
   /* registration form end*/
+
+  /* init tooltip */
+  $('[data-toggle="tooltip"]').tooltip();
+  /* init tooltip end*/
 });
