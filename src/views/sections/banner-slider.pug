@@ -1,23 +1,29 @@
 .banner
   .container
-    .banner-slider.slider.single-item
+    .col-md-10.px-0.banner-slider.slider
       .banner-slider__items
         .banner-slider__item
-          .banner-slider__item--info
-            a(href='#')
-              img(src='./img/slider-image.jpg' alt='').img-fluid
-            h2 Слоненок с мячиком. Мягкая игрушка связана спицами
-            +lector-info
-          .banner-slider__item--sign-up
-            .countdown(data-countdown='2019-09-21')
-            .banner-slider__item--link Записаться
+          .row.banner-slider__item--info
+            .col-md-2
+              a(href='#').banner-slider__item--info__link
+                img(src='./img/slider-image.jpg' alt='').img-fluid
+            .col-md-4
+              a(href='#').banner-slider__item--info__title Слоненок с мячиком. Мягкая игрушка связана спицами
+              +lector-info
+            .col-md-6
+              .banner-slider__item--sign-up
+                .countdown(data-countdown='2019-09-21')
+                .banner-slider__item--link Записаться
       .banner-slider__items
         .banner-slider__item
-          .banner-slider__item--info
-            a(href='#')
-              img(src='./img/img-head.png' alt='').img-fluid
-            h2 Слоненок с мячиком. Мягкая игрушка связана спицами
-            +lector-info
-          .banner-slider__item--sign-up
-            .countdown(data-countdown='2019-09-21')
-            .banner-slider__item--link Записаться
+          .row.banner-slider__item--info
+            .col-md-2
+              a(href='#').banner-slider__item--info__link
+                img(src='./img/slider-image.jpg' alt='').img-fluid
+            .col-md-4
+              a(href='#').banner-slider__item--info__title Слоненок с мячиком. Мягкая игрушка связана спицами
+              +lector-info
+            .col-md-6
+              .banner-slider__item--sign-up
+                .countdown(data-countdown='2019-09-21')
+                .banner-slider__item--link Записаться

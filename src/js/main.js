@@ -173,4 +173,21 @@ $(document).ready(function () {
   /* init tooltip */
   $('[data-toggle="tooltip"]').tooltip();
   /* init tooltip end*/
+  if ($(".banner-slider").length > 0) {
+    $('.banner-slider').slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            adaptiveHeight: true,
+            arrows: false
+          }
+        }
+      ]
+    });
+  }
 });
