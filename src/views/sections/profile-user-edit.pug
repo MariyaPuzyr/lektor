@@ -9,29 +9,27 @@
             .row
               .col-md-12
                 .registration-form__group
-                  .placeholder Фамилия
-                    span *
-                  input.registration-form-control.form-control.is-invalid(type='text' required)
+                  input.registration-form-control.form-control.is-invalid(type='text' required placeholder='Фамилия*')
                   .invalid-feedback Заполните поле
               .col-md-12
                 .registration-form__group
-                  input.registration-form-control(type='text' placeholder='Имялектора')
+                  input.registration-form-control(type='text' value='Имялектора')
               .col-md-12
                 .registration-form__group
-                  input.registration-form-control(type='text' placeholder='Отчество')
+                  input.registration-form-control(type='text' value='Отчество')
           .col-md-8
             .row
               .col-md-12
                 .registration-form__group
-                  input.registration-form-control(type='text' placeholder='Студент')
+                  input.registration-form-control(type='text' value='Студент')
               .col-md-12
-                .registration-form__group
+                .registration-form__group.mb-0
                   textarea.registration-form-control(rows='5') Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени. Вебинар - это модно, современно, доступно, просто, удобно.
-                .count-value Введённых символов
-                  span 233
+                  .count-value Введённых символов
+                    span 233
         .row
           .col-md-12
-            label.registration-form__checkbox
+            label.registration-form__checkbox.mt-2
               input(type='checkbox')
               span Включить уведомление на E-mail
         .row
@@ -41,9 +39,7 @@
               .input-group-prepend
                 .input-group-text
                   +sprite('icon', 'icon-user')
-              .placeholder Введите e-mail
-                span *
-              input.registration-form-control(type='text')
+              input.registration-form-control(type='text' value='user@gmail.com' disabled='disabled')
             .registration-form__group.registration-form__ico
               .input-group-prepend
                 .input-group-text
@@ -60,13 +56,14 @@
               input.registration-form-control(type='text')
           .col-md-4
             h4 Система вывода
-            select.custom-select
-              option(selected='') Cпособ оплаты
-              option(value='1') One
-              option(value='2') Two
-              option(value='3') Three
+            .registration-form__group
+              select.select.registration-form-control
+                option(selected='') Cпособ оплаты
+                option(value='1') One
+                option(value='2') Two
+                option(value='3') Three
             .registration-form__group
               input.registration-form-control(type='text' placeholder='Номер счета')
         .row
-          .col-md-12
+          .col-md-3
             button(type='submit').profile-user-edit__save-btn Сохранить

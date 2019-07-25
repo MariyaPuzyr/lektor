@@ -1,4 +1,4 @@
-.profile-user{
+.profile-user {
   &-info {
     background: $color_darkblue;
     color: $color_white;
@@ -144,6 +144,62 @@
         cursor: pointer;
         margin-left: 20px;
         line-height: 24px;
+      }
+    }
+    .was-validated .registration-form-control:focus {
+      border-color: $color_underline;
+      box-shadow: none;
+    }
+    &__form {
+      margin-bottom: 70px;
+      .registration-form {
+        &__group {
+          flex-direction: column;
+          overflow: initial;
+          .invalid-feedback {
+            position: absolute;
+            bottom: -20px;
+          }
+          .count-value {
+            font-size: $size_main_font;
+            line-height: 17px;
+            color: $color_description;
+            span {
+              margin-left: 3px;
+              color: $color_selected;
+            }
+          }
+        }
+        &-control {
+          color: $color_link;
+          &:focus {
+            border-color: $color_underline;
+          }
+        }
+      }
+    }
+
+    h4 {
+      margin-top: 20px;
+      font-size: $size_title_font;
+      line-height: 24px;
+      color: $color_link;
+      margin-bottom: 15px;
+    }
+    &__save-btn {
+      border-radius: 24px;
+      background: $color_selected;
+      border: 1px solid $color_selected;
+      color: $color_white;
+      width: 100%;
+      padding: 9px 20px;
+      font-size: $size_link_font;
+      line-height: 19px;
+      font-family: $font_bold;
+      transition: .3s;
+      &:hover {
+        background: $color_white;
+        color: $color_selected;
       }
     }
   }
