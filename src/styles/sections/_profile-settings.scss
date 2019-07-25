@@ -13,12 +13,34 @@
       flex-direction: column;
       padding: 25px 1rem 0;
       .navbar-nav .nav-link {
-        padding: 0 30px 15px 0;
+        margin: 0 15px;
+        padding: 0 0 15px;
         font-size: $size_link_font;
         line-height: 19px;
         transition: .3s;
+        position: relative;
+        &::after {
+          content: "";
+          bottom: 0;
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: $color_underline;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
         &:hover {
-          color: $color_selected;
+          &::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+      .nav-item.active .nav-link {
+        &::after {
+          width: 100%;
+          left: 0;
         }
       }
       .container {
