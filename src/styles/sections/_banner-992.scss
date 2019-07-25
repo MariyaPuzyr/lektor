@@ -1,0 +1,15 @@
+.banner-slider__item {
+  .countdown {
+    &-item {
+      &:first-child {
+        padding-left: 25px;
+      }
+      &:last-child {
+        padding-right: 25px;
+      }
+    }
+  }
+  &--info__title {
+    margin-top: 0;
+  }
+}

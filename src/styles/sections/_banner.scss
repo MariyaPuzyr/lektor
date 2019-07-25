@@ -7,7 +7,6 @@
       display: flex;
       align-items: center;
       &--info {
-        display: flex;
         &__link {
           display: block;
           img {
@@ -23,6 +22,7 @@
           text-decoration: none;
           transition: .3s;
           display: block;
+          margin-top: 15px;
           margin-bottom: 15px;
           &:hover {
             color: $color_selected;
@@ -41,11 +41,11 @@
         &-item {
           margin-right: 10px;
           &:first-child {
-            padding-left: 25px;
+            padding-left: 10px;
             border-left: 1px solid #C4C4C4;
           }
           &:last-child {
-            padding-right: 25px;
+            padding-right: 10px;
             border-right: 1px solid #C4C4C4;
           }
         }
