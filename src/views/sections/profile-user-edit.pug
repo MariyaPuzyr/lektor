@@ -2,3 +2,71 @@
   .container
     h2.profile-user-edit__title Редактировать профиль
       span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .profile-user-edit__form
+      form(action='#')
+        .row
+          .col-md-4
+            .row
+              .col-md-12
+                .registration-form__group
+                  .placeholder Фамилия
+                    span *
+                  input.registration-form-control(type='text' required)
+                .invalid-feedback Заполните поле
+              .col-md-12
+                .registration-form__group
+                  input.registration-form-control(type='text' placeholder='Имялектора')
+              .col-md-12
+                .registration-form__group
+                  input.registration-form-control(type='text' placeholder='Отчество')
+          .col-md-8
+            .row
+              .col-md-12
+                .registration-form__group
+                  input.registration-form-control(type='text' placeholder='Студент')
+              .col-md-12
+                .registration-form__group
+                  textarea.registration-form-control(rows='5') Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени. Вебинар - это модно, современно, доступно, просто, удобно.
+                .count-value Введённых символов
+                  span 233
+        .row
+          .col-md-12
+            label.registration-form__checkbox
+              input(type='checkbox')
+              span Включить уведомление на E-mail
+        .row
+          .col-md-4
+            h4 Изменить пароль
+            .registration-form__group.registration-form__ico
+              .input-group-prepend
+                .input-group-text
+                  +sprite('icon', 'icon-user')
+              .placeholder Введите e-mail
+                span *
+              input.registration-form-control(type='text')
+            .registration-form__group.registration-form__ico
+              .input-group-prepend
+                .input-group-text
+                  +sprite('icon', 'icon-password')
+              .placeholder Введите пароль
+                span *
+              input.registration-form-control(type='text')
+            .registration-form__group.registration-form__ico
+              .input-group-prepend
+                .input-group-text
+                  +sprite('icon', 'icon-password')
+              .placeholder Подтвердите пароль
+                span *
+              input.registration-form-control(type='text')
+          .col-md-4
+            h4 Система вывода
+            select.custom-select
+              option(selected='') Cпособ оплаты
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+            .registration-form__group
+              input.registration-form-control(type='text' placeholder='Номер счета')
+        .row
+          .col-md-12
+            button(type='submit').profile-user-edit__save-btn Сохранить
