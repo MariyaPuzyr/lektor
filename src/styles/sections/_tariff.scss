@@ -108,3 +108,25 @@
     }
   }
 }
+
+.choose-tariff {
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: $size_title_font;
+    line-height: 24px;
+    color: $color_link;
+    font-family: $font_main;
+  }
+  &__item {
+    box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+    border-radius: 4px;
+    background: $color_white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font_light;
+    height: 100%;
+    margin-bottom: 70px;
+  }
+}
