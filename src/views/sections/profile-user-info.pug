@@ -16,8 +16,9 @@
         .user-info__notifications
           a(href='#').user-info__notifications-link
             +sprite('icon', 'icon-settigs')
-          a(href='#').user-info__notifications-link
+          a(href='#').user-info__notifications-link.notification.active
             +sprite('icon', 'icon-alarm')
+            span 10
       button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#profile-menu')
         span.icon-bar
         span.icon-bar
