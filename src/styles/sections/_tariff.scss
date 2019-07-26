@@ -125,8 +125,89 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: $font_light;
     height: 100%;
-    margin-bottom: 70px;
+    position: relative;
+    font-size: $size_title_font;
+    line-height: 24px;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background: url('../img/svg/tariff-bg.svg') no-repeat center;
+      background-size: contain;
+      width: 100%;
+      height: 193px;
+    }
+    &--count-user {
+      position: relative;
+      font-family: $font_light;
+      font-size: 64px;
+      line-height: 78px;
+      color: $color_darkblue;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 102px;
+      span {
+        font-size: $size_title_font;
+        line-height: 24px;
+      }
+      .infinity-ico {
+        width: 84px;
+        height: 40px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+    }
+    &--tarif {
+      font-family: $font_semibold;
+      margin-bottom: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: $color_selected;
+      text-align: center;
+      span {
+        margin-left: 9px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid $color_underline;
+        color: $color_underline;
+        font-size: 12px;
+        line-height: 16px;
+        flex: 0 0 auto;
+      }
+    }
+    &--price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $font_light;
+      color: $color_link;
+      margin-bottom: 15px;
+      position: relative;
+      span {
+        margin-bottom: 5px;
+      }
+    }
+    &--info {
+      font-family: $font_main;
+      font-size: $size_main_font;
+      line-height: 17px;
+      text-align: center;
+      color: $color_description;
+      margin-bottom: 20px;
+      min-height: 34px;
+    }
+    &s {
+      margin-bottom: 70px;
+    }
   }
 }
