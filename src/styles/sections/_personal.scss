@@ -1,0 +1,16 @@
+.choose-tariff__item {
+  &.no-events {
+    .choose-tariff__item--count-user {
+      color: $color_description;
+    }
+  }
+  .my-schedule {
+    border-color: $color_selected;
+    color: $color_link;
+    &:hover {
+      background: $color_selected;
+      color: $color_white;
+      text-decoration: none;
+    }
+  }
+}
