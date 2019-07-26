@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration page</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
+    <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
+    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
+  </head>
+  <body>
+    <div class="d-flex d-lg-none">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <header class="header-item">
+            <div class="navbar-header__top">
+              <div class="navbar-collapse collapse" id="menu">
+                <div class="navbar-top d-flex">
+                  <ul class="navbar-nav mr-lg-auto">
+                    <li><a class="navigation-link" href="rules.html">Правила</a></li>
+                    <li><a class="navigation-link" href="faq.html">FAQ</a></li>
+                    <li><a class="navigation-link" href="about.html">О нас</a></li>
+                    <li><a class="navigation-link" href="about-resource.html">О ресурсе</a></li>
+                    <li>
+                      <form class="navigation-form" action="#">
+                        <input class="form-control" name="s" type="text" placeholder="Search">
+                      </form>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li><a class="navigation-entry navigation-login" href="#" data-toggle="modal" data-target="#login">Вход</a></li>
+                    <li><a class="navigation-entry navigation-registration" href="registration.html">Регистрация</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-header__info">
+              <div class="navbar-header__logo"><a class="navbar-brand" href="index.html"><img class="logo d-none d-md-flex" src="./img/svg/lektor_logo2.svg" alt=""><img class="mobile-logo d-flex d-md-none" src="./img/svg/mobile-logo.svg" alt=""></a>
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              </div>
+              <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav ml-lg-auto">
+                  <li class="nav-item active"><a class="nav-link" href="trainings.html">Актуальные тренинги</a></li>
+                  <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
+                  <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
+                  <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="registration-page">
+        <div class="registration-left d-lg-block d-none"><a class="registration-logo" href="index.html"><img src="./img/svg/lektor_logo-white.svg" alt=""></a>
+          <div class="site-features__list-item">
+            <h4>Lektor.org.ua, с большой вероятностью, будет полезен:</h4>
+            <ul>
+              <li>учителям и репетиторам</li>
+              <li>юристам</li>
+              <li>экономистам</li>
+              <li>бизнес-тренерам</li>
+              <li>крупным компаниям с их территориально разнесенными офисами</li>
+              <li>компаниям и людям, занимающимися продажами</li>
+              <li>и т.д.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="registration-form">
+          <h2 class="registration-form__title">Регистрация новой учетной записи</h2>
+          <form action="#">
+            <div class="registration-form-row">
+              <div class="registration-form--col">
+                <div class="registration-form__group">
+                  <div class="placeholder">Фамилия<span>*</span></div>
+                  <input class="registration-form-control" type="text">
+                </div>
+                <div class="registration-form__group">
+                  <div class="placeholder">Имя<span>*</span></div>
+                  <input class="registration-form-control" type="text">
+                </div>
+                <div class="registration-form__group">
+                  <input class="registration-form-control" type="text" placeholder="Отчество">
+                </div>
+              </div>
+              <div class="registration-form--col">
+                <div class="registration-form__group registration-form__ico">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <svg class="icon">
+                        <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="placeholder">Введите e-mail<span>*</span></div>
+                  <input class="registration-form-control" type="text">
+                </div>
+                <div class="registration-form__group registration-form__ico">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <svg class="icon">
+                        <use xlink:href="./img/sprites/sprite.svg#icon-password"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="placeholder">Введите пароль<span>*</span></div>
+                  <input class="registration-form-control" type="text">
+                </div>
+                <div class="registration-form__group registration-form__ico">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <svg class="icon">
+                        <use xlink:href="./img/sprites/sprite.svg#icon-password"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="placeholder">Подтвердите пароль<span>*</span></div>
+                  <input class="registration-form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="registration-form-row">
+              <div class="registration-form--col">
+                <div class="registration-form__group">
+                  <div class="placeholder">Должность - преподаватель, репетитор, бизнес-тренер...<span>*</span></div>
+                  <input class="registration-form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="registration-form-row">
+              <div class="registration-form--col">
+                <div class="registration-form__group">
+                  <div class="placeholder">О себе<span>*</span></div>
+                  <textarea class="registration-form-control" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="registration-form-row">
+              <div class="registration-form--col">
+                <div class="g-recaptcha" data-sitekey="6LejRq8UAAAAANl1a-LA38-zgxZJBSxdQ5UAxgNL"></div>
+              </div>
+            </div>
+            <div class="registration-form-row">
+              <div class="registration-form--col">
+                <label class="registration-form__checkbox">
+                  <input type="checkbox"><span>Я согласен с<a href="#">пользовательским соглашением<span>*</span></a></span>
+                </label>
+              </div>
+            </div>
+            <div class="registration-form-row">
+              <div class="registration-form--col">
+                <div class="registration-form__link">
+                  <button class="registration-form__link-registration" type="submit">Зарегистрироваться</button>
+                  <div class="registration-form__link-login">У вас уже есть аккаунт?<a href="#" data-toggle="modal" data-target="#login">Войти</a></div>
+                </div>
+                <div class="registration-form__copyright">&copy; 2013 All rights reserved.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-login" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <svg class="close-ico">
+                <use xlink:href="./img/sprites/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+            <h5 class="modal-title">Вход</h5>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Введите e-mail">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-password"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Введите пароль">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-link">
+                    <button class="form-link__login" type="submit">Войти</button><a class="form-link__forgot-pass" href="#">Забыли пароль?</a>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="sign-social">
+                    <div class="sign-social__title">Или войдите с помощью соцсетей:</div>
+                    <ul>
+                      <li><a class="sign-social__link" href="#">
+                          <div class="icon icon-fa"></div>Facebook</a></li>
+                      <li><a class="sign-social__link google-link" href="#">
+                          <div class="icon icon-google"></div>Google</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="registration-link">У вас еще нет аккаунта?<a href="registration.html">Зарегистрируйтесь</a></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+  </body>
+</html>

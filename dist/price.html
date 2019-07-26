@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lektor Price</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
+    <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
+    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <header class="header-item">
+          <div class="navbar-header__top">
+            <div class="navbar-collapse collapse" id="menu">
+              <div class="navbar-top d-flex">
+                <ul class="navbar-nav mr-lg-auto">
+                  <li><a class="navigation-link" href="rules.html">Правила</a></li>
+                  <li><a class="navigation-link" href="faq.html">FAQ</a></li>
+                  <li><a class="navigation-link" href="about.html">О нас</a></li>
+                  <li><a class="navigation-link" href="about-resource.html">О ресурсе</a></li>
+                  <li>
+                    <form class="navigation-form" action="#">
+                      <input class="form-control" name="s" type="text" placeholder="Search">
+                    </form>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-lg-auto">
+                  <li><a class="navigation-entry navigation-login" href="#">Василий Фамилиялектора</a></li>
+                  <li><a class="navigation-entry navigation-registration" href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-header__info">
+            <div class="navbar-header__logo"><a class="navbar-brand" href="index.html"><img class="logo d-none d-md-flex" src="./img/svg/lektor_logo2.svg" alt=""><img class="mobile-logo d-flex d-md-none" src="./img/svg/mobile-logo.svg" alt=""></a>
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="navbar-collapse collapse" id="menu">
+              <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active"><a class="nav-link" href="trainings.html">Актуальные тренинги</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
+                <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
+                <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
+                <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </nav>
+    <main>
+      <div class="profile-user-info">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container flex-wrap">
+            <div class="profile-user-info__top">
+              <div class="user-info">
+                <div class="user-info__avatar"><img src="./img/avatar.jpg" alt=""><a class="user-info__settings-link" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+                <div class="user-info__info"><a class="user-info__name" href="#">Василий Фамимлмялектора</a>
+                  <div class="user-info__tarif d-lg-flex flex-row d-none">
+                    <div class="user-info__tarif--info">Тариф 30 слушателей<span>(осталось 30 дней)</span></div><a class="user-info__tarif--change default-blue" href="price.html">Изменить тариф</a>
+                  </div>
+                </div>
+              </div>
+              <div class="user-info__notifications"><a class="user-info__notifications-link" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-settigs"></use>
+                  </svg></a><a class="user-info__notifications-link notification active" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-alarm"></use>
+                  </svg><span>10</span></a></div>
+            </div>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#profile-menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="collapse navbar-collapse w-100" id="profile-menu">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="personal.html">Личный кабинет</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Расписание</a></li>
+                <li class="nav-item"><a class="nav-link" href="invite.html">Пригласить на лекцию</a></li>
+                <li class="nav-item"><a class="nav-link" href="finance.html">Финансы</a></li>
+                <li class="nav-item"><a class="nav-link" href="referrals.html">Рефералы</a></li>
+                <li class="nav-item"><a class="nav-link" href="my-archive.html">Мой архив</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="profile-user-edit">
+        <div class="container">
+          <h2 class="profile-user-edit__title">Тарифы<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <div class="your-tariff">
+                <div class="your-tariff__title">Ваш тариф</div>
+                <div class="your-tariff__item">30<span>слушателей</span></div>
+                <div class="your-tariff__price"><span>25 $/месяц</span><span>0,83 $/сутки
+                    <div class="tooltip-item" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</div></span></div>
+                <div class="your-tariff__change-info">Изменить тариф можно ежедневно, один раз</div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+              <div class="tariff-includes">
+                <div class="tariff-includes__title">Каждый тариф предусматривает:</div>
+                <ul class="tariff-includes__list">
+                  <li>
+                    <div class="icon icon-sound"></div>Трансляция аудио
+                  </li>
+                  <li>
+                    <div class="icon icon-video"></div>Трансляция видео
+                  </li>
+                  <li>
+                    <div class="icon icon-doc"></div>Показ документов
+                  </li>
+                  <li>
+                    <div class="icon icon-rec"></div>Запись всех лекций
+                  </li>
+                  <li>
+                    <div class="icon icon-date"></div>Срок действия 30 дней
+                  </li>
+                  <li>
+                    <div class="icon icon-infinityconference"></div>Количество конференций не ограничено
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="choose-tariff__title">Выбрать тариф:</div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item">
+                  <div class="choose-tariff__item--count-user">15<span>слушателей</span></div>
+                  <div class="choose-tariff__item--tarif">Тестовый<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></div>
+                  <div class="choose-tariff__item--price"><span>0 $/месяц</span><span>0 $/сутки</span></div>
+                  <div class="choose-tariff__item--info">Изменить тариф - 1</div>
+                  <div class="choose-tariff__item--list not-included-list">
+                    <li>Отправка приглашений</li>
+                    <li>Запись конференции</li>
+                    <li>Размер файлов для закачки</li>
+                    <li>Размер архива для записи</li>
+                    <li>Партнерская программа</li>
+                  </div><a class="choose-tariff__item--buy" href="#">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item">
+                  <div class="choose-tariff__item--count-user">30<span>слушателей</span></div>
+                  <div class="choose-tariff__item--tarif">30</div>
+                  <div class="choose-tariff__item--price"><span>26 $/месяц</span><span>0,84 $/сутки</span></div>
+                  <div class="choose-tariff__item--info">Изменить тариф можно ежедневно, один раз</div>
+                  <div class="choose-tariff__item--list">
+                    <li>Отправка приглашений</li>
+                    <li>Запись конференции</li>
+                    <li>Размер файлов для закачки</li>
+                    <li>Размер архива для записи</li>
+                    <li>Партнерская программа</li>
+                  </div><a class="choose-tariff__item--buy selected" href="#">Сейчас выбран</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item">
+                  <div class="choose-tariff__item--count-user">75<span>слушателей</span></div>
+                  <div class="choose-tariff__item--tarif">75</div>
+                  <div class="choose-tariff__item--price"><span>40 $/месяц</span><span>1,33 $/сутки</span></div>
+                  <div class="choose-tariff__item--info">Изменить тариф можно ежедневно, один раз</div>
+                  <div class="choose-tariff__item--list">
+                    <li>Отправка приглашений</li>
+                    <li>Запись конференции</li>
+                    <li>Размер файлов для закачки</li>
+                    <li>Размер архива для записи</li>
+                    <li>Партнерская программа</li>
+                  </div><a class="choose-tariff__item--buy" href="#">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item">
+                  <div class="choose-tariff__item--count-user">
+                    <svg class="infinity-ico">
+                      <use xlink:href="./img/sprites/sprite.svg#infinity-ico"></use>
+                    </svg><span>слушателей</span>
+                  </div>
+                  <div class="choose-tariff__item--tarif">Универсал</div>
+                  <div class="choose-tariff__item--price"><span>400 $/месяц</span><span>4,44 $/сутки</span></div>
+                  <div class="choose-tariff__item--info">Изменить тариф можно ежедневно, один раз</div>
+                  <div class="choose-tariff__item--list">
+                    <li>Отправка приглашений</li>
+                    <li>Запись конференции</li>
+                    <li>Размер файлов для закачки</li>
+                    <li>Размер архива для записи</li>
+                    <li>Партнерская программа</li>
+                  </div><a class="choose-tariff__item--buy" href="#">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="container">
+          <div class="col-md-10 px-0 banner-slider slider">
+            <div class="banner-slider__items">
+              <div class="banner-slider__item">
+                <div class="row banner-slider__item--info">
+                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                    <div class="lector-info">
+                      <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                      <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider__item--sign-up">
+                      <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-slider__items">
+              <div class="banner-slider__item">
+                <div class="row banner-slider__item--info">
+                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                    <div class="lector-info">
+                      <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                      <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider__item--sign-up">
+                      <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-copy-info"><a class="footer-logo" href="#"><img class="img-fluid" src="./img/svg/lektor_logo2.svg"></a>
+              <p>&copy; 2013 All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-4">
+            <ul class="footer-menu">
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Правила</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Архив</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">О ресурсе</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-social">
+              <div class="footer-social__title">Подписаться</div>
+              <ul class="footer-social__list">
+                <li><a class="footer-social__list-ico facebook" href="#"></a></li>
+                <li><a class="footer-social__list-ico vk" href="#"></a></li>
+                <li><a class="footer-social__list-ico twitter" href="#"></a></li>
+                <li><a class="footer-social__list-ico od" href="#"></a></li>
+                <li><a class="footer-social__list-ico rss" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+  </body>
+</html>
