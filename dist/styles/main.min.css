@@ -10580,6 +10580,21 @@ a.text-dark:focus {
   margin-bottom: 50px;
 }
 
+.choose-tariff__item .users-badge {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  color: #ffffff;
+  background: #67B930;
+  padding: 3px 15px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+  font-family: "ProximaNova-Bold";
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .choose-tariff__item.no-events .choose-tariff__item--count-user {
   color: #6F7B8E;
 }

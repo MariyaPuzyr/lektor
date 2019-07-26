@@ -266,5 +266,18 @@
     &s {
       margin-bottom: 50px;
     }
+    .users-badge {
+      position: absolute;
+      z-index: 1;
+      top: 20px;
+      left: 20px;
+      color: $color_white;
+      background: $color_selected;
+      padding: 3px 15px;
+      border-radius: 45px;
+      font-family: $font_bold;
+      font-size: $size_main_font;
+      line-height: 18px;
+    }
   }
 }

@@ -1,0 +1,14 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor Personal page with lections"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/profile-user-info
+    include ../sections/personal-header-lections
+    include ../sections/personal-next-lections
+    include ../sections/personal-tariff-info
+    include ../sections/personal-upcoming-events
+    include ../sections/banner-slider
+  include ../includes/footer
