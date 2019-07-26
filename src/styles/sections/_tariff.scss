@@ -7,6 +7,7 @@
   font-family: $font_light;
   display: flex;
   flex-direction: column;
+  height: 100%;
   &__title {
     font-size: $size_title_big_font;
     line-height: 44px;
@@ -25,11 +26,15 @@
   &__price {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     font-size: $size_title_font;
     line-height: 24px;
     margin-bottom: 20px;
-    span:first-child {
-      margin-right: 30px;
+    span {
+      display: flex;
+      &:first-child {
+        margin-right: 30px;
+      }
     }
     .tooltip-item {
       width: 24px;
@@ -60,6 +65,7 @@
   background: $color_white;
   border: 1px solid $color_border;
   padding: 30px;
+  height: 100%;
   font-family: $font_main;
   &__title {
     font-size: $size_title_font;

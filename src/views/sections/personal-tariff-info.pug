@@ -1,12 +1,12 @@
 .personal-tariff-info
   .container
     .row
-      .col-md-9
+      .col-md-9.mb-4.mb-md-0
         .your-tariff
           .your-tariff__top
             .your-tariff__title Ваш тариф
             .dropdown.your-tariff__dropdown
-              a#tariff-menu.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              a#tariff-menu.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Универсал
               .dropdown-menu(aria-labelledby='tariff-menu')
                 a.dropdown-item(href='#') Универсал
@@ -14,7 +14,7 @@
                 a.dropdown-item(href='#') Универсал
           .your-tariff__info
             .your-tariff__info--full-info
-              +sprite('icons', 'infinity-ico')
+              .icon
               span слушателей
             .your-tariff__info--full-info Стоимость 400 $/месяц
             .your-tariff__info--full-info Будет списано 4,44 $/сутки
@@ -23,5 +23,6 @@
             span Перед началом конференции выберите подходящий тарифный план
       .col-md-3
         a(href='#').add-event
-          +sprite('add-event--ico', 'icon-add')
+          .add-event--ico-item
+            +sprite('add-event--ico', 'icon-add')
           .add-event__title Добавить мероприятие
