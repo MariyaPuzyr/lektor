@@ -3,21 +3,25 @@
     h3.personal-upcoming-events__title Ближайшие события
       span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
     .row
-      .col-md-10.col-offset-md-1
+      .col-md-10.offset-md-1
         p Составьте расписание своих мероприятий. Создайте единичные мероприятия или повторяющееся регулярно встречи. По желанию задайте настройки для них.
     .row
-      .col-md-4
+      .col-md-3.mb-md-5.offset-md-1
         .personal-upcoming-events__item.first-step
           .personal-upcoming-events__item--title Добавь новое мероприятие
           +sprite('icon', 'img-add-new')
-          p Это может быть совещание, конференция или лекция
-      .col-md-4
-        .personal-upcoming-events__item.first-step
+          p.d-none.d-md-block Это может быть совещание, конференция или лекция
+      .col-md-1.d-none.d-md-flex.align-items-center.justify-content-center
+        .arrow-next-step
+      .col-md-3.mb-md-5
+        .personal-upcoming-events__item
           .personal-upcoming-events__item--title Пригласите посетителей
           +sprite('icon', 'img-invite')
-          p Это может быть совещание, конференция или лекция
-      .col-md-4
-        .personal-upcoming-events__item.first-step
+          p.d-none.d-md-block Это может быть совещание, конференция или лекция
+      .col-md-1.d-none.d-md-flex.align-items-center.justify-content-center
+        .arrow-next-step
+      .col-md-3.mb-md-5
+        .personal-upcoming-events__item
           .personal-upcoming-events__item--title Войти в конференц-зал
           +sprite('icon', 'img-room')
-          p Удобно общайтесь со своими гостями в чате, демонстрируйте файлы
+          p.d-none.d-md-block Удобно общайтесь со своими гостями в чате, демонстрируйте файлы
