@@ -1,0 +1,23 @@
+.personal-upcoming-events
+  .container
+    h3.personal-upcoming-events__title Ближайшие события
+      span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .row
+      .col-md-10.col-offset-md-1
+        p Составьте расписание своих мероприятий. Создайте единичные мероприятия или повторяющееся регулярно встречи. По желанию задайте настройки для них.
+    .row
+      .col-md-4
+        .personal-upcoming-events__item.first-step
+          .personal-upcoming-events__item--title Добавь новое мероприятие
+          +sprite('icon', 'imh-add-new')
+          p Это может быть совещание, конференция или лекция
+      .col-md-4
+        .personal-upcoming-events__item.first-step
+          .personal-upcoming-events__item--title Пригласите посетителей
+          +sprite('icon', 'imh-invite')
+          p Это может быть совещание, конференция или лекция
+      .col-md-4
+        .personal-upcoming-events__item.first-step
+          .personal-upcoming-events__item--title Войти в конференц-зал
+          +sprite('icon', 'imh-room')
+          p Удобно общайтесь со своими гостями в чате, демонстрируйте файлы
