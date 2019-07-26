@@ -10616,15 +10616,14 @@ a.text-dark:focus {
 }
 
 .personal-tariff-info .your-tariff__title {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
   margin-right: 30px;
 }
 
 .personal-tariff-info .your-tariff__dropdown {
-  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   border: 1px solid #23AAEA;
   background: #ffffff;
   -webkit-border-radius: 3px;
