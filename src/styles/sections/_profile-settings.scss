@@ -13,7 +13,7 @@
       flex-direction: column;
       padding: 25px 1rem 0;
       .navbar-nav .nav-link {
-        margin: 0 15px;
+        margin: 0 30px 0 0;
         padding: 0 0 15px;
         font-size: $size_link_font;
         line-height: 19px;
@@ -201,7 +201,7 @@
       box-shadow: none;
     }
     &__form {
-      margin-bottom: 70px;
+      margin-bottom: 50px;
       .registration-form {
         &__group {
           flex-direction: column;
