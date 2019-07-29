@@ -1,13 +1,14 @@
 .coming-events-soon {
   .personal-upcoming-events__title {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   &__img-info {
     position: relative;
     border-radius: 4px;
     font-family: $font_main;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     img {
       width: 100%;
       border-radius: 4px;
@@ -51,25 +52,55 @@
         }
       }
       &-menu {
-        padding: 0;
+        padding: 10px 0;
         margin: 0;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+        &::before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 10px 10px 10px;
+          border-color: transparent transparent #ffffff transparent;
+          position: absolute;
+          top: -10px;
+          right: 8px;
+        }
         .icon {
           width: 24px;
           height: 24px;
+          margin-right: 10px;
+          &-edit {
+            fill: $color_link;
+          }
         }
       }
       &-item {
-
+        font-family: $font_bold;
+        font-size: $size_main_font;
+        line-height: 17px;
+        padding: 5px 15px;
+        color: $color_link;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+        &:hover {
+          background: transparent;
+          color: $color_selected;
+        }
       }
       &.show {
-       .dropdown-toggle {
-         background: $color_selected;
-       }
+        .dropdown-toggle {
+          background: $color_selected;
+        }
       }
     }
   }
   &__info {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     &--title {
       font-size: $size_link_font;
       line-height: 19px;
@@ -78,6 +109,26 @@
       margin-bottom: 10px;
       display: block;
       transition: .3s;
+    }
+  }
+  &__schedule-btn {
+    width: 100%;
+    font-family: $font_main;
+    font-size: $size_title_font;
+    line-height: 24px;
+    color: $color_link;
+    border: 1px solid $color_underline;
+    border-radius: 28px;
+    padding: 11px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    margin-bottom: 50px;
+    &:hover {
+      background: $color_underline;
+      color: $color_white;
+      text-decoration: none;
     }
   }
 }

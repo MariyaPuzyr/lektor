@@ -7,6 +7,9 @@
     &__info, &__img {
       padding: 0;
     }
+    &__img img {
+      display: block;
+    }
   }
   .countdown {
     margin-bottom: 20px;
@@ -22,11 +25,12 @@
   font-family: $font_main;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   span {
     display: flex;
     align-items: flex-end;
     color: $color_selected;
+    margin-bottom: 10px;
   }
   .icon {
     width: 24px;
