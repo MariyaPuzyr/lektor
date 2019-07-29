@@ -1,0 +1,23 @@
+.feedback-form
+  h3.feedback-form--title Обратная связь
+  form(action='#')
+    .row
+      .col-md-6
+        .registration-form__group
+          .placeholder Тема письма
+            span *
+          input.registration-form-control(type='text')
+      .col-md-6
+        .registration-form__group
+          .placeholder Ваш e-mail
+            span *
+          input.registration-form-control(type='text')
+    .row
+      .col-md-12
+        .registration-form__group
+          .placeholder Текст письма
+            span *
+          textarea.registration-form-control(rows='5')
+    .row
+      .col-md-3
+          button(type='submit').registration-form__link-registration Зарегистрироваться

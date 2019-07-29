@@ -1,0 +1,8 @@
+.feedback-form {
+  &--title {
+    color: $color_link;
+    font-size: $size_title_font;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}

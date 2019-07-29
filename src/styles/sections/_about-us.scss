@@ -1,0 +1,36 @@
+.about-us {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-family: $font_main;
+  font-size: $size_link_font;
+  line-height: 24px;
+  color: $color_description;
+  p {
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: $size_title_font;
+    line-height: 24px;
+    color: $color_link;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  ul {
+    padding: 0;
+    margin: 0 0 30px;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      &::before {
+        content: '';
+        width: 15px;
+        height: 1px;
+        background: $color_description;
+        flex: 0 0 auto;
+        margin-right: 5px;
+      }
+    }
+  }
+}
