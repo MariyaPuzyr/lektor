@@ -1,3 +1,43 @@
-.next-lections {
-
+.next-lectures {
+  margin-bottom: 50px;
+  .main-slider{
+    &__items {
+      min-height: initial;
+    }
+    &__info, &__img {
+      padding: 0;
+    }
+  }
+  .countdown {
+    margin-bottom: 20px;
+  }
+  .personal-upcoming-events {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__lecture-participants {
+      font-size: $size_link_font;
+      line-height: 19px;
+      font-family: $font_main;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      span {
+        display: flex;
+        align-items: flex-end;
+        color: $color_selected;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+      .signed-up {
+        margin-right: 30px;
+        fill: $color_underline;
+        text-decoration: underline;
+        color: $color_underline;
+      }
+    }
+  }
 }

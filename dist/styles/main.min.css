@@ -10949,6 +10949,66 @@ a.text-dark:focus {
   transform: rotate(-90deg);
 }
 
+.next-lectures {
+  margin-bottom: 50px;
+}
+
+.next-lectures .main-slider__items {
+  min-height: initial;
+}
+
+.next-lectures .main-slider__info,
+.next-lectures .main-slider__img {
+  padding: 0;
+}
+
+.next-lectures .countdown {
+  margin-bottom: 20px;
+}
+
+.next-lectures .personal-upcoming-events__title {
+  margin-bottom: 20px;
+}
+
+.next-lectures .personal-upcoming-events__lecture-participants {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "ProximaNova-Regular";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.next-lectures .personal-upcoming-events__lecture-participants span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: #67B930;
+}
+
+.next-lectures .personal-upcoming-events__lecture-participants .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.next-lectures .personal-upcoming-events__lecture-participants .signed-up {
+  margin-right: 30px;
+  fill: #23AAEA;
+  text-decoration: underline;
+  color: #23AAEA;
+}
+
 h1,
 h2,
 h3,
