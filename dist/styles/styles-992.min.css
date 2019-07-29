@@ -220,3 +220,11 @@
 .banner-slider__item--info__title {
   margin-top: 0;
 }
+
+.faq {
+  margin-bottom: 70px;
+}
+
+.faq .card-body {
+  padding: 10px 65px 30px 15px;
+}

@@ -1,3 +1,48 @@
 .faq {
-
+  margin-bottom: 20px;
+  .card {
+    margin-bottom: 10px;
+    border: 1px solid $color_border;
+    border-radius: 4px;
+    &-header {
+      background: $color_white;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      font-family: $font_bold;
+      font-size: $size_link_font;
+      line-height: 20px;
+      color: $color_darkblue;
+    }
+    p {
+      margin: 0;
+      font-family: $font_main;
+      font-size: $size_link_font;
+      line-height: 24px;
+      color: $color_description;
+    }
+    &-body {
+      padding: 10px 15px 30px;
+    }
+  }
+  &--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 15px;
+    &.collapsed {
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      mask: url('../img/svg/arrow-select.svg') no-repeat center;
+      background: $color_selected;
+      transition: .3s;
+    }
+  }
 }
