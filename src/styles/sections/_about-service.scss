@@ -1,3 +1,34 @@
 .about-service {
   margin-top: 40px;
+  .profile-user-edit__title {
+    margin-bottom: 40px;
+  }
+  &__item {
+    padding: 25px 20px 10px;
+    background: $color_white;
+    border: 1px solid $color_border;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    &--title {
+      font-size: $size_title_font;
+      line-height: 24px;
+      font-family: $font_semibold;
+      color: $color_darkblue;
+      margin-bottom: 20px;
+      display: block;
+      transition: .3s;
+      &:hover {
+        color: $color_selected;
+      }
+    }
+    p {
+      font-family: $font_main;
+      font-size: $size_link_font;
+      line-height: 24px;
+      color: $color_description;
+      margin-bottom: 5px;
+    }
+  }
 }
