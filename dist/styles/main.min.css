@@ -7731,6 +7731,7 @@ a.text-dark:focus {
 .navbar {
   width: 100%;
   padding-bottom: 0;
+  padding-top: 11px;
 }
 
 .navbar .header-item {
@@ -7868,7 +7869,13 @@ a.text-dark:focus {
   border: 1px solid #67B930;
   -webkit-border-radius: 19px;
   border-radius: 19px;
-  padding: 9px 37px;
+  padding: 8px 37px;
+  min-height: 38px;
+  min-width: 160px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .navbar .header-item .navigation-registration:hover {

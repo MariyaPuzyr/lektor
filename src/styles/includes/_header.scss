@@ -1,6 +1,7 @@
 .navbar {
   width: 100%;
   padding-bottom: 0;
+  padding-top: 11px;
   .header {
     &-item {
       display: flex;
@@ -96,7 +97,10 @@
           margin-right: 0;
           border: 1px solid $color_selected;
           border-radius: 19px;
-          padding: 9px 37px;
+          padding: 8px 37px;
+          min-height: 38px;
+          min-width: 160px;
+          justify-content: center;
           &:hover {
             background: $color_selected;
             color: $color_white;
