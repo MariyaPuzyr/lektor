@@ -11271,6 +11271,12 @@ a.text-dark:focus {
   margin-bottom: 10px;
 }
 
+.about-us a {
+  margin: 0 3px;
+  color: #23AAEA;
+  text-decoration: underline;
+}
+
 .about-us h4 {
   font-size: 20px;
   line-height: 24px;
@@ -11307,6 +11313,28 @@ a.text-dark:focus {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin-right: 5px;
+}
+
+.about-us ol {
+  padding: 0;
+  margin: 0 0 20px;
+  list-style-type: none;
+  counter-reset: ordered;
+}
+
+.about-us ol li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.about-us ol li::before {
+  content: counter(ordered);
+  counter-increment: ordered;
+  display: inline-block;
+  color: #2A58AD;
+  position: absolute;
+  left: 0;
 }
 
 .feedback-form--title {
