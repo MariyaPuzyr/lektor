@@ -8600,6 +8600,60 @@ a.text-dark:focus {
   text-decoration: underline;
 }
 
+.follow-back {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 19px;
+  color: #0C2947;
+  padding: 9px 20px;
+  border: 1px solid #23AAEA;
+  background: #ffffff;
+  -webkit-border-radius: 19px;
+  border-radius: 19px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  width: 112px;
+}
+
+.follow-back .icon {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  fill: #6F7B8E;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.follow-back:hover {
+  background: #23AAEA;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.follow-back:hover .icon {
+  fill: #ffffff;
+}
+
 .main-slider {
   margin-top: 30px;
   font-family: "ProximaNova-Regular";
@@ -11304,7 +11358,7 @@ a.text-dark:focus {
 }
 
 .about-us ul li::before {
-  content: '';
+  content: '' !important;
   width: 15px;
   height: 1px;
   background: #6F7B8E;
@@ -11417,7 +11471,11 @@ a.text-dark:focus {
 
 .article-list {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.article-list .profile-user-edit__title {
+  margin-bottom: 35px;
 }
 
 .article-list__item {
@@ -11544,6 +11602,22 @@ a.text-dark:focus {
 
 .article-list--pagination .page-link:focus {
   outline: none;
+}
+
+.article-list h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.article-list p b {
+  color: #0C2947;
+  margin: 0 3px;
+}
+
+.article-list p span {
+  font-family: "ProximaNova-Bold";
+  color: #2A58AD;
+  margin-right: 3px;
 }
 
 h1,

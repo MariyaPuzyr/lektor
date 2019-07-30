@@ -1,6 +1,9 @@
 .article-list {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  .profile-user-edit__title {
+    margin-bottom: 35px;
+  }
   &__item {
     margin-bottom: 10px;
     display: flex;
@@ -76,6 +79,21 @@
       &:focus {
         outline: none;
       }
+    }
+  }
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  p {
+    b {
+      color: $color_link;
+      margin: 0 3px;
+    }
+    span {
+      font-family: $font_bold;
+      color: $color_darkblue;
+      margin-right: 3px;
     }
   }
 }
