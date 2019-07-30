@@ -9322,7 +9322,7 @@ a.text-dark:focus {
 
 .articles {
   padding-top: 45px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   background: -webkit-linear-gradient(205.8deg, #EAF5FE 0%, #C9DBEB 96.88%);
   background: -o-linear-gradient(205.8deg, #EAF5FE 0%, #C9DBEB 96.88%);
   background: linear-gradient(244.2deg, #EAF5FE 0%, #C9DBEB 96.88%);
@@ -10075,7 +10075,6 @@ a.text-dark:focus {
 .banner {
   background: #F5F9FB;
   padding: 30px 0;
-  margin-top: 20px;
 }
 
 .banner-slider {
@@ -10400,6 +10399,10 @@ a.text-dark:focus {
   margin-right: 10px;
   -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .choose-tariff__title {
@@ -11471,7 +11474,7 @@ a.text-dark:focus {
 
 .article-list {
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .article-list .profile-user-edit__title {
@@ -11660,6 +11663,10 @@ body::before {
   height: 667px;
   background: #F2F6FA;
   z-index: -1;
+}
+
+.page-item {
+  margin-top: 30px;
 }
 
 @media (min-width: 576px) {

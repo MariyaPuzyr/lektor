@@ -1,0 +1,99 @@
+.page-item
+  .container
+    h2.profile-user-edit__title Тарифы
+    .row
+      .col-md-12
+        .tariff-includes
+          .tariff-includes__title Каждый тариф предусматривает:
+          ul.tariff-includes__list
+            li
+              .icon.icon-sound
+              | Трансляция аудио
+            li
+              .icon.icon-video
+              | Трансляция видео
+            li
+              .icon.icon-doc
+              | Показ документов
+            li
+              .icon.icon-rec
+              | Запись всех лекций
+            li
+              .icon.icon-date
+              | Срок действия 30 дней
+            li
+              .icon.icon-infinityconference
+              | Количество конференций не ограничено
+    .row
+      .col-md-12
+        .choose-tariff__title Выбрать тариф:
+      .col-md-6.col-lg-3
+        .choose-tariff__items
+          .choose-tariff__item
+            .choose-tariff__item--count-user 15
+              span слушателей
+            .choose-tariff__item--tarif Тестовый
+              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            .choose-tariff__item--price
+              span 0 $/месяц
+              span 0 $/сутки
+            .choose-tariff__item--info Изменить тариф - 1
+            .choose-tariff__item--list.not-included-list
+              li Отправка приглашений
+              li Запись конференции
+              li Размер файлов для закачки
+              li Размер архива для записи
+              li Партнерская программа
+            a(href='#').choose-tariff__item--buy Купить
+      .col-md-6.col-lg-3
+        .choose-tariff__items
+          .choose-tariff__item
+            .choose-tariff__item--count-user 30
+              span слушателей
+            .choose-tariff__item--tarif 30
+            .choose-tariff__item--price
+              span 26 $/месяц
+              span 0,84 $/сутки
+            .choose-tariff__item--info Изменить тариф можно ежедневно, один раз
+            .choose-tariff__item--list
+              li Отправка приглашений
+              li Запись конференции
+              li Размер файлов для закачки
+              li Размер архива для записи
+              li Партнерская программа
+            a(href='#').choose-tariff__item--buy Купить
+      .col-md-6.col-lg-3
+        .choose-tariff__items
+          .choose-tariff__item
+            .choose-tariff__item--count-user 75
+              span слушателей
+            .choose-tariff__item--tarif 75
+            .choose-tariff__item--price
+              span 40 $/месяц
+              span 1,33 $/сутки
+            .choose-tariff__item--info Изменить тариф можно ежедневно, один раз
+            .choose-tariff__item--list
+              li Отправка приглашений
+              li Запись конференции
+              li Размер файлов для закачки
+              li Размер архива для записи
+              li Партнерская программа
+            a(href='#').choose-tariff__item--buy Купить
+      .col-md-6.col-lg-3
+        .choose-tariff__items
+          .choose-tariff__item
+            .choose-tariff__item--count-user
+              +sprite('infinity-ico', 'infinity-ico')
+              span слушателей
+            .choose-tariff__item--tarif Универсал
+            .choose-tariff__item--price
+              span 400 $/месяц
+              span 4,44 $/сутки
+            .choose-tariff__item--info Изменить тариф можно ежедневно, один раз
+            .choose-tariff__item--list
+              li Отправка приглашений
+              li Запись конференции
+              li Размер файлов для закачки
+              li Размер архива для записи
+              li Партнерская программа
+            a(href='#').choose-tariff__item--buy Купить
