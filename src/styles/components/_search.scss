@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    margin-bottom: 30px;
     .form-control {
       height: 38px;
       padding: 9px 15px;
@@ -19,6 +20,7 @@
       &:hover, &:focus {
         outline: none;
         border-color: $color_selected;
+        box-shadow: none;
       }
       &::placeholder {
         color: $color_description;

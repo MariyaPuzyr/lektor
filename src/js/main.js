@@ -190,4 +190,15 @@ $(document).ready(function () {
       ]
     });
   }
+
+  if ($(".archive-item__dropdown").length > 0) {
+    $('.archive-item__dropdown').click(function () {
+      $(this).next().toggle();
+    });
+  }
+
+  $(document).on('click', '.day a', function () {
+    var result =  $(this).data('day') + $(this).data('month') + $(this).data('year');
+    console.log(result);
+  });
 });

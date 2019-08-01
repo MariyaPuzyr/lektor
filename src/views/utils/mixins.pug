@@ -14,14 +14,14 @@ mixin lector-info
 
 
 mixin trending-archive-list
-  .col-md-4
+  .col-md-4.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
         a(href='#').coming-events-soon__img-info--link
           img(src='./img/event-1.jpg').img-fluid
         a(href='#').archive-tag-link Архив
-        +lector-info
       .coming-events-soon__info
+        +lector-info
         a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
         p Прошла 31 ноября 2019 года, 15:00
         .price-lections
@@ -35,14 +35,14 @@ mixin trending-archive-list
 
 
 mixin trending-archive-list__with-price
-  .col-md-4
+  .col-md-4.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
         a(href='#').coming-events-soon__img-info--link
           img(src='./img/event-1.jpg').img-fluid
         a(href='#').archive-tag-link Архив
-        +lector-info
       .coming-events-soon__info
+        +lector-info
         a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
         p Прошла 31 ноября 2019 года, 15:00
         .price-lections
@@ -55,14 +55,14 @@ mixin trending-archive-list__with-price
             a(href='#').default-blue Скачать архив
 
 mixin trending-archive-list__no-img
-  .col-md-4
+  .col-md-4.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
-        a(href='#').coming-events-soon__img-info--link
-          img(src='./img/svg/img-icon.svg').img-fluid
+        a(href='#').coming-events-soon__img-info--link.no-img
+          +sprite('icon', 'img-icon')
         a(href='#').archive-tag-link Архив
-        +lector-info
       .coming-events-soon__info
+        +lector-info
         a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
         p Прошла 31 ноября 2019 года, 15:00
         .price-lections
