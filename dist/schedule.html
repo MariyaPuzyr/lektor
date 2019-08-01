@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lektor schedule</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
+    <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
+    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <header class="header-item">
+          <div class="navbar-header__top">
+            <div class="navbar-collapse collapse" id="menu">
+              <div class="navbar-top d-flex">
+                <ul class="navbar-nav mr-lg-auto">
+                  <li><a class="navigation-link" href="rules.html">Правила</a></li>
+                  <li><a class="navigation-link" href="faq.html">FAQ</a></li>
+                  <li><a class="navigation-link" href="about.html">О нас</a></li>
+                  <li><a class="navigation-link" href="about-resource.html">О ресурсе</a></li>
+                  <li>
+                    <form class="navigation-form" action="#">
+                      <input class="form-control" name="s" type="text" placeholder="Search">
+                    </form>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-lg-auto">
+                  <li><a class="navigation-entry navigation-login" href="personal.html">Василий Фамилиялектора</a></li>
+                  <li><a class="navigation-entry navigation-registration" href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-header__info">
+            <div class="navbar-header__logo"><a class="navbar-brand" href="index.html"><img class="logo d-none d-md-flex" src="./img/svg/lektor_logo2.svg" alt=""><img class="mobile-logo d-flex d-md-none" src="./img/svg/mobile-logo.svg" alt=""></a>
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="navbar-collapse collapse" id="menu">
+              <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active"><a class="nav-link" href="trainings.html">Актуальные тренинги</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
+                <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
+                <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
+                <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </nav>
+    <main>
+      <div class="profile-user-info">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container flex-wrap">
+            <div class="profile-user-info__top">
+              <div class="user-info">
+                <div class="user-info__avatar"><img src="./img/avatar.jpg" alt=""><a class="user-info__settings-link" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+                <div class="user-info__info"><a class="user-info__name" href="#">Василий Фамимлмялектора</a>
+                  <div class="user-info__tarif d-lg-flex flex-row d-none">
+                    <div class="user-info__tarif--info">Тариф 30 слушателей<span>(осталось 30 дней)</span></div><a class="user-info__tarif--change default-blue" href="price.html">Изменить тариф</a>
+                  </div>
+                </div>
+              </div>
+              <div class="user-info__notifications"><a class="user-info__notifications-link" href="profile-settings.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-settigs"></use>
+                  </svg></a><a class="user-info__notifications-link notification active" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-alarm"></use>
+                  </svg><span>10</span></a></div>
+            </div>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#profile-menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="collapse navbar-collapse w-100" id="profile-menu">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="personal.html">Личный кабинет</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Расписание</a></li>
+                <li class="nav-item"><a class="nav-link" href="invite.html">Пригласить на лекцию</a></li>
+                <li class="nav-item"><a class="nav-link" href="finance.html">Финансы</a></li>
+                <li class="nav-item"><a class="nav-link" href="referrals.html">Рефералы</a></li>
+                <li class="nav-item"><a class="nav-link" href="my-archive.html">Мой архив</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="profile-user-edit">
+        <div class="container">
+          <h2 class="profile-user-edit__title">Личный кабинет<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item no-events">
+                  <div class="choose-tariff__item--count-user">0<span>новых мероприятий</span></div><a class="border-link my-schedule" href="schedule.html">Мое расписание</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item no-events">
+                  <div class="choose-tariff__item--count-user">0<span>мероприятий в архива</span></div><a class="border-link" href="my-archive.htm">Мой архив</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item no-events">
+                  <div class="choose-tariff__item--count-user">0<span>всего проведено</span></div><a class="border-link" href="#">Моя история</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="choose-tariff__items">
+                <div class="choose-tariff__item no-events">
+                  <div class="choose-tariff__item--count-user">0<span>приглашений</span></div><a class="border-link" href="#">Смотреть</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="personal-tariff-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 mb-4 mb-md-0">
+              <div class="your-tariff">
+                <div class="your-tariff__top">
+                  <div class="your-tariff__title">Ваш тариф</div>
+                  <div class="dropdown your-tariff__dropdown"><a class="dropdown-toggle" id="tariff-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Универсал</a>
+                    <div class="dropdown-menu" aria-labelledby="tariff-menu"><a class="dropdown-item" href="#">Универсал</a><a class="dropdown-item" href="#">Универсал</a><a class="dropdown-item" href="#">Универсал</a></div>
+                  </div>
+                </div>
+                <div class="your-tariff__info">
+                  <div class="your-tariff__info--full-info">
+                    <div class="icon"></div><span>слушателей</span>
+                  </div>
+                  <div class="your-tariff__info--full-info">Стоимость 400 $/месяц</div>
+                  <div class="your-tariff__info--full-info">Будет списано 4,44 $/сутки</div>
+                </div>
+                <div class="your-tariff__bottom"><a class="default-blue save-tariff--link" href="#">Сохранить тариф</a><span>Перед началом конференции выберите подходящий тарифный план</span></div>
+              </div>
+            </div>
+            <div class="col-md-3"><a class="add-event" href="#">
+                <div class="add-event--ico-item">
+                  <svg class="add-event--ico">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-add"></use>
+                  </svg>
+                </div>
+                <div class="add-event__title">Добавить мероприятие</div></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="personal-upcoming-events">
+        <div class="container">
+          <h3 class="personal-upcoming-events__title">Ближайшие события<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></h3>
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <p>Составьте расписание своих мероприятий. Создайте единичные мероприятия или повторяющееся регулярно встречи. По желанию задайте настройки для них.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-md-5 offset-md-1">
+              <div class="personal-upcoming-events__item first-step">
+                <div class="personal-upcoming-events__item--title">Добавь новое мероприятие</div>
+                <svg class="icon">
+                  <use xlink:href="./img/sprites/sprite.svg#img-add-new"></use>
+                </svg>
+                <p class="d-none d-md-block">Это может быть совещание, конференция или лекция</p>
+              </div>
+            </div>
+            <div class="col-md-1 d-none d-md-flex align-items-center justify-content-center">
+              <div class="arrow-next-step"></div>
+            </div>
+            <div class="col-md-3 mb-md-5">
+              <div class="personal-upcoming-events__item">
+                <div class="personal-upcoming-events__item--title">Пригласите посетителей</div>
+                <svg class="icon">
+                  <use xlink:href="./img/sprites/sprite.svg#img-invite"></use>
+                </svg>
+                <p class="d-none d-md-block">Это может быть совещание, конференция или лекция</p>
+              </div>
+            </div>
+            <div class="col-md-1 d-none d-md-flex align-items-center justify-content-center">
+              <div class="arrow-next-step"></div>
+            </div>
+            <div class="col-md-3 mb-md-5">
+              <div class="personal-upcoming-events__item">
+                <div class="personal-upcoming-events__item--title">Войти в конференц-зал</div>
+                <svg class="icon">
+                  <use xlink:href="./img/sprites/sprite.svg#img-room"></use>
+                </svg>
+                <p class="d-none d-md-block">Удобно общайтесь со своими гостями в чате, демонстрируйте файлы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="container">
+          <div class="col-md-10 px-0 banner-slider slider">
+            <div class="banner-slider__items">
+              <div class="banner-slider__item">
+                <div class="row banner-slider__item--info">
+                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                    <div class="lector-info">
+                      <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                      <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider__item--sign-up">
+                      <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-slider__items">
+              <div class="banner-slider__item">
+                <div class="row banner-slider__item--info">
+                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                    <div class="lector-info">
+                      <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                      <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider__item--sign-up">
+                      <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-copy-info"><a class="footer-logo" href="#"><img class="img-fluid" src="./img/svg/lektor_logo2.svg"></a>
+              <p>&copy; 2013 All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-4">
+            <ul class="footer-menu">
+              <li><a href="article-list.html">Статьи</a></li>
+              <li><a href="rules.html">Правила</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="tariff.html">Тарифы</a></li>
+              <li><a href="#">Архив</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="about-service.html">О ресурсе</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-social">
+              <div class="footer-social__title">Подписаться</div>
+              <ul class="footer-social__list">
+                <li><a class="footer-social__list-ico facebook" href="#"></a></li>
+                <li><a class="footer-social__list-ico vk" href="#"></a></li>
+                <li><a class="footer-social__list-ico twitter" href="#"></a></li>
+                <li><a class="footer-social__list-ico od" href="#"></a></li>
+                <li><a class="footer-social__list-ico rss" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+  </body>
+</html>
