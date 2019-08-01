@@ -14,7 +14,7 @@ mixin lector-info
 
 
 mixin trending-archive-list
-  .col-md-4.d-flex
+  .col-lg-4.col-md-6.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
         a(href='#').coming-events-soon__img-info--link
@@ -29,13 +29,13 @@ mixin trending-archive-list
           | Бесплатно
         .row
           .col-md-6
-            a(href='#').default-blue Скачать видео
+            a(href='#').default-green Скачать видео
           .col-md-6
             a(href='#').default-blue Скачать архив
 
 
 mixin trending-archive-list__with-price
-  .col-md-4.d-flex
+  .col-lg-4.col-md-6.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
         a(href='#').coming-events-soon__img-info--link
@@ -50,12 +50,12 @@ mixin trending-archive-list__with-price
           span 150 грн.
         .row
           .col-md-6
-            a(href='#').default-blue Скачать видео
+            a(href='#').default-green Скачать видео
           .col-md-6
             a(href='#').default-blue Скачать архив
 
 mixin trending-archive-list__no-img
-  .col-md-4.d-flex
+  .col-lg-4.col-md-6.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
         a(href='#').coming-events-soon__img-info--link.no-img
@@ -70,7 +70,7 @@ mixin trending-archive-list__no-img
           span 150 грн.
         .row
           .col-md-6
-            a(href='#').default-blue Скачать видео
+            a(href='#').default-green Скачать видео
           .col-md-6
             a(href='#').default-blue Скачать архив
 
@@ -83,7 +83,7 @@ mixin pagination
     li
       a.page-link(href='#') 1
     li
-      a.page-link(href='#') 2
+      a.page-link.active(href='#') 2
     li
       a.page-link(href='#') 3
     li

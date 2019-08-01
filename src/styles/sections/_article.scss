@@ -69,7 +69,7 @@
       .arrow-left {
         transform: rotate(90deg);
       }
-      &:hover {
+      &:hover, &.active {
         background: $color_selected;
         color: $color_white;
         .icon {
