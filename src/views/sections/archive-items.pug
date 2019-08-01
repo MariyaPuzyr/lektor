@@ -1,3 +1,27 @@
 .archive-items
   .container
     h2.profile-user-edit__title Архив лектора
+    .row
+      .col-md-8
+        include ../components/search
+      .col-md-4
+        .archive-item.dropdown
+          label Выбрать по дате:
+          button.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            +sprite('icon','icon-date-16')
+            span Дата
+          .dropdown-menu
+            include ../components/data-select
+    .row
+      +trending-archive-list
+      +trending-archive-list__with-price
+      +trending-archive-list__no-img
+      +trending-archive-list
+      +trending-archive-list__with-price
+      +trending-archive-list__no-img
+      +trending-archive-list
+      +trending-archive-list__with-price
+      +trending-archive-list__no-img
+    .row
+      .col-md-12
+        +pagination
