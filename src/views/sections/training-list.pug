@@ -3,24 +3,7 @@
     h2.training-list__title Запланировано на сегодня
       span 245 тренингов
     .training-list__item
-      .training-list__calendar
-        .controls
-          a.pull-left.calendar-control(data-go='prev')
-
-          h4
-            span(data-head-month='')
-            span(data-head-year='')
-          a.pull-right.calendar-control(data-go='next')
-        .day-headers
-          .day.header Пн
-          .day.header Вт
-          .day.header Ср
-          .day.header Чт
-          .day.header Пт
-          .day.header.day-off Сб
-          .day.header.day-off Вс
-        .days(data-group='days')
-        // Responsive calendar - END
+      include ../components/data-select
       .training-list__slider-item
         .training-list__slider.slider
           div
