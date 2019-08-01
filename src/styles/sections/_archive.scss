@@ -1,0 +1,17 @@
+.archive-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  &s {
+    .profile-user-edit__title {
+      margin-bottom: 30px;
+    }
+  }
+  &--label {
+    font-family: $font_main;
+    font-size: $size_title_font;
+    line-height: 24px;
+    margin-right: 30px;
+    color: $color_link;
+  }
+}

@@ -55,7 +55,7 @@
       </div>
     </nav>
     <main>
-      <div class="archive-items">
+      <div class="archive-items page-item">
         <div class="container">
           <h2 class="profile-user-edit__title">Архив лектора</h2>
           <div class="row">
@@ -63,9 +63,9 @@
               <div class="search">
                 <form action="#">
                   <div class="search-item">
-                    <label>Поиск:</label>
+                    <label class="archive-item--label">Поиск:</label>
                     <input class="form-control" placeholder="По лектору, названию или описанию">
-                    <button type="submit">
+                    <button class="search-item--btn" type="submit">
                       <svg class="icon">
                         <use xlink:href="./img/sprites/sprite.svg#icon-search"></use>
                       </svg>
@@ -75,13 +75,13 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="archive-item dropdown">
-                <label>Выбрать по дате:</label>
-                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="archive-item">
+                <label class="archive-item--label">Выбрать по дате:</label>
+                <div class="archive-item__dropdown">
                   <svg class="icon">
                     <use xlink:href="./img/sprites/sprite.svg#icon-date-16"></use>
                   </svg><span>Дата</span>
-                </button>
+                </div>
                 <div class="dropdown-menu">
                   <div class="training-list__calendar">
                     <div class="controls"><a class="pull-left calendar-control" data-go="prev"></a>
