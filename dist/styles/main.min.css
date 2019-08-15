@@ -8709,7 +8709,7 @@ a.text-dark:focus {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .search-item .form-control {
@@ -11773,7 +11773,7 @@ a.text-dark:focus {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .archive-items .profile-user-edit__title {

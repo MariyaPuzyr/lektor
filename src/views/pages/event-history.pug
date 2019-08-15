@@ -1,0 +1,169 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor event history"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/profile-user-info
+    .profile-user-edit
+      .container
+        h2.profile-user-edit__title Моя история
+          span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .archive-items.page-item
+      .container
+        .row
+          .col-md-12.col-lg-8
+            include ../components/search
+          .col-md-12.col-lg-4
+            .archive-item
+              label.archive-item--label Выбрать по дате:
+              .archive-item__dropdown
+                +sprite('icon','icon-date-16')
+                span Дата
+              .dropdown-menu
+                include ../components/data-select
+        .row
+          .col-md-12.col-lg-6
+            .row
+              .col-md-6
+                .coming-events-soon__img-info.mt-0
+                  a(href='#')
+                    img(src='./img/event-1.jpg').img-fluid
+                  .time-to-start.today
+                    b не прошло
+                    |  31 ноября 2019, 15:00
+                  .dropdown.edit-dtopdown
+                    a#tariff-menu.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      +sprite('icon', 'icon-menu-trening')
+                    .dropdown-menu.dropdown-menu-right(aria-labelledby='tariff-menu')
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-copy', 'icon-copy')
+                        | Копировать
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-archive', 'icon-archive')
+                        | Поместить в
+                        | архив
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-delete', 'icon-delete')
+                        | Удалить
+              .col-md-6
+                .coming-events-soon__info.mt-0
+                  a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                  .personal-upcoming-events__lecture-participants
+                    span.signed-up
+                      +sprite('icon', 'icon-user')
+                      | 120 записались
+                    span
+                      +sprite('icon', 'icon-user-confirmed')
+                      | 120 подтвердили
+                  .row
+                    .col-md-2
+                      a(href='#').default-blue Перейти
+          .col-md-12.col-lg-6
+            .row
+              .col-md-6
+                .coming-events-soon__img-info.mt-0
+                  a(href='#')
+                    img(src='./img/event-1.jpg').img-fluid
+                  .time-to-start 31 ноября 2019, 15:00
+                  .dropdown.edit-dtopdown
+                    a#tariff-menu.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      +sprite('icon', 'icon-menu-trening')
+                    .dropdown-menu.dropdown-menu-right(aria-labelledby='tariff-menu')
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-copy', 'icon-copy')
+                        | Копировать
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-archive', 'icon-archive')
+                        | Поместить в
+                        | архив
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-delete', 'icon-delete')
+                        | Удалить
+              .col-md-6
+                .coming-events-soon__info.mt-0
+                  a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                  .personal-upcoming-events__lecture-participants
+                    span.signed-up
+                      +sprite('icon', 'icon-user')
+                      | 120 записались
+                    span
+                      +sprite('icon', 'icon-user-confirmed')
+                      | 120 подтвердили
+                  .row
+                    .col-md-2
+                      a(href='#').default-blue Перейти
+          .col-md-12.col-lg-6
+            .row
+              .col-md-6
+                .coming-events-soon__img-info.mt-0
+                  a(href='#')
+                    img(src='./img/event-1.jpg').img-fluid
+                  .time-to-start 31 ноября 2019, 15:00
+                  .dropdown.edit-dtopdown
+                    a#tariff-menu.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      +sprite('icon', 'icon-menu-trening')
+                    .dropdown-menu.dropdown-menu-right(aria-labelledby='tariff-menu')
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-copy', 'icon-copy')
+                        | Копировать
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-archive', 'icon-archive')
+                        | Поместить в
+                        | архив
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-delete', 'icon-delete')
+                        | Удалить
+              .col-md-6
+                .coming-events-soon__info.mt-0
+                  a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                  .personal-upcoming-events__lecture-participants
+                    span.signed-up
+                      +sprite('icon', 'icon-user')
+                      | 120 записались
+                    span
+                      +sprite('icon', 'icon-user-confirmed')
+                      | 120 подтвердили
+                  .row
+                    .col-md-2
+                      a(href='#').default-blue Перейти
+          .col-md-12.col-lg-6
+            .row
+              .col-md-6
+                .coming-events-soon__img-info.mt-0
+                  a(href='#')
+                    img(src='./img/event-1.jpg').img-fluid
+                  .time-to-start 31 ноября 2019, 15:00
+                  .dropdown.edit-dtopdown
+                    a#tariff-menu.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      +sprite('icon', 'icon-menu-trening')
+                    .dropdown-menu.dropdown-menu-right(aria-labelledby='tariff-menu')
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-copy', 'icon-copy')
+                        | Копировать
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-archive', 'icon-archive')
+                        | Поместить в
+                        | архив
+                      a.dropdown-item(href='#')
+                        +sprite('icon icon-delete', 'icon-delete')
+                        | Удалить
+              .col-md-6
+                .coming-events-soon__info.mt-0
+                  a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                  .personal-upcoming-events__lecture-participants
+                    span.signed-up
+                      +sprite('icon', 'icon-user')
+                      | 120 записались
+                    span
+                      +sprite('icon', 'icon-user-confirmed')
+                      | 120 подтвердили
+                  .row
+                    .col-md-2
+                      a(href='#').default-blue Перейти
+        .row
+          .col-md-12
+            +pagination
+    include ../sections/banner-slider
+  include ../includes/footer
