@@ -11186,10 +11186,10 @@ a.text-dark:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #67B930;
   margin-bottom: 10px;
 }
@@ -11201,7 +11201,7 @@ a.text-dark:focus {
 }
 
 .personal-upcoming-events__lecture-participants .signed-up {
-  margin-right: 30px;
+  margin-right: 15px;
   fill: #23AAEA;
   text-decoration: underline;
   color: #23AAEA;
@@ -11236,9 +11236,14 @@ a.text-dark:focus {
   -webkit-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 5px 0 5px 10px;
   font-size: 16px;
   line-height: 19px;
+}
+
+.coming-events-soon__img-info .time-to-start b {
+  font-family: "ProximaNova-Bold";
+  font-weight: normal;
 }
 
 .coming-events-soon__img-info .time-to-start.today {

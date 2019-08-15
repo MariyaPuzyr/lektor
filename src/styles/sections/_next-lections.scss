@@ -28,7 +28,7 @@
   margin-bottom: 10px;
   span {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     color: $color_selected;
     margin-bottom: 10px;
   }
@@ -38,7 +38,7 @@
     margin-right: 5px;
   }
   .signed-up {
-    margin-right: 30px;
+    margin-right: 15px;
     fill: $color_underline;
     text-decoration: underline;
     color: $color_underline;
