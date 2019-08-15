@@ -1,0 +1,15 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor - Invite page"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/archive-items
+    .profile-user-edit
+      .container
+        h2.profile-user-edit__title Пригласить на лекцию
+          span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    include ../sections/banner-slider
+    include ../sections/articles
+  include ../includes/footer

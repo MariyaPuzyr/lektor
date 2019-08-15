@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lektor - Invite page</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
+    <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
+    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <header class="header-item">
+          <div class="navbar-header__top">
+            <div class="navbar-collapse collapse" id="menu">
+              <div class="navbar-top d-flex">
+                <ul class="navbar-nav mr-lg-auto">
+                  <li><a class="navigation-link" href="rules.html">Правила</a></li>
+                  <li><a class="navigation-link" href="faq.html">FAQ</a></li>
+                  <li><a class="navigation-link" href="about.html">О нас</a></li>
+                  <li><a class="navigation-link" href="about-resource.html">О ресурсе</a></li>
+                  <li>
+                    <form class="navigation-form" action="#">
+                      <input class="form-control" name="s" type="text" placeholder="Search">
+                    </form>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-lg-auto">
+                  <li><a class="navigation-entry navigation-login" href="personal.html">Василий Фамилиялектора</a></li>
+                  <li><a class="navigation-entry navigation-registration" href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-header__info">
+            <div class="navbar-header__logo"><a class="navbar-brand" href="index.html"><img class="logo d-none d-md-flex" src="./img/svg/lektor_logo2.svg" alt=""><img class="mobile-logo d-flex d-md-none" src="./img/svg/mobile-logo.svg" alt=""></a>
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="navbar-collapse collapse" id="menu">
+              <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active"><a class="nav-link" href="trainings.html">Актуальные тренинги</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
+                <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
+                <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
+                <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </nav>
+    <main>
+      <div class="archive-items page-item">
+        <div class="container">
+          <h2 class="profile-user-edit__title">Архив лектора</h2>
+          <div class="row">
+            <div class="col-md-12 col-lg-8">
+              <div class="search">
+                <form action="#">
+                  <div class="search-item">
+                    <label class="archive-item--label">Поиск:</label>
+                    <input class="form-control" placeholder="По лектору, названию или описанию">
+                    <button class="search-item--btn" type="submit">
+                      <svg class="icon">
+                        <use xlink:href="./img/sprites/sprite.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="archive-item">
+                <label class="archive-item--label">Выбрать по дате:</label>
+                <div class="archive-item__dropdown">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-date-16"></use>
+                  </svg><span>Дата</span>
+                </div>
+                <div class="dropdown-menu">
+                  <div class="training-list__calendar">
+                    <div class="controls"><a class="pull-left calendar-control" data-go="prev"></a>
+                      <h4><span data-head-month=""></span><span data-head-year=""></span></h4><a class="pull-right calendar-control" data-go="next"></a>
+                    </div>
+                    <div class="day-headers">
+                      <div class="day header">Пн</div>
+                      <div class="day header">Вт</div>
+                      <div class="day header">Ср</div>
+                      <div class="day header">Чт</div>
+                      <div class="day header">Пт</div>
+                      <div class="day header day-off">Сб</div>
+                      <div class="day header day-off">Вс</div>
+                    </div>
+                    <div class="days" data-group="days"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link" href="#"><img class="img-fluid" src="./img/event-1.jpg"/></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg>Бесплатно
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link" href="#"><img class="img-fluid" src="./img/event-1.jpg"/></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg><span>150 грн.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link no-img" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#img-icon"></use>
+                    </svg></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg><span>150 грн.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link" href="#"><img class="img-fluid" src="./img/event-1.jpg"/></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg>Бесплатно
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link" href="#"><img class="img-fluid" src="./img/event-1.jpg"/></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg><span>150 грн.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link no-img" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#img-icon"></use>
+                    </svg></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg><span>150 грн.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link" href="#"><img class="img-fluid" src="./img/event-1.jpg"/></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg>Бесплатно
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link" href="#"><img class="img-fluid" src="./img/event-1.jpg"/></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg><span>150 грн.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="trending-archive-list">
+                <div class="coming-events-soon__img-info"><a class="coming-events-soon__img-info--link no-img" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#img-icon"></use>
+                    </svg></a><a class="archive-tag-link" href="#">Архив</a></div>
+                <div class="coming-events-soon__info">
+                  <div class="lector-info">
+                    <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                    <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                  </div><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <p>Прошла 31 ноября 2019 года, 15:00</p>
+                  <div class="price-lections">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+                    </svg><span>150 грн.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><a class="default-green" href="#">Скачать видео</a></div>
+                    <div class="col-md-6"><a class="default-blue" href="#">Скачать архив</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="article-list--pagination">
+                <li><a class="page-link" href="#">
+                    <svg class="icon arrow-left">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
+                    </svg></a></li>
+                <li><a class="page-link" href="#">1</a></li>
+                <li><a class="page-link active" href="#">2</a></li>
+                <li><a class="page-link" href="#">3</a></li>
+                <li><a class="page-link" href="#">
+                    <svg class="icon arrow-right">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-user-edit">
+        <div class="container">
+          <h2 class="profile-user-edit__title">Пригласить на лекцию<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></h2>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="container">
+          <div class="col-md-10 px-0 banner-slider slider">
+            <div class="banner-slider__items">
+              <div class="banner-slider__item">
+                <div class="row banner-slider__item--info">
+                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                    <div class="lector-info">
+                      <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                      <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider__item--sign-up">
+                      <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-slider__items">
+              <div class="banner-slider__item">
+                <div class="row banner-slider__item--info">
+                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                    <div class="lector-info">
+                      <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                      <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider__item--sign-up">
+                      <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="container">
+          <h2 class="site-features__title">Cтатьи вместо новостей</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="articles__item">
+                <div class="articles__item--date">18.04.2019</div><a class="articles__item--name" href="#">Система дистанционного обучения Лектор</a>
+                <p>Ресурс Лектор – это система рассчитана для организации и проведения дистанционного обучения с использованием Интернета. Лектор – это независимое программное обеспечение, ориентированное на: организацию дистанционной формы обучения, дополнительной системы поддержки учебного процесса...</p><a class="articles__item--link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="articles__item">
+                <div class="articles__item--date">29.10.2013</div><a class="articles__item--name" href="#">Преимущества дистанционного обучения</a>
+                <p>Важность и новшества дистанционного обучения все больше входит в нашу жизнь. Все больше учебных заведений перестраиваются на новые направления обучения - дистанционного обучения. Применение систем дистанционного обучения помогает не только проводить обучение в любое время и на любые темы, но и расширению...</p><a class="articles__item--link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="articles__item">
+                <div class="articles__item--date">18.04.2019</div><a class="articles__item--name" href="#">Онлайн-конференция или вебинар, что это такое?</a>
+                <p>Онлайн-конференция или вебинар - это онлайн мероприятие, организованное при помощи web-технологий в режиме прямой трансляции, эффективное PR-средство. Это живое общение посетителей сайта с организаторами конференции. Это просто и удобно, а также значительно выгодней обычной пресс-конференции.</p><a class="articles__item--link" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-copy-info"><a class="footer-logo" href="#"><img class="img-fluid" src="./img/svg/lektor_logo2.svg"></a>
+              <p>&copy; 2013 All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-4">
+            <ul class="footer-menu">
+              <li><a href="article-list.html">Статьи</a></li>
+              <li><a href="rules.html">Правила</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="tariff.html">Тарифы</a></li>
+              <li><a href="#">Архив</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="about-service.html">О ресурсе</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-social">
+              <div class="footer-social__title">Подписаться</div>
+              <ul class="footer-social__list">
+                <li><a class="footer-social__list-ico facebook" href="#"></a></li>
+                <li><a class="footer-social__list-ico vk" href="#"></a></li>
+                <li><a class="footer-social__list-ico twitter" href="#"></a></li>
+                <li><a class="footer-social__list-ico od" href="#"></a></li>
+                <li><a class="footer-social__list-ico rss" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+  </body>
+</html>
