@@ -6,8 +6,11 @@ block content
   include ../includes/header-user
   main
     include ../sections/profile-user-info
-    include ../sections/personal-header
+    .profile-user-edit
+      .container
+        h2.profile-user-edit__title Расписание
+          span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
     include ../sections/personal-tariff-info
-    include ../sections/personal-upcoming-events
+    include ../sections/schedule-list
     include ../sections/banner-slider
   include ../includes/footer
