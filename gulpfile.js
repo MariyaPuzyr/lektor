@@ -136,7 +136,9 @@ gulp.task('libs', function () {
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
     './node_modules/jquery-countdown/dist/jquery.countdown.min.js',
-    './node_modules/slick-carousel/slick/slick.min.js'
+    './node_modules/slick-carousel/slick/slick.min.js',
+    './node_modules/isotope-layout/dist/isotope.pkgd.min.js',
+    './src/js/jquery.mCustomScrollbar.min.js'
   ])
       .pipe(concat('libs.min.js'))
       .pipe(gulp.dest(paths.scripts.dist))

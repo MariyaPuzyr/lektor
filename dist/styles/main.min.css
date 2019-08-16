@@ -11988,8 +11988,54 @@ a.text-dark:focus {
   color: #6F7B8E;
 }
 
+.invite .nav-tabs {
+  border-bottom: 2px solid #C8D0D9;
+}
+
+.invite .nav-tabs .nav-link {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 15px;
+  font-family: "ProximaNova-Bold";
+  font-size: 16px;
+  line-height: 19px;
+  color: #6F7B8E;
+  margin-bottom: -2px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  border: none;
+}
+
+.invite .nav-tabs .nav-link.active,
+.invite .nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #23AAEA;
+  color: #23AAEA;
+}
+
+.invite .faq {
+  margin-top: 30px;
+}
+
 .invite .faq .card-body {
-  padding: 10px 15px 30px;
+  padding: 0 15px 30px;
+}
+
+.invite-refferal--code {
+  background: #EAF5FE;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #23AAEA;
+  font-family: "ProximaNova-Light";
+  font-size: 20px;
+  line-height: 24px;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.invite-refferal .registration-form-control {
+  margin-bottom: 30px;
 }
 
 h1,
