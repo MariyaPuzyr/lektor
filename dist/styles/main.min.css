@@ -9664,10 +9664,7 @@ a.text-dark:focus {
 .registration-form__group .input-group-text .icon {
   width: 18px;
   height: 18px;
-}
-
-.registration-form__group .input-group-text .icon path {
-  fill: #ff0000;
+  fill: #6F7B8E;
 }
 
 .registration-form__group .input-group-prepend {
@@ -9707,10 +9704,10 @@ a.text-dark:focus {
   margin-top: 20px;
   margin-bottom: 30px;
   color: #181C1F;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -11582,14 +11579,19 @@ a.text-dark:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 15px 30px 15px 15px;
 }
 
@@ -11609,6 +11611,16 @@ a.text-dark:focus {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  position: absolute;
+  right: 30px;
+}
+
+.faq--title .date {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 19px;
+  color: #0C2947;
+  margin-top: 5px;
 }
 
 .article-list {
@@ -11974,6 +11986,10 @@ a.text-dark:focus {
   font-size: 14px;
   line-height: 17px;
   color: #6F7B8E;
+}
+
+.invite .faq .card-body {
+  padding: 10px 15px 30px;
 }
 
 h1,

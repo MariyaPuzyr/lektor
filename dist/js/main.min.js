@@ -201,4 +201,7 @@ $(document).ready(function () {
     var result =  $(this).data('day') + $(this).data('month') + $(this).data('year');
     console.log(result);
   });
+
+
+  /* add tags */
 });

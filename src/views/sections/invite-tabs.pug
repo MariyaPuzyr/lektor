@@ -1,12 +1,37 @@
 .invite
-  nav
-    #nav-tab.nav.nav-tabs(role='tablist')
-      a#invite-mail-tab.nav-item.nav-link.active(data-toggle='tab' href='#invite-mail' role='tab' aria-controls='invite-mail' aria-selected='true') Приласить по почте
-      a#invite-ref-tab.nav-item.nav-link(data-toggle='tab' href='#invite-ref' role='tab' aria-controls='invite-ref' aria-selected='false') Реферальные письма
-  #nav-tabContent.tab-content
-    #invite-mail.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='invite-mail-tab')
-      .invite-mail
-        .row
-          .col-md-6
-
-    #invite-ref.tab-pane.fade(role='tabpanel' aria-labelledby='invite-ref-tab') ...
+  .container
+    nav
+      #nav-tab.nav.nav-tabs(role='tablist')
+        a#invite-mail-tab.nav-item.nav-link.active(data-toggle='tab' href='#invite-mail' role='tab' aria-controls='invite-mail' aria-selected='true') Приласить по почте
+        a#invite-ref-tab.nav-item.nav-link(data-toggle='tab' href='#invite-ref' role='tab' aria-controls='invite-ref' aria-selected='false') Реферальные письма
+    #nav-tabContent.tab-content
+      #invite-mail.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='invite-mail-tab')
+        .invite-mail
+          form(action='#')
+          .row
+            .col-md-6
+              .invite-item
+                .invite-item__label Кому:
+                input(type='text' value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput").invite-item__field
+      #invite-ref.tab-pane.fade(role='tabpanel' aria-labelledby='invite-ref-tab')
+        #faq.faq
+          .row
+            .col-md-6
+              .card
+                #faq_headingOne.card-header
+                  .faq--title.collapsed(data-toggle='collapse', data-target='#faqOne', aria-controls='faqOne') Слоненок с мячиком. Мягкая игрушка связана спицами
+                    .date 31 ноября 2019, 15:00
+                #faqOne.collapse(aria-labelledby='faq_headingOne', data-parent='#faq')
+                  .card-body
+                    form(action='#')
+                      .invite-refferal
+                        .invite-refferal--code https://lektor.org.ua?webinar=gXNtCTb4Du9FH0l
+                        input.registration-form-control(type='text' placeholder='Текст реферальной ссылки')
+                        button(type='submit').default-green Сохранить
+            .col-md-6
+              .card
+                #faq_headingEleven.card-header
+                  .faq--title.collapsed(data-toggle='collapse', data-target='#faqEleven', aria-controls='faqEleven') Что такое вебинар
+                #faqEleven.collapse(aria-labelledby='faq_headingEleven', data-parent='#faq')
+                  .card-body
+                    p Нашим Ресурсом не требует проведения пополнения собственных средств Лектором (Тренером) на конкретную сумму в зависимости от стоимости предлагаемых Тарифных планов. Наш ресурс принимает только украинские гривны. Стоимость платных тарифных планов ориентированы к американскому доллару. Лектор может проводить пополнение собственных средств на любую сумму в украинских гривнах. Средства с собственного счета списываются только в момент «Начала проведения» лекций, семинаров или онлай конференций. Списание средств происходит из расчета усредненной стоимости выбранного тарифного плана за сутки.
