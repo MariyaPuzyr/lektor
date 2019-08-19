@@ -10461,6 +10461,7 @@ a.text-dark:focus {
   background: #ffffff;
   padding: 25px 30px 30px;
   color: #0C2947;
+  height: 100%;
 }
 
 .your-balance__top,
@@ -10508,14 +10509,6 @@ a.text-dark:focus {
 .your-balance .your-tariff__info--full-info {
   font-family: "ProximaNova-Light";
   color: #0C2947;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
   margin-bottom: 5px;
 }
 
@@ -12129,6 +12122,64 @@ a.text-dark:focus {
 
 .invite-refferal .registration-form-control {
   margin-bottom: 30px;
+}
+
+.finance-tariff .your-tariff__top {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.finance-tariff .your-tariff__info--full-info {
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+.finance-tariff .your-tariff__info--full-info:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+.finance-tariff .your-tariff__info--full-info .icon {
+  margin-left: 5px;
+}
+
+.finance-tariff .once {
+  text-decoration: underline;
+}
+
+.finance-tooltip {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 h1,

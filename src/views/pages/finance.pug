@@ -10,6 +10,8 @@ block content
       .container
         h2.profile-user-edit__title Финансы
           span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .personal-tariff-info
+      .container
         .row
           .col-lg-6.mb-4.mb-lg-0.col-md-12
             .your-balance
@@ -38,10 +40,10 @@ block content
                   span слушателей
               .your-tariff__info--full-info Стоимость 400 $/месяц
               .your-tariff__info--full-info 4,44 $/сутки
-                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+                span.finance-tooltip(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
               .your-tariff__bottom
                 a(href='#').default-blue.save-tariff--link Изменить тариф
-                span Ежедневно, один раз
+                span.once Ежедневно, один раз
     include ../sections/payment-history
     include ../sections/banner-slider
   include ../includes/footer
