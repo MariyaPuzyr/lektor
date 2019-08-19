@@ -1,0 +1,49 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor Finance"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/profile-user-info
+    .profile-user-edit
+      .container
+        h2.profile-user-edit__title Финансы
+          span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .personal-tariff-info
+      .container
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .your-balance
+              .your-balance__top
+                .your-tariff__title Ваш баланс
+                .your-balance__price 10000
+                  span грн.
+                    .value ( 416.67 $)
+              .your-tariff__info--full-info Ваш бонусный баланс
+                span 140 грн.
+                  .value ( 5.83 $)
+              .your-tariff__info--full-info Курс долара на 17.05.2019
+                span 24.00 грн.
+              .row
+                .col-md-6
+                  a(href='#').default-green Пополнить баланс
+                .col-md-6
+                  a(href='#').default-blue.blue-border Вывод стредств
+          .col-md-6
+            .your-tariff
+              .your-tariff__top
+                .your-tariff__title Ваш тариф
+              .your-tariff__info
+                .your-tariff__info--full-info
+                  span Универсал
+                  .icon
+                  span слушателей
+                .your-tariff__info--full-info Стоимость 400 $/месяц
+                .your-tariff__info--full-info Будет списано 4,44 $/сутки
+              .your-tariff__bottom
+                a(href='#').default-blue.save-tariff--link Сохранить тариф
+                span Перед началом конференции выберите подходящий тарифный план
+    include ../sections/payment-history
+    include ../sections/banner-slider
+  include ../includes/footer

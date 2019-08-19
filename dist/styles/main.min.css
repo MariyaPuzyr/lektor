@@ -7724,6 +7724,10 @@ a.text-dark:focus {
   border: 1px solid #67B930;
 }
 
+.blue-border {
+  border: 1px solid #23AAEA;
+}
+
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url("../fonts/ProximaNova-Regular.eot");

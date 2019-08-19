@@ -1,0 +1,32 @@
+.payment-history
+  .container
+    h4.payment-history__title История платежей:
+    .table-responsive
+      table.table
+        thead
+          tr
+            th(scope='col') #
+            th(scope='col') Действие
+            th(scope='col') Дата
+            th(scope='col') Сумма
+            th(scope='col') Бонусный счет
+            th(scope='col') Остаток на счету
+            th(scope='col') Доступно для вывода
+            th(scope='col') Комментарии
+        tbody
+          tr
+            th(scope='row') 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            th(scope='row') 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            th(scope='row') 3
+            td Larry
+            td the Bird
+            td @twitter
+    +pagination
