@@ -10,10 +10,8 @@ block content
       .container
         h2.profile-user-edit__title Финансы
           span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
-    .personal-tariff-info
-      .container
         .row
-          .col-md-6.mb-4.mb-md-0
+          .col-lg-6.mb-4.mb-lg-0.col-md-12
             .your-balance
               .your-balance__top
                 .your-tariff__title Ваш баланс
@@ -30,20 +28,20 @@ block content
                   a(href='#').default-green Пополнить баланс
                 .col-md-6
                   a(href='#').default-blue.blue-border Вывод стредств
-          .col-md-6
-            .your-tariff
+          .col-lg-6.col-md-12
+            .your-tariff.finance-tariff
               .your-tariff__top
                 .your-tariff__title Ваш тариф
-              .your-tariff__info
                 .your-tariff__info--full-info
                   span Универсал
                   .icon
                   span слушателей
-                .your-tariff__info--full-info Стоимость 400 $/месяц
-                .your-tariff__info--full-info Будет списано 4,44 $/сутки
+              .your-tariff__info--full-info Стоимость 400 $/месяц
+              .your-tariff__info--full-info 4,44 $/сутки
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
               .your-tariff__bottom
-                a(href='#').default-blue.save-tariff--link Сохранить тариф
-                span Перед началом конференции выберите подходящий тарифный план
+                a(href='#').default-blue.save-tariff--link Изменить тариф
+                span Ежедневно, один раз
     include ../sections/payment-history
     include ../sections/banner-slider
   include ../includes/footer

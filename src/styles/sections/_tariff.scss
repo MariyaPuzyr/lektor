@@ -1,62 +1,119 @@
-.your-tariff {
-  background: linear-gradient(180deg, #23AAEA 0%, #3F71D1 100%);
-  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
-  border-radius: 4px;
-  color: $color_white;
-  padding: 30px;
-  font-family: $font_light;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  &__title {
-    font-size: $size_title_big_font;
-    line-height: 44px;
-    margin-bottom: 5px;
-  }
-  &__item {
-    font-size: $size_title_big_font;
-    line-height: 44px;
-    margin-bottom: 5px;
-    span {
-      font-size: $size_title_font;
-      line-height: 24px;
-      margin-left: 3px;
-    }
-  }
-  &__price {
+.your {
+  &-tariff {
+    background: linear-gradient(180deg, #23AAEA 0%, #3F71D1 100%);
+    box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+    border-radius: 4px;
+    color: $color_white;
+    padding: 30px;
+    font-family: $font_light;
     display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    font-size: $size_title_font;
-    line-height: 24px;
-    margin-bottom: 20px;
-    span {
-      display: flex;
-      &:first-child {
-        margin-right: 30px;
+    flex-direction: column;
+    height: 100%;
+    &__title {
+      font-size: $size_title_big_font;
+      line-height: 44px;
+      margin-bottom: 5px;
+    }
+    &__item {
+      font-size: $size_title_big_font;
+      line-height: 44px;
+      margin-bottom: 5px;
+      span {
+        font-size: $size_title_font;
+        line-height: 24px;
+        margin-left: 3px;
       }
     }
-    .tooltip-item {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 1px solid $color_white;
+    &__price {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: $size_link_font;
+      align-items: baseline;
+      flex-wrap: wrap;
+      font-size: $size_title_font;
       line-height: 24px;
-      margin-left: 10px;
-      flex: 0 0 auto;
-      cursor: pointer;
+      margin-bottom: 20px;
+      span {
+        display: flex;
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+      .tooltip-item {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid $color_white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $size_link_font;
+        line-height: 24px;
+        margin-left: 10px;
+        flex: 0 0 auto;
+        cursor: pointer;
+      }
+    }
+    &__change-info {
+      margin-bottom: 10px;
+      text-decoration: underline;
+      font-family: $font_main;
+      font-size: $size_link_font;
+      line-height: 19px;
     }
   }
-  &__change-info {
-    margin-bottom: 10px;
-    text-decoration: underline;
-    font-family: $font_main;
-    font-size: $size_link_font;
-    line-height: 19px;
+
+  &-balance {
+    box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+    border-radius: 4px;
+    background: $color_white;
+    padding: 25px 30px 30px;
+    color: $color_link;
+    &__top, &__price {
+      display: flex;
+      align-items: baseline;
+    }
+    &__price {
+      font-size: $size_title_big_font;
+      line-height: 44px;
+      font-family: $font_light;
+      span {
+        display: flex;
+        align-items: baseline;
+        font-size: $size_title_font;
+        line-height: 24px;
+        margin: 0 3px;
+      }
+      .value {
+        color: $color_description;
+      }
+    }
+    .your-tariff {
+      &__title {
+        color: $color_link;
+        font-family: $font_light;
+        margin-right: 30px;
+      }
+      &__info--full-info {
+        font-family: $font_light;
+        color: $color_link;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 5px;
+        &:nth-child(3) {
+          margin-bottom: 20px;
+        }
+        span {
+          display: flex;
+          align-items: baseline;
+          margin-left: 30px;
+          margin-right: 10px;
+          font-size: $size_title_font;
+          line-height: 24px;
+          .value {
+            color: $color_description;
+          }
+        }
+      }
+    }
   }
 }
 
