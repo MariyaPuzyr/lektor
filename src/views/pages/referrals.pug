@@ -1,0 +1,27 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor referrals"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/profile-user-info
+    .profile-user-edit.referrals-item
+      .container
+        h2.profile-user-edit__title Рефералы
+          span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .invite
+      .container
+        nav
+          #nav-tab.nav.nav-tabs(role='tablist')
+            a#your-referrals-tab.nav-item.nav-link.active(data-toggle='tab' href='#your-referrals' role='tab' aria-controls='your-referrals' aria-selected='true') Ваши рефералы
+            a#mailing-tab.nav-item.nav-link(data-toggle='tab' href='#mailing' role='tab' aria-controls='mailing' aria-selected='false') Рассылка писем
+        #nav-tabContent.tab-content
+          #your-referrals.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='your-referrals-tab')
+            .row
+              .col-md-12
+                +pagination
+          #mailing.tab-pane.fade(role='tabpanel' aria-labelledby='mailing-tab')
+
+    include ../sections/banner-slider
+  include ../includes/footer
