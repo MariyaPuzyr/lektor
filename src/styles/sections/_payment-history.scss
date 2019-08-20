@@ -12,10 +12,60 @@
       padding: 0;
       border-top: none;
     }
-    thead th {
-      border-bottom: none;
-      font-family: $font_bold;
+    thead th,
+    tbody th,
+    tbody td {
+      border-bottom: 1px solid $color_border;
+      font-family: $font_main;
+      font-weight: normal;
       font-size: $size_main_font;
+      line-height: 17px;
+      color: $color_link;
+      padding: 0 10px 10px;
+      vertical-align: inherit;
+    }
+    tbody th,
+    tbody td {
+      padding: 15px 10px;
+    }
+    thead th {
+      border-bottom: 2px solid $color_border;
+      font-family: $font_bold;
+      white-space: nowrap;
+    }
+    .price, .bonus, .balance, .withdrawal {
+      font-size: $size_title_font;
+      line-height: 24px;
+      font-family: $font_light;
+      text-align: center;
+    }
+    .price {
+      color: $color_selected;
+    }
+    .minus {
+      color: $color_error;
+    }
+    .bonus, .balance, .withdrawal {
+      color: $color_link;
+    }
+    .withdrawal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-left: 10px;
+        border: 1px solid $color_underline;
+        border-radius: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
+        color: $color_underline;
+        font-family: $font_main;
+        cursor: pointer;
+      }
     }
   }
 }

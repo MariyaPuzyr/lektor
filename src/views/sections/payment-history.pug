@@ -7,7 +7,7 @@
           tr
             th(scope='col') #
             th(scope='col') Действие
-            th(scope='col') Дата
+            th(scope='col').data Дата
             th(scope='col') Сумма
             th(scope='col') Бонусный счет
             th(scope='col') Остаток на счету
@@ -18,100 +18,110 @@
             th(scope='row') 1
             td Покупка тарифного плана
             td 10.05.2019
-            td.minus -20
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price.minus -20
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Тарифный план «30»
           tr
             th(scope='row') 2
             td Покупка тарифного плана
             td 10.05.2019
-            td.minus -20
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price.minus -20
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Тарифный план «30»
           tr
             th(scope='row') 3
             td Заработок от проведенной платной конференции
             td 10.05.2019
-            td 300
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price 300
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Конференция «Повесть временных лет»
           tr
             th(scope='row') 4
             td Заработок от проведенной платной конференции
             td 10.05.2019
-            td 300
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price 300
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Конференция «Повесть временных лет»
           tr
             th(scope='row') 5
             td Пополнение счета
             td 10.05.2019
-            td 300
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price 300
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Пополнение личного счета
           tr
             th(scope='row') 6
             td Покупка тарифного плана
             td 10.05.2019
-            td.minus -20
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price.minus -20
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Тарифный план «30»
           tr
             th(scope='row') 7
             td Покупка тарифного плана
             td 10.05.2019
-            td.minus -20
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price.minus -20
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Тарифный план «30»
           tr
             th(scope='row') 8
             td Заработок от проведенной платной конференции
             td 10.05.2019
-            td 300
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price 300
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Конференция «Повесть временных лет»
           tr
             th(scope='row') 9
             td Заработок от проведенной платной конференции
             td 10.05.2019
-            td 300
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price 300
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Конференция «Повесть временных лет»
           tr
             th(scope='row') 10
             td Пополнение счета
             td 10.05.2019
-            td 300
-            td 140
-            td 10000
-            td 6500
-              span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+            td.price 300
+            td.bonus 140
+            td.balance 10000
+            td
+              .withdrawal 6500
+                span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
             td Пополнение личного счета
     +pagination
