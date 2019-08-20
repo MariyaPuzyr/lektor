@@ -105,20 +105,116 @@
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="your-referrals" role="tabpanel" aria-labelledby="your-referrals-tab">
               <div class="row">
-                <div class="col-md-12">
-                  <ul class="article-list--pagination">
-                    <li><a class="page-link" href="#">
-                        <svg class="icon arrow-left">
-                          <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
-                        </svg></a></li>
-                    <li><a class="page-link" href="#">1</a></li>
-                    <li><a class="page-link active" href="#">2</a></li>
-                    <li><a class="page-link" href="#">3</a></li>
-                    <li><a class="page-link" href="#">
-                        <svg class="icon arrow-right">
-                          <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
-                        </svg></a></li>
-                  </ul>
+                <div class="col-md-6">
+                  <div class="referrals-link">
+                    <div class="referrals-link__title">Ваша реферальная ссылка:</div>
+                    <form action="#">
+                      <input type="text" readonly="readonly" value="http://lektor.org.ua/referal/418">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="your-tariff finance-tariff">
+                    <div class="your-tariff__top">
+                      <div class="your-tariff__title">Общий заработок</div>
+                    </div>
+                    <div class="your-tariff__item"><span>в реферальной системе</span>300<span>грн.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="referrals-filter">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="button-group" id="filters">
+                      <button class="button is-checked" data-filter="*">Все уровни</button>
+                      <button class="button" data-filter=".level-one">1 уровень</button>
+                      <button class="button" data-filter=".level-two">2 уровень</button>
+                      <button class="button" data-filter=".level-three">3 уровень</button>
+                      <button class="button" data-filter=".level-four">4 уровень</button>
+                      <button class="button" data-filter=".level-five">5 уровень</button>
+                      <button class="button" data-filter=".level-six">6 уровень</button>
+                    </div>
+                    <div class="grid">
+                      <div class="referrals-item level-six" data-category="level-six">
+                        <div class="referrals-item__info"><img src="/img/avatar.jpg" alt="">
+                          <div class="referrals-item__info--user"><a class="name" href="#">Василий Фамилиялектора</a><a class="mailto" href="mailto:antonio.tester17@gmail.com">antonio.tester17@gmail.com</a></div>
+                        </div>
+                        <div class="referrals-item__level-info">
+                          <div class="referrals-item__level-top"><span>6 уровень</span>
+                            <div class="referrals-item__level-events">150 событий посещено</div>
+                          </div>
+                          <div class="referrals-item__tariff">Тарифный план “Универсальный”</div>
+                        </div>
+                        <div class="referrals-item__income">10000 грн.<span>Заработок</span></div>
+                        <div class="referrals-item__income">100 чел.<span>Пригласил</span></div>
+                      </div>
+                      <div class="referrals-item level-one" data-category="level-one">
+                        <div class="referrals-item__info"><img src="/img/avatar.jpg" alt="">
+                          <div class="referrals-item__info--user"><a class="name" href="#">Василий Фамилиялектора</a><a class="mailto" href="mailto:antonio.tester17@gmail.com">antonio.tester17@gmail.com</a></div>
+                        </div>
+                        <div class="referrals-item__level-info">
+                          <div class="referrals-item__level-top no-visited"><span>0 уровень</span>
+                            <div class="referrals-item__level-events">0 событий посещено</div>
+                          </div>
+                          <div class="referrals-item__tariff">Тарифный план “30”</div>
+                        </div>
+                        <div class="referrals-item__income">0 грн.<span>Заработок</span></div>
+                        <div class="referrals-item__income">0 чел.<span>Пригласил</span></div>
+                      </div>
+                      <div class="referrals-item level-six" data-category="level-six">
+                        <div class="referrals-item__info"><img src="/img/avatar.jpg" alt="">
+                          <div class="referrals-item__info--user"><a class="name" href="#">Василий Фамилиялектора</a><a class="mailto" href="mailto:antonio.tester17@gmail.com">antonio.tester17@gmail.com</a></div>
+                        </div>
+                        <div class="referrals-item__level-info">
+                          <div class="referrals-item__level-top"><span>6 уровень</span>
+                            <div class="referrals-item__level-events">150 событий посещено</div>
+                          </div>
+                          <div class="referrals-item__tariff">Тарифный план “Универсальный”</div>
+                        </div>
+                        <div class="referrals-item__income">10000 грн.<span>Заработок</span></div>
+                        <div class="referrals-item__income">100 чел.<span>Пригласил</span></div>
+                      </div>
+                      <div class="referrals-item level-six" data-category="level-six">
+                        <div class="referrals-item__info"><img src="/img/avatar.jpg" alt="">
+                          <div class="referrals-item__info--user"><a class="name" href="#">Василий Фамилиялектора</a><a class="mailto" href="mailto:antonio.tester17@gmail.com">antonio.tester17@gmail.com</a></div>
+                        </div>
+                        <div class="referrals-item__level-info">
+                          <div class="referrals-item__level-top"><span>6 уровень</span>
+                            <div class="referrals-item__level-events">150 событий посещено</div>
+                          </div>
+                          <div class="referrals-item__tariff">Тарифный план “Универсальный”</div>
+                        </div>
+                        <div class="referrals-item__income">10000 грн.<span>Заработок</span></div>
+                        <div class="referrals-item__income">100 чел.<span>Пригласил</span></div>
+                      </div>
+                      <div class="referrals-item level-six" data-category="level-six">
+                        <div class="referrals-item__info"><img src="/img/avatar.jpg" alt="">
+                          <div class="referrals-item__info--user"><a class="name" href="#">Василий Фамилиялектора</a><a class="mailto" href="mailto:antonio.tester17@gmail.com">antonio.tester17@gmail.com</a></div>
+                        </div>
+                        <div class="referrals-item__level-info">
+                          <div class="referrals-item__level-top"><span>6 уровень</span>
+                            <div class="referrals-item__level-events">150 событий посещено</div>
+                          </div>
+                          <div class="referrals-item__tariff">Тарифный план “Универсальный”</div>
+                        </div>
+                        <div class="referrals-item__income">10000 грн.<span>Заработок</span></div>
+                        <div class="referrals-item__income">100 чел.<span>Пригласил</span></div>
+                      </div>
+                    </div>
+                    <ul class="article-list--pagination">
+                      <li><a class="page-link" href="#">
+                          <svg class="icon arrow-left">
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
+                          </svg></a></li>
+                      <li><a class="page-link" href="#">1</a></li>
+                      <li><a class="page-link active" href="#">2</a></li>
+                      <li><a class="page-link" href="#">3</a></li>
+                      <li><a class="page-link" href="#">
+                          <svg class="icon arrow-right">
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

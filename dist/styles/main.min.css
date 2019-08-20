@@ -12288,6 +12288,10 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
+.referrals-item .profile-user-edit__title {
+  margin-bottom: 30px;
+}
+
 h1,
 h2,
 h3,

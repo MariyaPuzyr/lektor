@@ -1,0 +1,89 @@
+.referrals-filter
+  .row
+    .col-md-12
+      #filters.button-group
+        button.button.is-checked(data-filter='*') Все уровни
+        button.button(data-filter='.level-one') 1 уровень
+        button.button(data-filter='.level-two') 2 уровень
+        button.button(data-filter='.level-three') 3 уровень
+        button.button(data-filter='.level-four') 4 уровень
+        button.button(data-filter='.level-five') 5 уровень
+        button.button(data-filter='.level-six') 6 уровень
+      .grid
+        .referrals-item.level-six(data-category='level-six')
+          .referrals-item__info
+            img(src='/img/avatar.jpg' alt='')
+            .referrals-item__info--user
+              a(href='#').name Василий Фамилиялектора
+              a(href='mailto:antonio.tester17@gmail.com').mailto antonio.tester17@gmail.com
+          .referrals-item__level-info
+            .referrals-item__level-top
+              span 6 уровень
+              .referrals-item__level-events 150 событий посещено
+            .referrals-item__tariff Тарифный план “Универсальный”
+          .referrals-item__income 10000 грн.
+            span Заработок
+          .referrals-item__income 100 чел.
+            span Пригласил
+        .referrals-item.level-one(data-category='level-one')
+          .referrals-item__info
+            img(src='/img/avatar.jpg' alt='')
+            .referrals-item__info--user
+              a(href='#').name Василий Фамилиялектора
+              a(href='mailto:antonio.tester17@gmail.com').mailto antonio.tester17@gmail.com
+          .referrals-item__level-info
+            .referrals-item__level-top.no-visited
+              span 0 уровень
+              .referrals-item__level-events 0 событий посещено
+            .referrals-item__tariff Тарифный план “30”
+          .referrals-item__income 0 грн.
+            span Заработок
+          .referrals-item__income 0 чел.
+            span Пригласил
+        .referrals-item.level-six(data-category='level-six')
+          .referrals-item__info
+            img(src='/img/avatar.jpg' alt='')
+            .referrals-item__info--user
+              a(href='#').name Василий Фамилиялектора
+              a(href='mailto:antonio.tester17@gmail.com').mailto antonio.tester17@gmail.com
+          .referrals-item__level-info
+            .referrals-item__level-top
+              span 6 уровень
+              .referrals-item__level-events 150 событий посещено
+            .referrals-item__tariff Тарифный план “Универсальный”
+          .referrals-item__income 10000 грн.
+            span Заработок
+          .referrals-item__income 100 чел.
+            span Пригласил
+        .referrals-item.level-six(data-category='level-six')
+          .referrals-item__info
+            img(src='/img/avatar.jpg' alt='')
+            .referrals-item__info--user
+              a(href='#').name Василий Фамилиялектора
+              a(href='mailto:antonio.tester17@gmail.com').mailto antonio.tester17@gmail.com
+          .referrals-item__level-info
+            .referrals-item__level-top
+              span 6 уровень
+              .referrals-item__level-events 150 событий посещено
+            .referrals-item__tariff Тарифный план “Универсальный”
+          .referrals-item__income 10000 грн.
+            span Заработок
+          .referrals-item__income 100 чел.
+            span Пригласил
+        .referrals-item.level-six(data-category='level-six')
+          .referrals-item__info
+            img(src='/img/avatar.jpg' alt='')
+            .referrals-item__info--user
+              a(href='#').name Василий Фамилиялектора
+              a(href='mailto:antonio.tester17@gmail.com').mailto antonio.tester17@gmail.com
+          .referrals-item__level-info
+            .referrals-item__level-top
+              span 6 уровень
+              .referrals-item__level-events 150 событий посещено
+            .referrals-item__tariff Тарифный план “Универсальный”
+          .referrals-item__income 10000 грн.
+            span Заработок
+          .referrals-item__income 100 чел.
+            span Пригласил
+
+      +pagination
