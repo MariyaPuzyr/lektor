@@ -1,7 +1,7 @@
 .referrals-filter
   .row
     .col-md-12
-      #filters.button-group
+      #filters.filter-group
         button.button.is-checked(data-filter='*') Все уровни
         button.button(data-filter='.level-one') 1 уровень
         button.button(data-filter='.level-two') 2 уровень
@@ -10,7 +10,7 @@
         button.button(data-filter='.level-five') 5 уровень
         button.button(data-filter='.level-six') 6 уровень
       .grid
-        .referrals-item.level-six(data-category='level-six')
+        .referrals-items.level-six(data-category='level-six')
           .referrals-item__info
             img(src='/img/avatar.jpg' alt='')
             .referrals-item__info--user
@@ -25,7 +25,7 @@
             span Заработок
           .referrals-item__income 100 чел.
             span Пригласил
-        .referrals-item.level-one(data-category='level-one')
+        .referrals-items.level-one(data-category='level-one')
           .referrals-item__info
             img(src='/img/avatar.jpg' alt='')
             .referrals-item__info--user
@@ -40,7 +40,7 @@
             span Заработок
           .referrals-item__income 0 чел.
             span Пригласил
-        .referrals-item.level-six(data-category='level-six')
+        .referrals-items.level-six(data-category='level-six')
           .referrals-item__info
             img(src='/img/avatar.jpg' alt='')
             .referrals-item__info--user
@@ -55,7 +55,7 @@
             span Заработок
           .referrals-item__income 100 чел.
             span Пригласил
-        .referrals-item.level-six(data-category='level-six')
+        .referrals-items.level-six(data-category='level-six')
           .referrals-item__info
             img(src='/img/avatar.jpg' alt='')
             .referrals-item__info--user
@@ -70,7 +70,7 @@
             span Заработок
           .referrals-item__income 100 чел.
             span Пригласил
-        .referrals-item.level-six(data-category='level-six')
+        .referrals-items.level-six(data-category='level-six')
           .referrals-item__info
             img(src='/img/avatar.jpg' alt='')
             .referrals-item__info--user

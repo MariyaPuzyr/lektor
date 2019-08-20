@@ -207,19 +207,18 @@ $(document).ready(function () {
 
   /* filter referrals */
   var $grid = $('.grid').isotope({
-    itemSelector: '.referrals-item',
+    itemSelector: '.referrals-items',
     layoutMode: 'fitRows'
   });
 
 // bind filter button click
   $('#filters').on( 'click', 'button', function() {
     var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
     $grid.isotope({ filter: filterValue });
   });
 
 // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
+  $('.filter-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
