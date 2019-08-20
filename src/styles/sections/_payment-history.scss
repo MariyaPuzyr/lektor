@@ -1,0 +1,21 @@
+.payment-history {
+  font-family: $font_main;
+  &__title {
+    font-size: $size_title_font;
+    line-height: 24px;
+    color: $color_link;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .table {
+    th, td {
+      padding: 0;
+      border-top: none;
+    }
+    thead th {
+      border-bottom: none;
+      font-family: $font_bold;
+      font-size: $size_main_font;
+    }
+  }
+}

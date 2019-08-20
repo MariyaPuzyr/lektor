@@ -12182,6 +12182,30 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
+.payment-history {
+  font-family: "ProximaNova-Regular";
+}
+
+.payment-history__title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #0C2947;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.payment-history .table th,
+.payment-history .table td {
+  padding: 0;
+  border-top: none;
+}
+
+.payment-history .table thead th {
+  border-bottom: none;
+  font-family: "ProximaNova-Bold";
+  font-size: 14px;
+}
+
 h1,
 h2,
 h3,
