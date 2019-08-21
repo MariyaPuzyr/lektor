@@ -12323,7 +12323,6 @@ a.text-dark:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
 }
 
 .referrals-item__info--user {
@@ -12342,6 +12341,17 @@ a.text-dark:focus {
   color: #2A58AD;
 }
 
+.referrals-item__info--user .name {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.referrals-item__info--user .name:hover {
+  text-decoration: none;
+  color: #67B930;
+}
+
 .referrals-item__info--user .mailto {
   font-size: 16px;
   line-height: 19px;
@@ -12355,6 +12365,78 @@ a.text-dark:focus {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+}
+
+.referrals-item__level-events {
+  font-size: 16px;
+  line-height: 19px;
+  color: #23AAEA;
+  border-bottom: 1px solid;
+}
+
+.referrals-item__level-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.referrals-item__level-top span {
+  padding: 2px 10px;
+  background: #23AAEA;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "ProximaNova-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 15px;
+}
+
+.referrals-item__level-top.no-visited span {
+  background: #bac1cc;
+}
+
+.referrals-item__level-top.no-visited .referrals-item__level-events {
+  color: #6F7B8E;
+  border-bottom: none;
+}
+
+.referrals-item__tariff {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 19px;
+  color: #0C2947;
+}
+
+.referrals-item__income {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0C2947;
+  font-family: "ProximaNova-Light";
+}
+
+.referrals-item__income span {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .referrals-link {
@@ -12430,6 +12512,7 @@ a.text-dark:focus {
   -o-transition: .3s;
   transition: .3s;
   background: #ffffff;
+  cursor: pointer;
 }
 
 .referrals-filter .filter-group .button.is-checked {
@@ -17119,6 +17202,19 @@ body::before {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .referrals-filter .filter-group {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .referrals-filter .filter-group .button {
+    margin-bottom: 5px;
   }
 }
 
