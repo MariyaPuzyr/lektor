@@ -12525,6 +12525,10 @@ a.text-dark:focus {
   outline: none;
 }
 
+.referrals-filter .grid {
+  padding: 0 15px;
+}
+
 h1,
 h2,
 h3,
@@ -17215,6 +17219,12 @@ body::before {
 
   .referrals-filter .filter-group .button {
     margin-bottom: 5px;
+  }
+
+  .referrals-item__info,
+  .referrals-item__level-info,
+  .referrals-item__income {
+    padding: 0;
   }
 }
 

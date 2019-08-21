@@ -160,14 +160,24 @@
         }
       }
     }
+    .grid {
+      padding: 0 15px;
+    }
   }
 }
 
 @include adapt_to('large-phone') {
-  .referrals-filter .filter-group {
-    justify-content: center;
-    .button {
-      margin-bottom: 5px;
+  .referrals {
+    &-filter .filter-group {
+      justify-content: center;
+      .button {
+        margin-bottom: 5px;
+      }
+    }
+    &-item {
+      &__info, &__level-info, &__income {
+        padding: 0;
+      }
     }
   }
 }
