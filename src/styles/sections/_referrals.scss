@@ -12,6 +12,34 @@
       display: flex;
       align-items: center;
     }
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      &--user {
+        display: flex;
+        flex-direction: column;
+        font-size: $size_title_font;
+        line-height: 24px;
+        font-family: $font_semibold;
+        color: $color_darkblue;
+        .mailto {
+          font-size: $size_link_font;
+          line-height: 19px;
+          font-family: $font_main;
+          color: $color_link;
+        }
+      }
+      img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+    }
+    &__level-info {
+      
+    }
   }
   &-link {
     background: $color_darkblue;
