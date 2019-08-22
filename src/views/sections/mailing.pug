@@ -1,29 +1,27 @@
 .mailing
-  form(action='#').mailing-refferals
-    label Реферальная ссылка в письме:
-    input(type='text' placeholder='Текст реферальной ссылки').registration-form-control.mr-3
+  form(action='#').mailing-refferals.flex-wrap.flex-md-nowrap
+    label.mb-2.mb-md-0.col-auto.px-0 Реферальная ссылка в письме:
+    input(type='text' placeholder='Текст реферальной ссылки').registration-form-control.mr-0.mr-md-3.mb-2.mb-md-0
     button(type='submit').default-blue Сохранить
   form(action='#').mailing-letters
-    .mailing-letters__top
-      h4 Рассылка писем
-      .radio
-        input#all-level(type="radio" name="gender" value="all-level" checked="")
+    .mailing-letters__top.flex-wrap.flex-md-nowrap
+      h4.mb-2.mb-md-0 Рассылка писем
+      .mailing-letters__check
+        input#all-level(type="radio" name="mailing" value="all-level" checked="")
         label(for="all-level") По всем уровням
-        input#one-level(type="radio" name="gender" value="one-level")
+        input#one-level(type="radio" name="mailing" value="one-level")
         label(for="one-level") Только 1 уровню
-    .registration-form-row
-      .registration-form--col
-        .registration-form__group
-          .placeholder Тема письма
-            span *
-          input.registration-form-control(type="text")
-        .registration-form__group
-          .placeholder Шаблон письма
-            span *
-          textarea.registration-form-control(rows="5")
-        .registration-form__group
-          span {link} - реферальная ссылка
-          .note *Письма без темы или шаблона включающего реферальную ссылку отправлены не будут
+    .registration-form__group
+      .placeholder Тема письма
+        span *
+      input.registration-form-control(type="text")
+    .registration-form__group.mb-0
+      .placeholder Шаблон письма
+        span *
+      textarea.registration-form-control(rows="5")
+    .registration-form__group.d-flex.flex-column
+      .referral-link {link} - реферальная ссылка
+      .note *Письма без темы или шаблона включающего реферальную ссылку отправлены не будут
     .row
       .col-md-3
         button(type='submit').default-green.w-100 Сохранить

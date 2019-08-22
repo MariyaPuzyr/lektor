@@ -12531,6 +12531,9 @@ a.text-dark:focus {
 
 .mailing {
   margin-bottom: 70px;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "ProximaNova-Regular";
 }
 
 .mailing-refferals {
@@ -12548,54 +12551,85 @@ a.text-dark:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .mailing-refferals label {
-  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
   font-family: "ProximaNova-Light";
   font-size: 20px;
   line-height: 24px;
   color: #0C2947;
-  margin-right: 20px;
-  white-space: nowrap;
 }
 
-.mailing-letters input[type=radio] {
+.mailing-letters__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #0C2947;
+}
+
+.mailing-letters__top h4 {
+  margin: 0 20px 0 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mailing-letters__check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mailing-letters__check input[type=radio] {
   display: none;
 }
 
-.mailing-letters label {
+.mailing-letters__check label {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 25px;
-  margin-right: 15px;
-  font-size: 13px;
+  padding: 2px 15px;
+  border: 1px solid #23AAEA;
+  color: #0C2947;
+  -webkit-border-radius: 0 19px 19px 0;
+  border-radius: 0 19px 19px 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  margin: 0;
 }
 
-.mailing-letters label:before {
-  content: "";
-  display: inline-block;
-  width: 17px;
-  height: 16px;
-  margin-right: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: #999;
-  -webkit-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+.mailing-letters__check label:nth-child(2) {
+  -webkit-border-radius: 19px 0 0 19px;
+  border-radius: 19px 0 0 19px;
 }
 
-.mailing-letters input[type=radio]:checked + label:before {
-  content: "\2022";
-  color: #f3f3f3;
-  font-size: 40px;
-  text-align: center;
-  vertical-align: top;
-  line-height: 23px;
+.mailing-letters__check input[type=radio]:checked + label {
+  color: #ffffff;
+  background: #23AAEA;
+}
+
+.mailing-letters .referral-link {
+  color: #6F7B8E;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.mailing-letters .note {
+  color: #23AAEA;
 }
 
 h1,

@@ -220,35 +220,32 @@
             </div>
             <div class="tab-pane fade" id="mailing" role="tabpanel" aria-labelledby="mailing-tab">
               <div class="mailing">
-                <form class="mailing-refferals" action="#">
-                  <label>Реферальная ссылка в письме:</label>
-                  <input class="registration-form-control mr-3" type="text" placeholder="Текст реферальной ссылки">
+                <form class="mailing-refferals flex-wrap flex-md-nowrap" action="#">
+                  <label class="mb-2 mb-md-0 col-auto px-0">Реферальная ссылка в письме:</label>
+                  <input class="registration-form-control mr-0 mr-md-3 mb-2 mb-md-0" type="text" placeholder="Текст реферальной ссылки">
                   <button class="default-blue" type="submit">Сохранить</button>
                 </form>
                 <form class="mailing-letters" action="#">
-                  <div class="mailing-letters__top">
-                    <h4>Рассылка писем</h4>
-                    <div class="radio">
-                      <input id="all-level" type="radio" name="gender" value="all-level" checked="">
+                  <div class="mailing-letters__top flex-wrap flex-md-nowrap">
+                    <h4 class="mb-2 mb-md-0">Рассылка писем</h4>
+                    <div class="mailing-letters__check">
+                      <input id="all-level" type="radio" name="mailing" value="all-level" checked="">
                       <label for="all-level">По всем уровням</label>
-                      <input id="one-level" type="radio" name="gender" value="one-level">
+                      <input id="one-level" type="radio" name="mailing" value="one-level">
                       <label for="one-level">Только 1 уровню</label>
                     </div>
                   </div>
-                  <div class="registration-form-row">
-                    <div class="registration-form--col">
-                      <div class="registration-form__group">
-                        <div class="placeholder">Тема письма<span>*</span></div>
-                        <input class="registration-form-control" type="text">
-                      </div>
-                      <div class="registration-form__group">
-                        <div class="placeholder">Шаблон письма<span>*</span></div>
-                        <textarea class="registration-form-control" rows="5"></textarea>
-                      </div>
-                      <div class="registration-form__group"><span>{link} - реферальная ссылка</span>
-                        <div class="note">*Письма без темы или шаблона включающего реферальную ссылку отправлены не будут</div>
-                      </div>
-                    </div>
+                  <div class="registration-form__group">
+                    <div class="placeholder">Тема письма<span>*</span></div>
+                    <input class="registration-form-control" type="text">
+                  </div>
+                  <div class="registration-form__group mb-0">
+                    <div class="placeholder">Шаблон письма<span>*</span></div>
+                    <textarea class="registration-form-control" rows="5"></textarea>
+                  </div>
+                  <div class="registration-form__group d-flex flex-column">
+                    <div class="referral-link">{link} - реферальная ссылка</div>
+                    <div class="note">*Письма без темы или шаблона включающего реферальную ссылку отправлены не будут</div>
                   </div>
                   <div class="row">
                     <div class="col-md-3">
