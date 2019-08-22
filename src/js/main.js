@@ -226,6 +226,16 @@ $(document).ready(function () {
     });
   });
 
-
   /* filter referrals end */
+  if ($(".write-message__link").length > 0) {
+    $('.write-message__link').click(function () {
+      $('.write-message').find('.write-message__form').addClass('active');
+      $(this).hide();
+    });
+
+    $('.reset-btn').click(function () {
+      $('.write-message').find('.write-message__form').removeClass('active');
+      $('.write-message__link').show();
+    });
+  }
 });

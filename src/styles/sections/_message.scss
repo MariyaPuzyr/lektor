@@ -1,0 +1,12 @@
+.write-message {
+  &__link {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &__form {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}

@@ -7709,6 +7709,34 @@ a.text-dark:focus {
   text-decoration: none;
 }
 
+.reset-btn {
+  width: 100%;
+  background: #E7EBEE;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  color: #6F7B8E;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "ProximaNova-Bold";
+  font-size: 16px;
+  line-height: 19px;
+  padding: 9px 15px;
+  border: 1px solid #E7EBEE;
+}
+
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url("../fonts/ProximaNova-Regular.eot");
@@ -12611,6 +12639,19 @@ a.text-dark:focus {
 
 .mailing-letters .note {
   color: #23AAEA;
+}
+
+.write-message__link {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.write-message__form {
+  display: none;
+}
+
+.write-message__form.active {
+  display: block;
 }
 
 h1,
