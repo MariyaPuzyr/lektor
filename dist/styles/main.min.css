@@ -7610,48 +7610,11 @@ a.text-dark:focus {
   }
 }
 
-.default-blue {
-  color: #ffffff;
-  padding: 9px 15px;
-  min-width: 160px;
-  background: #23AAEA;
-  border: 1px solid #23AAEA;
-  -webkit-border-radius: 24px;
-  border-radius: 24px;
-  font-family: "ProximaNova-Bold";
-  font-size: 16px;
-  line-height: 19px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  position: relative;
-  z-index: 1;
-}
-
-.default-blue:hover {
-  background: #ffffff;
-  color: #23AAEA;
-  text-decoration: none;
-}
-
+.default-blue,
 .default-green {
   color: #ffffff;
   padding: 9px 15px;
   min-width: 160px;
-  background: #67B930;
-  border: 1px solid #67B930;
   -webkit-border-radius: 24px;
   border-radius: 24px;
   font-family: "ProximaNova-Bold";
@@ -7676,10 +7639,36 @@ a.text-dark:focus {
   z-index: 1;
 }
 
+.default-blue:hover,
 .default-green:hover {
   background: #ffffff;
-  color: #67B930;
   text-decoration: none;
+}
+
+.default-green {
+  background: #67B930;
+  border: 1px solid #67B930;
+}
+
+.default-green:hover {
+  color: #67B930;
+}
+
+.default-blue {
+  background: #23AAEA;
+  border: 1px solid #23AAEA;
+}
+
+.default-blue:hover {
+  color: #23AAEA;
+}
+
+.green-border {
+  border: 1px solid #67B930;
+}
+
+.blue-border {
+  border: 1px solid #23AAEA;
 }
 
 .border-link {
@@ -7718,14 +7707,6 @@ a.text-dark:focus {
   background: #67B930;
   color: #ffffff;
   text-decoration: none;
-}
-
-.green-border {
-  border: 1px solid #67B930;
-}
-
-.blue-border {
-  border: 1px solid #23AAEA;
 }
 
 @font-face {

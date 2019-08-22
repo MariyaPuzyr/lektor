@@ -1,0 +1,23 @@
+.write-message
+  .row
+    .col-md-3
+      a(href='#').default-green.w-100.write-message__link Написать сообщение
+  .write-message__form
+    form(action='#').was-validated
+      .registration-form-row
+        .registration-form--col
+          .registration-form__group
+            .placeholder Фамилия
+              span *
+            input.registration-form-control(type='text')
+      .registration-form-row
+        .registration-form--col
+          .registration-form__group
+            .placeholder О себе
+              span *
+            textarea.registration-form-control(rows='5')
+      .row
+        .col-md-3
+          button(type='submit').default-green.w-100 Отправить сообщение
+        .col-md-2
+          button(type='reset').w-100 Отмена

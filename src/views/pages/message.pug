@@ -1,0 +1,15 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor message"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/profile-user-info
+    .container
+      .profile-user-edit
+        h2.profile-user-edit__title Сообщения
+      include ../sections/write-message
+      include ../sections/message-content
+    include ../sections/banner-slider
+  include ../includes/footer
