@@ -237,5 +237,10 @@ $(document).ready(function () {
       $('.write-message').find('.write-message__form').removeClass('active');
       $('.write-message__link').show();
     });
+
+    $('.message-item__content').click(function () {
+      $('.message-item').removeClass('open');
+      $(this).parents('.message-item').toggleClass('open');
+    });
   }
 });

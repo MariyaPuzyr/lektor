@@ -35,7 +35,36 @@
       align-items: center;
     }
     &__message-content {
-      
+      padding: 0 30px 20px;
+      display: none;
+      &--title {
+        font-size: $size_link_font;
+        line-height: 19px;
+        font-family: $font_bold;
+        margin-bottom: 5px;
+        color: $color_darkblue;
+      }
+      p {
+        font-size: $size_link_font;
+        line-height: 24px;
+        font-family: $font_main;
+        color: $color_link;
+        margin-bottom: 20px;
+      }
+      &--item{
+        display: flex;
+        align-items: flex-start;
+        .icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+    &.open {
+      .message-item__message-content {
+        display: block;
+      }
     }
   }
   &-readed {
@@ -53,6 +82,10 @@
     &.no-answer {
       color: $color_white;
       background: $color_darkblue;
+    }
+    &.new-message {
+      color: $color_white;
+      background: $color_underline;
     }
   }
   &-date {

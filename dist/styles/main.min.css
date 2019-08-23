@@ -12694,6 +12694,48 @@ a.text-dark:focus {
   align-items: center;
 }
 
+.message-item__message-content {
+  padding: 0 30px 20px;
+  display: none;
+}
+
+.message-item__message-content--title {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 5px;
+  color: #2A58AD;
+}
+
+.message-item__message-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "ProximaNova-Regular";
+  color: #0C2947;
+  margin-bottom: 20px;
+}
+
+.message-item__message-content--item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.message-item__message-content--item .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.message-item.open .message-item__message-content {
+  display: block;
+}
+
 .message-readed {
   background: #E7EBEE;
   -webkit-border-radius: 4px;
@@ -12712,6 +12754,11 @@ a.text-dark:focus {
 .message-readed.no-answer {
   color: #ffffff;
   background: #2A58AD;
+}
+
+.message-readed.new-message {
+  color: #ffffff;
+  background: #23AAEA;
 }
 
 .message-date {
