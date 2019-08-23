@@ -1,34 +1,46 @@
 .message-content
   .message-item
-    +sprite('icon', 'icon-message')
-    .message-readed.no-answer нет ответа
-    .message-date 31.05.2019, 15:00
-    .message-title Тема сообщения от пользователя к администрации ...
-    .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
-    .message-delete
-      +sprite('icon-delete', 'icon-delete')
+    .message-item__content
+      +sprite('icon', 'icon-message')
+      .message-readed.no-answer нет ответа
+      .message-date 31.05.2019, 15:00
+      .message-title Тема сообщения от пользователя к администрации ...
+      .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
+      .message-delete
+        +sprite('icon-delete', 'icon-delete')
+    .message-item__message-content
+      .message-item__message-content--title Тема сообщения от пользователя к администрации полная может быть гораздо длинее, так как не ограничена.
+      p От новостей в таком формате как есть рекомендую отказаться, так как новости привлекательны своей актуальностью. А полезные статьи так и можно разместить в форме списка статей ,если планируется дальнейшее их пополнение. Если пополнения не будет то можно использовать эти тексты для описания преимуществ сервиса.
+      .message-item__message-content--item
+        +sprite('icon', 'icon-answer')
+        .message-item__message-content--admin-response
+          .message-item__message-content--title Ответ администрции
+          p От новостей в таком формате как есть рекомендую отказаться, так как новости привлекательны своей актуальностью. А полезные статьи так и можно разместить в форме списка статей ,если планируется дальнейшее их пополнение. Если пополнения не будет то можно использовать эти тексты для описания преимуществ сервиса.
   .message-item
-    +sprite('icon', 'icon-message')
-    .message-readed 1 прочитано
-    .message-date 31.05.2019, 15:00
-    .message-title Тема сообщения от пользователя к администрации ...
-    .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
-    .message-delete
-      +sprite('icon-delete', 'icon-delete')
+    .message-item__content
+      +sprite('icon', 'icon-message')
+      .message-readed 1 прочитано
+      .message-date 31.05.2019, 15:00
+      .message-title Тема сообщения от пользователя к администрации ...
+      .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
+      .message-delete
+        +sprite('icon-delete', 'icon-delete')
   .message-item
-    +sprite('icon', 'icon-message')
-    .message-readed 3 прочитано
-    .message-date 31.05.2019, 15:00
-    .message-title Тема сообщения от пользователя к администрации ...
-    .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
-    .message-delete
-      +sprite('icon-delete', 'icon-delete')
+    .message-item__content
+      +sprite('icon', 'icon-message')
+      .message-readed 3 прочитано
+      .message-date 31.05.2019, 15:00
+      .message-title Тема сообщения от пользователя к администрации ...
+      .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
+      .message-delete
+        +sprite('icon-delete', 'icon-delete')
   .message-item
-    +sprite('icon', 'icon-message')
-    .message-readed 10 прочитано
-    .message-date 31.05.2019, 15:00
-    .message-title Тема сообщения от пользователя к администрации ...
-    .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
-    .message-delete
-      +sprite('icon-delete', 'icon-delete')
+    .message-item__content
+      +sprite('icon', 'icon-message')
+      .message-readed 10 прочитано
+      .message-date 31.05.2019, 15:00
+      .message-title Тема сообщения от пользователя к администрации ...
+      .message-description Коротко начало текста вашего сообщения - о чем вы хотите спросить или сообщить ...
+      .message-delete
+        +sprite('icon-delete', 'icon-delete')
   +pagination
