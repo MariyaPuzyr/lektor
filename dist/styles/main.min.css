@@ -12648,6 +12648,15 @@ a.text-dark:focus {
 
 .write-message__form {
   display: none;
+  margin-bottom: 40px;
+}
+
+.write-message__form--title {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "ProximaNova-Regular";
+  color: #0C2947;
+  margin-bottom: 15px;
 }
 
 .write-message__form.active {
@@ -12736,6 +12745,11 @@ a.text-dark:focus {
   display: block;
 }
 
+.message-item.open .message-title,
+.message-item.open .message-description {
+  display: none;
+}
+
 .message-readed {
   background: #E7EBEE;
   -webkit-border-radius: 4px;
@@ -12793,6 +12807,10 @@ a.text-dark:focus {
   color: #6F7B8E;
   min-width: 330px;
   margin-right: 10px;
+}
+
+.message-delete {
+  margin: auto 0 auto auto;
 }
 
 h1,

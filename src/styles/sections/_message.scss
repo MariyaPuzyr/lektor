@@ -5,6 +5,14 @@
   }
   &__form {
     display: none;
+    margin-bottom: 40px;
+    &--title {
+      font-size: $size_title_font;
+      line-height: 24px;
+      font-family: $font_main;
+      color: $color_link;
+      margin-bottom: 15px;
+    }
     &.active {
       display: block;
     }
@@ -51,7 +59,7 @@
         color: $color_link;
         margin-bottom: 20px;
       }
-      &--item{
+      &--item {
         display: flex;
         align-items: flex-start;
         .icon {
@@ -64,6 +72,9 @@
     &.open {
       .message-item__message-content {
         display: block;
+      }
+      .message-title, .message-description {
+        display: none;
       }
     }
   }
@@ -112,5 +123,8 @@
     color: $color_description;
     min-width: 330px;
     margin-right: 10px;
+  }
+  &-delete {
+    margin: auto 0 auto auto;
   }
 }

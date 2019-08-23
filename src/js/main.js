@@ -240,7 +240,7 @@ $(document).ready(function () {
 
     $('.message-item__content').click(function () {
       $('.message-item').removeClass('open');
-      $(this).parents('.message-item').toggleClass('open');
+      $(this).parents('.message-item').addClass('open');
     });
   }
 });

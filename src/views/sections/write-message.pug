@@ -4,6 +4,7 @@
       .default-green.w-100.write-message__link Написать сообщение
   .write-message__form
     form(action='#').was-validated
+      .write-message__form--title Ваше сообжение администраци:
       .registration-form__group
         .placeholder Фамилия
           span *
@@ -14,6 +15,6 @@
         textarea.registration-form-control(rows='5')
       .row
         .col-md-3
-          button(type='submit').default-green.w-100 Отправить сообщение
+          button(type='submit').default-green.w-100.send-btn Отправить сообщение
         .col-md-2
           button(type='reset').reset-btn.w-100 Отмена
