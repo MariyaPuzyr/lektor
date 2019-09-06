@@ -17,6 +17,11 @@
       display: block;
     }
   }
+  .success-info {
+    display: inline-flex;
+    align-items: center;
+    color: $color_white;
+  }
 }
 
 .message {

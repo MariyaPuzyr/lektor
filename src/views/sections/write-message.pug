@@ -2,6 +2,10 @@
   .row
     .col-md-3
       .default-green.w-100.write-message__link Написать сообщение
+    .col-md-12
+      .success-info
+        +sprite('icon','icon-info')
+        | Ваше сообщение успешно отправлено. В ближайшее время вы получите ответ администратора по вашему вопросу
   .write-message__form
     form(action='#').was-validated
       .write-message__form--title Ваше сообжение администраци:

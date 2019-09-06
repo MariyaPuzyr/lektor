@@ -12663,6 +12663,18 @@ a.text-dark:focus {
   display: block;
 }
 
+.write-message .success-info {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
 .message-item {
   margin-bottom: 10px;
   border: 1px solid #C8D0D9;
