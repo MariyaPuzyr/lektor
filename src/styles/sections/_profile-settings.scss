@@ -207,10 +207,6 @@
         &__group {
           flex-direction: column;
           overflow: initial;
-          .invalid-feedback {
-            position: absolute;
-            bottom: -20px;
-          }
           .count-value {
             font-size: $size_main_font;
             line-height: 17px;

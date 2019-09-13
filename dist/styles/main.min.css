@@ -10172,11 +10172,6 @@ a.text-dark:focus {
   overflow: initial;
 }
 
-.profile-user-edit__form .registration-form__group .invalid-feedback {
-  position: absolute;
-  bottom: -20px;
-}
-
 .profile-user-edit__form .registration-form__group .count-value {
   font-size: 14px;
   line-height: 17px;
