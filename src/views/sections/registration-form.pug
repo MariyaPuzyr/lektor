@@ -28,6 +28,8 @@
           .placeholder Введите пароль
             span *
           input.registration-form-control(type='text')
+          .invalid-feedback(style='display: block')
+            strong The password confirmation does not match.
         .registration-form__group.registration-form__ico
           .input-group-prepend
             .input-group-text

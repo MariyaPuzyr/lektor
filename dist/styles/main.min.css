@@ -9651,7 +9651,11 @@ a.text-dark:focus {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  overflow: hidden;
+}
+
+.registration-form__group .invalid-feedback {
+  position: absolute;
+  bottom: -20px;
 }
 
 .registration-form__group .placeholder {
