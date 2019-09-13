@@ -167,6 +167,12 @@ $(document).ready(function () {
     $(".placeholder").click(function () {
       $(this).next().focus();
     });
+
+    $('.registration-form-control').each(function (i, input) {
+      if(!input.value.length) return;
+      $(input).prev('.placeholder').hide()
+    })
+
   }
   /* registration form end*/
 
