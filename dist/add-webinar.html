@@ -97,210 +97,106 @@
           <h2 class="profile-user-edit__title">Добавить конференцию<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></h2>
         </div>
       </div>
-      <div class="personal-tariff-info">
+      <div class="profile-user-edit">
         <div class="container">
-          <div class="row">
-            <div class="col-md-9 mb-4 mb-md-0">
-              <div class="your-tariff">
-                <div class="your-tariff__top">
-                  <div class="your-tariff__title">Ваш тариф</div>
-                  <div class="dropdown your-tariff__dropdown"><a class="dropdown-toggle" id="tariff-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Универсал</a>
-                    <div class="dropdown-menu" aria-labelledby="tariff-menu"><a class="dropdown-item" href="#">Универсал</a><a class="dropdown-item" href="#">Универсал</a><a class="dropdown-item" href="#">Универсал</a></div>
-                  </div>
-                </div>
-                <div class="your-tariff__info">
-                  <div class="your-tariff__info--full-info">
-                    <div class="icon"></div><span>слушателей</span>
-                  </div>
-                  <div class="your-tariff__info--full-info">Стоимость 400 $/месяц</div>
-                  <div class="your-tariff__info--full-info">Будет списано 4,44 $/сутки</div>
-                </div>
-                <div class="your-tariff__bottom"><a class="default-blue save-tariff--link" href="#">Сохранить тариф</a><span>Перед началом конференции выберите подходящий тарифный план</span></div>
-              </div>
-            </div>
-            <div class="col-md-3"><a class="add-event" href="add-webinar.html">
-                <div class="add-event--ico-item">
-                  <svg class="add-event--ico">
-                    <use xlink:href="./img/sprites/sprite.svg#icon-add"></use>
-                  </svg>
-                </div>
-                <div class="add-event__title">Добавить мероприятие</div></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="personal-upcoming-events coming-events-soon">
-        <div class="container">
-          <h3 class="personal-upcoming-events__title">Расписание<span data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span></h3>
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
+          <div class="profile-user-edit__form">
+            <form class="was-validated" action="#">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="coming-events-soon__img-info"><a href="#"><img class="img-fluid" src="./img/event-1.jpg"></a>
-                    <div class="time-to-start today">Осталось 15 минут</div>
-                    <div class="dropdown edit-dtopdown"><a class="dropdown-toggle" id="tariff-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-menu-trening"></use>
-                        </svg></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tariff-menu"><a class="dropdown-item" href="#">
-                          <svg class="icon icon-edit">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-edit"></use>
-                          </svg>Редактировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-copy">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-copy"></use>
-                          </svg>Копировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-delete">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-delete"></use>
-                          </svg>Удалить</a></div>
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="registration-form__group">
+                        <div class="placeholder">Название конференции<span>*</span></div>
+                        <input class="registration-form-control" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="registration-form__group mb-0">
+                        <textarea class="registration-form-control" rows="5">Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени. Вебинар - это модно, современно, доступно, просто, удобно.</textarea>
+                        <div class="count-value">Введённых символов<span>233</span></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="coming-events-soon__info"><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
-                    <div class="personal-upcoming-events__lecture-participants"><span class="signed-up">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
-                        </svg>120 записались</span><span>
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user-confirmed"></use>
-                        </svg>120 подтвердили</span></div>
-                    <div class="row">
-                      <div class="col-md-2"><a class="default-blue" href="#">Перейти</a></div>
-                    </div>
-                  </div>
+                <div class="col-md-4">
+                  <label class="registration-form__checkbox mt-0 mb-2">
+                    <input type="checkbox"><span>Материал доступен для скачивания слушателям</span>
+                  </label>
+                  <label class="registration-form__checkbox mt-0 mb-2">
+                    <input type="checkbox"><span>Скрытая конференция</span>
+                  </label>
+                  <label class="registration-form__checkbox mt-0 mb-2">
+                    <input type="checkbox"><span>Отображать в архиве</span>
+                  </label>
+                  <label class="registration-form__checkbox mt-0 mb-0">
+                    <input type="checkbox"><span>Автоматическая трансляция</span>
+                  </label>
                 </div>
               </div>
-            </div>
-            <div class="col-md-12 col-lg-6">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="coming-events-soon__img-info"><a href="#"><img class="img-fluid" src="./img/event-1.jpg"></a>
-                    <div class="time-to-start">31 ноября 2019, 15:00</div>
-                    <div class="dropdown edit-dtopdown"><a class="dropdown-toggle" id="tariff-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-menu-trening"></use>
-                        </svg></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tariff-menu"><a class="dropdown-item" href="#">
-                          <svg class="icon icon-edit">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-edit"></use>
-                          </svg>Редактировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-copy">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-copy"></use>
-                          </svg>Копировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-delete">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-delete"></use>
-                          </svg>Удалить</a></div>
+                <div class="col-md-4">
+                  <h4>Дата и  время начала конференции</h4>
+                  <label class="registration-form__checkbox mt-0">
+                    <input type="checkbox"><span>Повторяющееся событие</span>
+                  </label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="archive-item add-webinar__add-date">
+                        <div class="archive-item__dropdown">
+                          <svg class="icon">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-date-16"></use>
+                          </svg><span>Дата *</span>
+                        </div>
+                        <div class="dropdown-menu">
+                          <div class="training-list__calendar">
+                            <div class="controls"><a class="pull-left calendar-control" data-go="prev"></a>
+                              <h4><span data-head-month=""></span><span data-head-year=""></span></h4><a class="pull-right calendar-control" data-go="next"></a>
+                            </div>
+                            <div class="day-headers">
+                              <div class="day header">Пн</div>
+                              <div class="day header">Вт</div>
+                              <div class="day header">Ср</div>
+                              <div class="day header">Чт</div>
+                              <div class="day header">Пт</div>
+                              <div class="day header day-off">Сб</div>
+                              <div class="day header day-off">Вс</div>
+                            </div>
+                            <div class="days" data-group="days"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="archive-item">
+                        <div class="archive-item__dropdown clockpicker" data-donetext="Done">
+                          <svg class="icon">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-timer"></use>
+                          </svg>
+                          <input class="form-control" type="text" value="Время">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="coming-events-soon__info"><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
-                    <div class="personal-upcoming-events__lecture-participants"><span class="signed-up">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
-                        </svg>120 записались</span><span>
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user-confirmed"></use>
-                        </svg>120 подтвердили</span></div>
-                    <div class="row">
-                      <div class="col-md-2"><a class="default-blue" href="#">Перейти</a></div>
-                    </div>
+                <div class="col-md-4">
+                  <h4>Стоимость (грн.)</h4>
+                  <div class="registration-form__group">
+                    <input class="registration-form-control" type="text" placeholder="Стоимость конференции">
                   </div>
+                  <div class="registration-form__group">
+                    <input class="registration-form-control" type="text" placeholder="За скачивание архива медиаматериала">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h4>Превью</h4>
                 </div>
               </div>
-            </div>
-            <div class="col-md-12 col-lg-6">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="coming-events-soon__img-info"><a href="#"><img class="img-fluid" src="./img/event-1.jpg"></a>
-                    <div class="time-to-start">31 ноября 2019, 15:00</div>
-                    <div class="dropdown edit-dtopdown"><a class="dropdown-toggle" id="tariff-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-menu-trening"></use>
-                        </svg></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tariff-menu"><a class="dropdown-item" href="#">
-                          <svg class="icon icon-edit">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-edit"></use>
-                          </svg>Редактировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-copy">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-copy"></use>
-                          </svg>Копировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-delete">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-delete"></use>
-                          </svg>Удалить</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="coming-events-soon__info"><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
-                    <div class="personal-upcoming-events__lecture-participants"><span class="signed-up">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
-                        </svg>120 записались</span><span>
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user-confirmed"></use>
-                        </svg>120 подтвердили</span></div>
-                    <div class="row">
-                      <div class="col-md-2"><a class="default-blue" href="#">Перейти</a></div>
-                    </div>
-                  </div>
+                <div class="col-md-3">
+                  <button class="profile-user-edit__save-btn" type="submit">Сохранить</button>
                 </div>
               </div>
-            </div>
-            <div class="col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="coming-events-soon__img-info"><a href="#"><img class="img-fluid" src="./img/event-1.jpg"></a>
-                    <div class="time-to-start">31 ноября 2019, 15:00</div>
-                    <div class="dropdown edit-dtopdown"><a class="dropdown-toggle" id="tariff-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-menu-trening"></use>
-                        </svg></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tariff-menu"><a class="dropdown-item" href="#">
-                          <svg class="icon icon-edit">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-edit"></use>
-                          </svg>Редактировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-copy">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-copy"></use>
-                          </svg>Копировать</a><a class="dropdown-item" href="#">
-                          <svg class="icon icon-delete">
-                            <use xlink:href="./img/sprites/sprite.svg#icon-delete"></use>
-                          </svg>Удалить</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="coming-events-soon__info"><a class="coming-events-soon__info--title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
-                    <div class="personal-upcoming-events__lecture-participants"><span class="signed-up">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
-                        </svg>120 записались</span><span>
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#icon-user-confirmed"></use>
-                        </svg>120 подтвердили</span></div>
-                    <div class="row">
-                      <div class="col-md-2"><a class="default-blue" href="#">Перейти</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="article-list--pagination">
-                <li><a class="page-link" href="#">
-                    <svg class="icon arrow-left">
-                      <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
-                    </svg></a></li>
-                <li><a class="page-link" href="#">1</a></li>
-                <li><a class="page-link active" href="#">2</a></li>
-                <li><a class="page-link" href="#">3</a></li>
-                <li><a class="page-link" href="#">
-                    <svg class="icon arrow-right">
-                      <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
-                    </svg></a></li>
-              </ul>
-            </div>
+            </form>
           </div>
         </div>
       </div>

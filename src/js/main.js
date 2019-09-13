@@ -254,4 +254,13 @@ $(document).ready(function () {
       $('.success-info').addClass('active');
     });
   }
+
+  /* clock picker init */
+  if ($(".clockpicker").length > 0) {
+    $('.clockpicker').clockpicker({
+      placement: 'bottom',
+      align: 'left'
+    });
+  }
+  /* clock picker init end*/
 });
