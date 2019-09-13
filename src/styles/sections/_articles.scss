@@ -16,6 +16,7 @@
     line-height: 24px;
     display: flex;
     flex-direction: column;
+    height: calc(100% - 20px);
     &--date {
       color: #bac1cc;
       margin-bottom: 5px;
@@ -36,7 +37,7 @@
       border-radius: 19px;
       line-height: 19px;
       color: $color_link;
-      margin: auto auto auto 0;
+      margin: auto auto 0 0;
       transition: .3s;
       &:hover {
         text-decoration: none;

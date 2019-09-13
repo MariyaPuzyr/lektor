@@ -242,5 +242,10 @@ $(document).ready(function () {
       $('.message-item').removeClass('open');
       $(this).parents('.message-item').addClass('open');
     });
+
+    $('.send-btn').click(function () {
+      $('.write-message').find('.write-message__form').removeClass('active');
+      $('.success-info').addClass('active');
+    });
   }
 });
