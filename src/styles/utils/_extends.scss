@@ -61,6 +61,13 @@
 .blue-border {
   border: 1px solid $color_underline;
 }
+.defaul-grey {
+  color: $color_description !important;
+  border: 1px solid $color_border !important;
+  &:hover {
+    background: $color_border !important;
+  }
+}
 
 .border-link {
   position: relative;
