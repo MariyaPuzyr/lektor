@@ -201,6 +201,19 @@ $(document).ready(function () {
     $('.archive-item__dropdown').click(function () {
       $(this).next().toggle();
     });
+
+    /* get day value and put in to day-input */
+    $(document).on('click', '.day a', function () {
+      var association = this.dataset.day + "/" + this.dataset.month + "/" + this.dataset.year ;
+      console.log(association);
+    });
+    function changeDateVal(){
+      var resultText = document.getElementsByClassName('.archive-item__dropdown span');
+      resultText.innerText;
+      console.log(resultText.innerText);
+    }
+    changeDateVal()
+    /* get day value and put in to day-input end*/
   }
 
   $(document).on('click', '.day a', function () {

@@ -13291,6 +13291,10 @@ a.text-dark:focus {
   font-family: "ProximaNova-Regular";
 }
 
+.add-webinar .add-webinar__add-date .dropdown-menu {
+  width: 350px;
+}
+
 .add-webinar .archive-item__dropdown {
   width: 100%;
 }
