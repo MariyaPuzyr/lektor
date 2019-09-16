@@ -13295,6 +13295,59 @@ a.text-dark:focus {
   width: 100%;
 }
 
+.add-webinar .week-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.add-webinar .week-list .registration-form__checkbox {
+  position: relative;
+}
+
+.add-webinar .week-list .registration-form__checkbox span {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.add-webinar .week-list .registration-form__checkbox input[type="checkbox"] {
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2A58AD;
+  border: 1px dashed #C8D0D9;
+}
+
+.add-webinar .week-list .registration-form__checkbox input[type="checkbox"]:checked {
+  color: #ffffff;
+  background: #23AAEA;
+  border-color: #23AAEA;
+}
+
+.add-webinar .week-list .registration-form__checkbox input[type="checkbox"]:checked + span {
+  color: #ffffff;
+}
+
+.add-webinar .week-list .registration-form__checkbox input[type="checkbox"]:checked::after {
+  -webkit-mask: none;
+  mask: none;
+  background: transparent;
+}
+
+.add-webinar .message-notification {
+  font-size: 14px;
+  line-height: 17px;
+  color: #23AAEA;
+  font-family: "ProximaNova-Regular";
+  margin-top: 10px;
+}
+
 h1,
 h2,
 h3,

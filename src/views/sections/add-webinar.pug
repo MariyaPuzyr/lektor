@@ -35,6 +35,28 @@
 						label.registration-form__checkbox.mt-0.recurring-event
 							input(type='checkbox')
 							span Повторяющееся событие
+						.week-list
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Пн
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Вт
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Ср
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Чт
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Пт
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Сб
+							label.registration-form__checkbox.mt-0.recurring-event
+								input(type='checkbox')
+								span Вс
 						.row
 							.col-md-12.col-lg-6
 								.archive-item.add-webinar__add-date
@@ -44,7 +66,7 @@
 									.dropdown-menu
 										include ../components/data-select
 							.col-md-12.col-lg-6
-								.archive-item
+								.archive-item.add-webinar__add-time
 									.archive-item__dropdown.clockpicker(data-donetext='Готово')
 										+sprite('icon','icon-timer')
 										input.form-control(type='text' value='Время')
@@ -86,6 +108,27 @@
 								label.registration-form__checkbox.mb-4
 									input(type='checkbox')
 									span Реферальное письмо по окончанию вебинара
+							.col-md-12
+								h4 Письмо для рассылки
+								.row
+									.col-lg-6.col-md-12
+										.registration-form__group
+											.placeholder Тема письма
+												span *
+											input.registration-form-control(type='text')
+									.col-lg-6.col-md-12
+										.registration-form__group
+											.placeholder Текст реферальной ссылки
+												span *
+											input.registration-form-control(type='text')
+								.row
+									.col-md-12
+										.registration-form__group.mb-3
+											.placeholder Шаблон письма
+												span *
+											textarea.registration-form-control(rows='5')
+											.count-value {link} - реферальная ссылка
+											.message-notification *Письма без темы или шаблона включающего реферальную ссылку отправлены не будут
 				.row
 					.col-md-3
 						button(type='submit').profile-user-edit__save-btn Сохранить

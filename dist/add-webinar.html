@@ -139,6 +139,29 @@
                   <label class="registration-form__checkbox mt-0 recurring-event">
                     <input type="checkbox"><span>Повторяющееся событие</span>
                   </label>
+                  <div class="week-list">
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Пн</span>
+                    </label>
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Вт</span>
+                    </label>
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Ср</span>
+                    </label>
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Чт</span>
+                    </label>
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Пт</span>
+                    </label>
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Сб</span>
+                    </label>
+                    <label class="registration-form__checkbox mt-0 recurring-event">
+                      <input type="checkbox"><span>Вс</span>
+                    </label>
+                  </div>
                   <div class="row">
                     <div class="col-md-12 col-lg-6">
                       <div class="archive-item add-webinar__add-date">
@@ -167,7 +190,7 @@
                       </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
-                      <div class="archive-item">
+                      <div class="archive-item add-webinar__add-time">
                         <div class="archive-item__dropdown clockpicker" data-donetext="Готово">
                           <svg class="icon">
                             <use xlink:href="./img/sprites/sprite.svg#icon-timer"></use>
@@ -218,6 +241,33 @@
                       <label class="registration-form__checkbox mb-4">
                         <input type="checkbox"><span>Реферальное письмо по окончанию вебинара</span>
                       </label>
+                    </div>
+                    <div class="col-md-12">
+                      <h4>Письмо для рассылки</h4>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                          <div class="registration-form__group">
+                            <div class="placeholder">Тема письма<span>*</span></div>
+                            <input class="registration-form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="registration-form__group">
+                            <div class="placeholder">Текст реферальной ссылки<span>*</span></div>
+                            <input class="registration-form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="registration-form__group mb-3">
+                            <div class="placeholder">Шаблон письма<span>*</span></div>
+                            <textarea class="registration-form-control" rows="5"></textarea>
+                            <div class="count-value">{link} - реферальная ссылка</div>
+                            <div class="message-notification">*Письма без темы или шаблона включающего реферальную ссылку отправлены не будут</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

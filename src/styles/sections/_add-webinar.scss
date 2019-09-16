@@ -1,4 +1,4 @@
-.preview{
+.preview {
   &-img {
     width: 100%;
     height: 115px;
@@ -40,5 +40,47 @@
 .add-webinar {
   .archive-item__dropdown {
     width: 100%;
+  }
+  .week-list {
+    display: flex;
+    flex-wrap: wrap;
+    .registration-form__checkbox {
+      position: relative;
+      span {
+        position: absolute;
+        left: 0;
+        width: 30px;
+        text-align: center;
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color_darkblue;
+        border: 1px dashed $color_border;
+        &::after {
+
+        }
+        &:checked {
+          color: $color_white;
+          background: $color_underline;
+          border-color: $color_underline;
+          & + span {
+            color: $color_white;
+          }
+          &::after {
+            mask: none;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+  .message-notification {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color_underline;
+    font-family: $font_main;
+    margin-top: 10px;
   }
 }
