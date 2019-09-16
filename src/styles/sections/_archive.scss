@@ -133,7 +133,7 @@
       .training-list__calendar {
         width: 100%;
         padding: 30px 20px;
-        min-width: 350px;
+        max-width: 350px;
       }
     }
     &.add-webinar__add-date {
@@ -145,24 +145,24 @@
     .clockpicker {
       display: flex;
       align-content: center;
-	    .form-control {
-		    border: none;
-		    background: transparent;
-		    background-image:none;
-		    padding: 0 0 0 36px;
-		    font-family: $font_main;
-		    font-size: $size_link_font;
-		    line-height: 19px;
-		    color: $color_description;
+      .form-control {
+        border: none;
+        background: transparent;
+        background-image: none;
+        padding: 0 0 0 36px;
+        font-family: $font_main;
+        font-size: $size_link_font;
+        line-height: 19px;
+        color: $color_description;
         height: 38px;
         position: absolute;
         top: 0;
         left: 0;
-		    &:focus {
-			    outline: none;
-			    box-shadow: none;
-		    }
-	    }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
     }
   }
   &-tag-link {

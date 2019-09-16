@@ -1,4 +1,4 @@
-.profile-user-edit
+.profile-user-edit.add-webinar
 	.container
 		.profile-user-edit__form
 			form(action='#').was-validated
@@ -15,7 +15,7 @@
 									textarea.registration-form-control(rows='5') Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени. Вебинар - это модно, современно, доступно, просто, удобно.
 									.count-value Введённых символов
 										span 233
-					.col-md-4
+					.col-md-4.d-flex.flex-column.mt-2.mt-md-0
 						label.registration-form__checkbox.mt-0.mb-2
 							input(type='checkbox')
 							span Материал доступен для скачивания слушателям
@@ -36,14 +36,14 @@
 							input(type='checkbox')
 							span Повторяющееся событие
 						.row
-							.col-md-6
+							.col-md-12.col-lg-6
 								.archive-item.add-webinar__add-date
 									.archive-item__dropdown
 										+sprite('icon','icon-date-16')
 										span Дата *
 									.dropdown-menu
 										include ../components/data-select
-							.col-md-6
+							.col-md-12.col-lg-6
 								.archive-item
 									.archive-item__dropdown.clockpicker(data-donetext='Готово')
 										+sprite('icon','icon-timer')
@@ -63,9 +63,29 @@
 								.preview-img
 									img(src='/img/svg/img-icon.svg')
 							.col-md-6
-								.preview-btns
+								.preview-btns.mt-2.mt-md-0
 									a(href='#').training-list__all-training Выбрать
 									a(href='#').training-list__all-training.defaul-grey Удалить
+				.row
+					.col-md-12
+						h4.mt-2 Файлы
+						.load-files
+							label.registration-form__checkbox.my-0.mr-auto
+								input(type='checkbox')
+								span 477179_353811051326479_413395789_o.jpg
+							a(href='#').default-dashed.mt-2.mt-md-0 Отображать в архиве
+						.load-files
+							label.registration-form__checkbox.my-0.mr-auto
+								input(type='checkbox')
+								span 477179_353811051326479_413395789_o.jpg
+							a(href='#').default-dashed.mt-2.mt-md-0 Отображать в архиве
+						.count-value Максимальный размер файла
+							span 500МБ
+						.row
+							.col-md-12
+								label.registration-form__checkbox.mb-4
+									input(type='checkbox')
+									span Реферальное письмо по окончанию вебинара
 				.row
 					.col-md-3
 						button(type='submit').profile-user-edit__save-btn Сохранить

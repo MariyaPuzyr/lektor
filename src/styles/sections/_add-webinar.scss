@@ -21,3 +21,24 @@
     }
   }
 }
+
+.load-files {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid $color_border;
+  border-radius: 4px;
+  background: $color_white;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color_link;
+  font-family: $font_main;
+}
+
+.add-webinar {
+  .archive-item__dropdown {
+    width: 100%;
+  }
+}

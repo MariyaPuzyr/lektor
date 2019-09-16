@@ -61,11 +61,32 @@
 .blue-border {
   border: 1px solid $color_underline;
 }
+
 .defaul-grey {
   color: $color_description !important;
   border: 1px solid $color_border !important;
   &:hover {
     background: $color_border !important;
+  }
+}
+
+.default-dashed {
+  width: 160px;
+  height: 24px;
+  color: $color_darkblue;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed $color_border;
+  border-radius: 19px;
+  background: $color_white;
+  transition: .3s;
+  &:hover {
+    background: $color_border;
+    text-decoration: none;
+    color: $color_white;
   }
 }
 

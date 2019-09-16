@@ -207,15 +207,6 @@
         &__group {
           flex-direction: column;
           overflow: initial;
-          .count-value {
-            font-size: $size_main_font;
-            line-height: 17px;
-            color: $color_description;
-            span {
-              margin-left: 3px;
-              color: $color_selected;
-            }
-          }
         }
         &-control {
           color: $color_link;
@@ -249,5 +240,14 @@
         color: $color_selected;
       }
     }
+  }
+}
+.count-value {
+  font-size: $size_main_font;
+  line-height: 17px;
+  color: $color_description;
+  span {
+    margin-left: 3px;
+    color: $color_selected;
   }
 }
