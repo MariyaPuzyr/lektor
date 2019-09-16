@@ -32,7 +32,7 @@
 				.row
 					.col-md-4
 						h4 Дата и  время начала конференции
-						label.registration-form__checkbox.mt-0
+						label.registration-form__checkbox.mt-0.recurring-event
 							input(type='checkbox')
 							span Повторяющееся событие
 						.row
@@ -45,7 +45,7 @@
 										include ../components/data-select
 							.col-md-6
 								.archive-item
-									.archive-item__dropdown.clockpicker(data-donetext='Done')
+									.archive-item__dropdown.clockpicker(data-donetext='Готово')
 										+sprite('icon','icon-timer')
 										input.form-control(type='text' value='Время')
 

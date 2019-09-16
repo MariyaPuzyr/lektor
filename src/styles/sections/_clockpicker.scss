@@ -1,0 +1,81 @@
+.clockpicker-popover {
+  max-width: 260px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  border: none;
+  border-radius: 4px;
+  margin-top: 2px;
+  &::before {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    left: 13px;
+    z-index: -1;
+    box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+    background: $color_white;
+  }
+  &::after {
+    top: -18px;
+    left: 13px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: $color_white;
+    border-width: 10px;
+  }
+  .popover-title {
+    padding: 10px 30px;
+    font-size: 30px;
+    line-height: 37px;
+    color: $color_link;
+    font-family: $font_main;
+    font-weight: normal;
+    .text-primary {
+      color: $color_selected !important;
+    }
+  }
+  .popover-content {
+    background: $color_white;
+    padding: 0 30px;
+  }
+  .clockpicker{
+    &-plate {
+      border: 1px solid $color_border;
+    }
+    &-tick {
+      font-size: 14px !important;
+      color: $color_link;
+      font-family: $font_main;
+      &.active, &:hover {
+        background: rgba($color_underline, .5);
+      }
+    }
+    &-button {
+      color: $color_link;
+      font-size: 14px;
+      line-height: 17px;
+      font-family: $font_main;
+      width: 160px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $color_underline;
+      border-radius: 19px;
+      transition: .3s;
+      padding: 0;
+      margin: 20px auto 30px;
+      &:hover {
+        background: $color_underline;
+        color: $color_white;
+      }
+    }
+  }
+}
