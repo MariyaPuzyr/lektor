@@ -12286,12 +12286,15 @@ a.text-dark:focus {
   border: none;
   background: transparent;
   background-image: none;
-  padding: 0;
+  padding: 0 0 0 36px;
   font-family: "ProximaNova-Regular";
   font-size: 16px;
   line-height: 19px;
   color: #6F7B8E;
-  height: auto;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .archive-item .clockpicker .form-control:focus {
@@ -13079,6 +13082,69 @@ a.text-dark:focus {
 
 .message-delete {
   margin: auto 0 auto auto;
+}
+
+.clockpicker-popover {
+  max-width: 260px;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  border: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.clockpicker-popover::before {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: 13px;
+  z-index: -1;
+  -webkit-box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  background: #ffffff;
+}
+
+.clockpicker-popover::after {
+  top: -18px;
+  left: 13px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 10px;
+}
+
+.clockpicker-popover .popover-title {
+  padding: 10px 30px;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0C2947;
+  font-family: "ProximaNova-Regular";
+  font-weight: normal;
+}
+
+.clockpicker-popover .popover-title .text-primary {
+  color: #67B930 !important;
+}
+
+.clockpicker-popover .popover-content {
+  background: #ffffff;
+  padding: 0 30px;
+}
+
+.clockpicker-popover .clockpicker-plate {
+  border: 1px solid #C8D0D9;
 }
 
 h1,
