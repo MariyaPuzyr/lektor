@@ -290,4 +290,20 @@ $(document).ready(function () {
     });
   }
   /* check if refferal-message label is checked end */
+
+  /* check if recurring-event label is checked */
+  if ($(".recurring-event").length > 0) {
+    $('.recurring-event input[type="checkbox"]').click(function () {
+      var $this = $(this);
+      if ($this[0].checked) {
+        $this.parents('.recurring-event').next().addClass('active');
+        $('.add-webinar__add-date').parents('.col-md-12').hide();
+      }
+      else {
+        $('.add-webinar__add-date').parents('.col-md-12').show();
+        $('.week-list').removeClass('active');
+      }
+    });
+  }
+  /* check if recurring-event label is checked end */
 });

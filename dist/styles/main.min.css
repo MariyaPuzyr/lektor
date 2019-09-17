@@ -13300,13 +13300,17 @@ a.text-dark:focus {
 }
 
 .add-webinar .week-list {
+  display: none;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.add-webinar .week-list.active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .add-webinar .week-list .registration-form__checkbox {

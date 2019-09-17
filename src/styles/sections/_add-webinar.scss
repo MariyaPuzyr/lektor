@@ -45,8 +45,11 @@
     width: 100%;
   }
   .week-list {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
+    &.active {
+      display: flex;
+    }
     .registration-form__checkbox {
       position: relative;
       span {
