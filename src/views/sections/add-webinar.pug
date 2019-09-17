@@ -105,30 +105,30 @@
 							span 500МБ
 						.row
 							.col-md-12
-								label.registration-form__checkbox.mb-4
+								label.registration-form__checkbox.mb-4.refferal-message
 									input(type='checkbox')
 									span Реферальное письмо по окончанию вебинара
-							.col-md-12
-								h4 Письмо для рассылки
-								.row
-									.col-lg-6.col-md-12
-										.registration-form__group
-											.placeholder Тема письма
-												span *
-											input.registration-form-control(type='text')
-									.col-lg-6.col-md-12
-										.registration-form__group
-											.placeholder Текст реферальной ссылки
-												span *
-											input.registration-form-control(type='text')
-								.row
-									.col-md-12
-										.registration-form__group.mb-3
-											.placeholder Шаблон письма
-												span *
-											textarea.registration-form-control(rows='5')
-											.count-value {link} - реферальная ссылка
-											.message-notification *Письма без темы или шаблона включающего реферальную ссылку отправлены не будут
+								.refferal-message__item
+									h4 Письмо для рассылки
+									.row
+										.col-lg-6.col-md-12
+											.registration-form__group
+												.placeholder Тема письма
+													span *
+												input.registration-form-control(type='text')
+										.col-lg-6.col-md-12
+											.registration-form__group
+												.placeholder Текст реферальной ссылки
+													span *
+												input.registration-form-control(type='text')
+									.row
+										.col-md-12
+											.registration-form__group.mb-3
+												.placeholder Шаблон письма
+													span *
+												textarea.registration-form-control(rows='5')
+												.count-value {link} - реферальная ссылка
+												.message-notification *Письма без темы или шаблона включающего реферальную ссылку отправлены не будут
 				.row
 					.col-md-3
 						button(type='submit').profile-user-edit__save-btn Сохранить

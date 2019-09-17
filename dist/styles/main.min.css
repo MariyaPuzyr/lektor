@@ -13352,6 +13352,14 @@ a.text-dark:focus {
   margin-top: 10px;
 }
 
+.add-webinar .refferal-message__item {
+  display: none;
+}
+
+.add-webinar .refferal-message__item.active {
+  display: block;
+}
+
 h1,
 h2,
 h3,

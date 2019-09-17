@@ -86,4 +86,10 @@
     font-family: $font_main;
     margin-top: 10px;
   }
+  .refferal-message__item {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
 }

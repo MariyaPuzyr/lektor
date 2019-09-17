@@ -276,4 +276,18 @@ $(document).ready(function () {
     });
   }
   /* clock picker init end*/
+
+  /* check if refferal-message label is checked */
+  if ($(".refferal-message").length > 0) {
+    $('.refferal-message input[type="checkbox"]').click(function () {
+      var $this = $(this);
+      if ($this[0].checked) {
+        $this.parents('.refferal-message').next().addClass('active');
+      }
+      else {
+        $('.refferal-message__item').removeClass('active');
+      }
+    });
+  }
+  /* check if refferal-message label is checked end */
 });
