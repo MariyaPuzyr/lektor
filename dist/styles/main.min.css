@@ -9297,10 +9297,6 @@ a.text-dark:focus {
 
 .training-list__slider-item {
   width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 60%;
-  -ms-flex: 1 0 60%;
-  flex: 1 0 60%;
   margin-top: 70px;
 }
 
@@ -9376,6 +9372,7 @@ a.text-dark:focus {
 
 .training-list .training-item {
   font-family: "ProximaNova-Regular";
+  width: 100%;
 }
 
 .training-list .training-item__link {
