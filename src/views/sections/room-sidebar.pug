@@ -1,0 +1,195 @@
+.room-sidebar
+  .room-sidebar__video-item
+    .show-video
+    +sprite('icon', 'user')
+  .room-sidebar__panel
+    ul.nav.nav-tabs(role='tablist')
+      li.nav-item
+        a#home-tab.nav-link.active(data-toggle='tab' href='#chat' role='tab' aria-controls='home' aria-selected='true')
+          +sprite('icon', 'chat')
+      li.nav-item
+        a#profile-tab.nav-link(data-toggle='tab' href='#faq' role='tab' aria-controls='faq' aria-selected='false')
+          +sprite('icon', 'icon-user-question')
+          span.badge 2
+
+    .tab-content
+      #chat.tab-pane.active(role='tabpanel' aria-labelledby='chat-tab')
+        .chat
+          .top
+            .title Чат
+            .chat-btns
+              a(href='#').default-blue.turn-on Включить
+              a(href='#').border-link.default-grey.clean-chat Очистить
+          .chat-body.mCustomScrollbar
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета ?')
+            +chat('Неообходи мо ли переделать ?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета ?')
+            +chat('Неообходи мо ли переделать ?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета ?')
+            +chat('Неообходи мо ли переделать ?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета ?')
+            +chat('Неообходи мо ли переделать ?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета ?')
+            +chat('Неообходи мо ли переделать ?')
+            +chat('Неообходи мо ли переделать фирменный стиль и цвета нового сайта?')
+            +chat('Неообходи мо ли переделать =====?')
+          .chat-footer
+            form(action='').chat-footer--add-message
+              textarea(placeholder='Введите сообщение')
+              button(type='submit').chat-send-btn
+                +sprite('icon', 'arrow-select')
+
+      #faq.tab-pane(role='tabpanel' aria-labelledby='faq-tab')
+        .top
+          .title Хотят задать вопрос 10
+        .faq-items.mCustomScrollbar
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Оченьдлиннаяфамилия
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+          .faq-item
+            img(src='./img/avatar.jpg').user-avatar
+            .faq-item--info
+              a(href='#').user-name Василий Фамилияпомощь
+              .faq-item--btns
+                a(href='#').default-blue.listen Слушать
+                a(href='#').border-link.default-grey.delete Удалить
+

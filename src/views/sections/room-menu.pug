@@ -1,0 +1,25 @@
+.room-menu
+  a(href='/').room-menu__link
+    img(src='./img/svg/white-logo.svg')
+  ul.room-menu__list.nav.nav-tabs(role='tablist')
+    li
+      a#description-tab(href='#description' data-toggle="tab" role='tab' aria-controls='description' aria-selected='true' title='description')
+        +sprite('icon', 'img-icon')
+    li
+      a#video-tab(href='#video' data-toggle="tab" role='tab' aria-controls='video' aria-selected='false' title='video')
+        +sprite('icon', 'icon-video')
+    li
+      a#documents-tab(href='#documents' data-toggle="tab" role='tab' aria-controls='documents' aria-selected='false' title='documents')
+        +sprite('icon', 'icon-doc')
+    li
+      a#presentation-tab(href='#presentation' data-toggle="tab" role='tab' aria-controls='presentation' aria-selected='false' title='presentation')
+        +sprite('icon', 'icon-presentation')
+    li
+      a#paint-tab(href='#paint' data-toggle="tab" role='tab' aria-controls='paint' aria-selected='false' title='paint')
+        +sprite('icon', 'icon-paint')
+    li
+      a#camera-tab(href='#camera' data-toggle="tab" role='tab' aria-controls='camera' aria-selected='false' title='camera')
+        +sprite('icon', 'icon-viewcam')
+    li
+      a#clear-tab(href='#clear' data-toggle="tab" role='tab' aria-controls='clear' aria-selected='false' title='clear')
+        +sprite('icon', 'icon-clear')

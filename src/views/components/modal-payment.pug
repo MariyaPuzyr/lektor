@@ -1,0 +1,77 @@
+#balance.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+  .modal-dialog.modal-payment(role='document')
+    .modal-content
+      .modal-body
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          +sprite('close-ico', 'close-icon')
+        h5.modal-title Пополнение баланса
+        form(action='#')
+          .row
+            .col-md-12
+              .registration-form__group
+                input.registration-form-control(type='text' placeholder='Сумма')
+            .col-md-12
+              .profile-user-edit
+                h4 Выберите способ оплаты:
+              .row
+                .col-md-6
+                  input#payment.css-radio(type='radio', name='balance' checked='checked')
+                  label.css-label(for='payment')
+                    img(src='./img/payment.png')
+                .col-md-6
+                  input#visa-payment.css-radio(type='radio', name='balance')
+                  label.css-label(for='visa-payment')
+                    img(src='./img/visa-payment.png')
+          .row
+            .col-md-5
+              button(type='submit').default-green.w-100.mb-2.mb-md-0 Продолжить
+            .col-md-5
+              a.reset-btn(href='#' data-dismiss='modal') Отмена
+
+
+#withdraw-funds.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+  .modal-dialog.modal-payment(role='document')
+    .modal-content
+      .modal-body
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          +sprite('close-ico', 'close-icon')
+        h5.modal-title Вывод стредств
+        form(action='#')
+          .row
+            .col-md-12
+              .registration-form__group
+                .placeholder Сумма для вывода
+                  span *
+                input.registration-form-control(type='text')
+            .col-md-12
+              .profile-user-edit
+                h4 Выбирите систему для вывода:
+              .row
+                .col-md-6
+                  input#mastercard.css-radio(type='radio', name='withdraw' checked='checked')
+                  label.css-label(for='mastercard')
+                    img(src='./img/visa-payment.png')
+                .col-md-6
+                  input#webmoney-payment.css-radio(type='radio', name='withdraw')
+                  label.css-label(for='webmoney-payment')
+                    img(src='./img/webmoney-payment.png')
+            .col-md-12
+              .registration-form__group
+                .placeholder Введите номер счета
+                  span *
+                input.registration-form-control(type='text')
+            .col-md-12
+              .registration-form__group
+                .placeholder Имя и фамилия владельца карты
+                  span *
+                input.registration-form-control(type='text')
+            .col-md-12
+              .registration-form__group
+                .placeholder Название банка
+                  span *
+                input.registration-form-control(type='text')
+          .row
+            .col-md-5
+              button(type='submit').default-green.w-100.mb-2.mb-md-0 Продолжить
+            .col-md-5
+              a.reset-btn(href='#' data-dismiss='modal') Отмена

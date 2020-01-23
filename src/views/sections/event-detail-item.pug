@@ -1,0 +1,55 @@
+.event-detail.article-list
+  .container
+    h2.profile-user-edit__title Слоненок с мячиком. Мягкая игрушка связана спицами
+    .event-detail-item
+      .event-detail__panel
+        .event-detail-info
+          include ../components/follow-back
+          .countdown(data-countdown='2019-10-21')
+      .event-detail__panel
+        +lector-info
+        .event-detail-info__date 31 ноября 2019 года, 15:00
+        p Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени.
+          | Вебинар - это модно, современно, доступно, просто, удобно.
+          | Вебинар, или онлайн-семинар, - набирающий популярность вид обучения в реальном времени с использованием Интернет-технологий.
+          | Данная технология позволяет за считанные секунды организовать встречу людей из разных уголков земного шара, в любое удобное время, не имея привязки к транспорту, что существенно экономит средства.
+      .event-detail__panel
+        .event-detail-info.event-detail-promo-img
+          img(src='./img/slider-image.jpg').img-fluid
+      .event-detail__panel
+        .event-detail-info.event-info
+          .event-price Стоимость:
+            span.free-price 1000 грн
+          .event-price Скачивание медиаматериалов:
+            span Бесплатно
+          form(action='#')
+            // hide form for get download files
+            .row.event-form.d-none
+              .col-md-12
+                .event-notice Для получения пригласительной ссылки, заполните данные
+              .col-md-6
+                .registration-form__group
+                  .placeholder Ваше имя
+                    span *
+                  input.registration-form-control(type='text')
+              .col-md-6
+                .registration-form__group
+                  .placeholder E-mail
+                    span *
+                  input.registration-form-control(type='text')
+            .row
+              .col-md-6.col-lg-4
+                button(type='submit').default-green.get-sign-in Записаться
+            .row
+              .col-md-12
+                .share-items
+                  span Поделиться
+                  ul.share-list
+                    li
+                      a(href='#').share-list-ico.facebook
+                    li
+                      a(href='#').share-list-ico.vk
+                    li
+                      a(href='#').share-list-ico.twitter
+                    li
+                      a(href='#').share-list-ico.od

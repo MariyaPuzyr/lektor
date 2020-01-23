@@ -1,0 +1,12 @@
+extends ../extends/room-layout
+block variables
+  - var title = "Lektor room webinar"
+
+block content
+  .room
+    include ../sections/room-menu
+    .room-presenter
+      include ../sections/room-navbar
+      .room-content
+        include ../sections/room-description
+        include ../sections/room-sidebar

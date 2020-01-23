@@ -1,0 +1,150 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor - Lecture in archive"
+
+block content
+  include ../includes/header-user
+  main
+    .event-detail.article-list
+      .container
+        h2.profile-user-edit__title Слоненок с мячиком. Мягкая игрушка связана спицами
+        .event-detail-item
+          .event-detail__panel
+            .event-detail-info
+              include ../components/follow-back
+              .lecture-info Материал в архиве
+          .event-detail__panel
+            +lector-info
+            .event-detail-info__date Лекция прошла 31 ноября 2019 года, 15:00
+            p Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени.
+              | Вебинар - это модно, современно, доступно, просто, удобно.
+              | Вебинар, или онлайн-семинар, - набирающий популярность вид обучения в реальном времени с использованием Интернет-технологий.
+              | Данная технология позволяет за считанные секунды организовать встречу людей из разных уголков земного шара, в любое удобное время, не имея привязки к транспорту, что существенно экономит средства.
+          .event-detail__panel
+            .event-detail-info.event-detail-promo-img
+              img(src='./img/slider-image.jpg').img-fluid
+          .event-detail__panel
+            .event-detail-info.event-info
+              .event-price Скачивание медиаматериалов:
+                span Бесплатно
+              .row
+                .col-md-6.col-lg-4
+                  a.default-green.mt-0.mb-4.mt-md-4(href='#') Скачать видео
+                .col-md-6.col-lg-4
+                  a.default-blue.mt-0.mb-4.mt-md-4(href='#') Скачать архив
+              .row
+                .col-md-12
+                  .share-items
+                    span Поделиться
+                    ul.share-list
+                      li
+                        a(href='#').share-list-ico.facebook
+                      li
+                        a(href='#').share-list-ico.vk
+                      li
+                        a(href='#').share-list-ico.twitter
+                      li
+                        a(href='#').share-list-ico.od
+    .archive-items.event-popular
+      .container
+        h2.training-list__title Ближайшие тренинги
+        .row.event-popular-slider.slider
+          .col-lg-4.col-md-6.d-flex
+            .trending-archive-list
+              .coming-events-soon__img-info
+                a(href='event-detail.html').coming-events-soon__img-info--link
+                  img(src='./img/event-1.jpg').img-fluid
+              .coming-events-soon__info
+                +lector-info
+                a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                p До начала 2 часа 15 минут
+                .d-flex.flex-wrap
+                  .price-lections.mr-4
+                    +sprite('icon', 'icon-user-confirmed')
+                    span 1000 грн.
+                  .price-lections
+                    +sprite('icon', 'icon-access-documents2')
+                    span 150 грн.
+                .row
+                  .col-md-6
+                    a(href='#').default-blue Записаться
+          .col-lg-4.col-md-6.d-flex
+            .trending-archive-list
+              .coming-events-soon__img-info
+                a(href='event-detail.html').coming-events-soon__img-info--link.no-img
+                  +sprite('icon', 'no-img')
+              .coming-events-soon__info
+                +lector-info
+                a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                p До начала 2 часа 15 минут
+                .d-flex.flex-wrap
+                  .price-lections.mr-4
+                    +sprite('icon', 'icon-user-confirmed')
+                    span 1000 грн.
+                  .price-lections
+                    +sprite('icon', 'icon-access-documents2')
+                    span 150 грн.
+                .row
+                  .col-md-6
+                    a(href='#').default-blue Записаться
+          .col-lg-4.col-md-6.d-flex
+            .trending-archive-list
+              .coming-events-soon__img-info
+                a(href='event-detail.html').coming-events-soon__img-info--link
+                  img(src='./img/event-1.jpg').img-fluid
+              .coming-events-soon__info
+                +lector-info
+                a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                p До начала 2 часа 15 минут
+                .d-flex.flex-wrap
+                  .price-lections.mr-4
+                    +sprite('icon', 'icon-user-confirmed')
+                    span 1000 грн.
+                  .price-lections
+                    +sprite('icon', 'icon-access-documents2')
+                    span 150 грн.
+                .row
+                  .col-md-6
+                    a(href='#').default-blue Записаться
+          .col-lg-4.col-md-6.d-flex
+            .trending-archive-list
+              .coming-events-soon__img-info
+                a(href='event-detail.html').coming-events-soon__img-info--link
+                  img(src='./img/event-1.jpg').img-fluid
+              .coming-events-soon__info
+                +lector-info
+                a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                p До начала 2 часа 15 минут
+                .d-flex.flex-wrap
+                  .price-lections.mr-4
+                    +sprite('icon', 'icon-user-confirmed')
+                    span 1000 грн.
+                  .price-lections
+                    +sprite('icon', 'icon-access-documents2')
+                    span 150 грн.
+                .row
+                  .col-md-6
+                    a(href='#').default-blue Записаться
+          .col-lg-4.col-md-6.d-flex
+            .trending-archive-list
+              .coming-events-soon__img-info
+                a(href='event-detail.html').coming-events-soon__img-info--link.no-img
+                  +sprite('icon', 'no-img')
+              .coming-events-soon__info
+                +lector-info
+                a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+                p До начала 2 часа 15 минут
+                .d-flex.flex-wrap
+                  .price-lections.mr-4
+                    +sprite('icon', 'icon-user-confirmed')
+                    span 1000 грн.
+                  .price-lections
+                    +sprite('icon', 'icon-access-documents2')
+                    span 150 грн.
+                .row
+                  .col-md-6
+                    a(href='#').default-blue Записаться
+
+    include ../sections/banner-slider
+    include ../sections/articles
+  include ../includes/footer

@@ -66,6 +66,7 @@
 .countdown-item {
   margin-right: 30px;
   padding-right: 30px;
+  min-width: 80px;
 }
 
 .training-list {
@@ -86,7 +87,8 @@
 }
 
 .training-list__slider-item {
-  width: 60%;
+  width: -webkit-calc(100% - 33.33333%);
+  width: calc(100% - 33.33333%);
   margin-top: 0;
 }
 

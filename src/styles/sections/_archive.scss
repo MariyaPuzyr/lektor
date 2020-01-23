@@ -5,6 +5,10 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 20px;
+    @include adapt_to('desktop') {
+      align-items: center;
+      justify-content: flex-start;
+    }
     &s {
       .profile-user-edit__title {
         margin-bottom: 30px;
@@ -13,6 +17,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        width: 100%;
         .coming-events-soon {
           &__img-info {
             margin: 0;
@@ -22,11 +27,13 @@
             &--link {
               background: $color_main_bg;
               border-radius: 4px;
-              display: table;
+              display: flex;
               height: 100%;
+              width: 100%;
+              min-height: 235px;
               .icon {
                 width: 115px;
-                height: 100%;
+                height: 115px;
                 margin: auto;
                 display: flex;
               }
@@ -37,7 +44,6 @@
           }
           &__info {
             margin-top: 15px;
-            margin-bottom: 0;
             .default-blue, .default-green {
               margin-bottom: 15px;
             }
@@ -54,6 +60,11 @@
               font-size: $size_title_font;
               line-height: 24px;
               font-family: $font_semibold;
+              transition: .3s;
+              &:hover {
+                color: $color_selected;
+                text-decoration: none;
+              }
             }
             p {
               font-family: $font_light;
@@ -86,6 +97,9 @@
       .article-list--pagination {
         margin-top: 0;
       }
+      .event-popular-slider .trending-archive-list .coming-events-soon__img-info--link {
+        min-height: 250px;
+      }
     }
     &--label {
       font-family: $font_main;
@@ -112,6 +126,10 @@
         height: 16px;
         margin-right: 15px;
         flex: 0 0 auto;
+      }
+      @include adapt_to('desktop') {
+        min-width: inherit;
+        width: 35%;
       }
     }
     .dropdown-menu {
@@ -165,7 +183,7 @@
       }
     }
   }
-  &-tag-link {
+  &-tag-link, &-new-invitation {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -178,5 +196,24 @@
     font-size: $size_main_font;
     line-height: 17px;
     color: $color_description;
+    transition: .3s;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &-new-invitation {
+    background: $color_selected;
+    color: $color_white;
+    &:hover {
+      color: $color_selected;
+      background: $color_white;
+    }
+    &:empty {
+      display: none;
+    }
+    //span {
+    //  display: flex;
+    //
+    //}
   }
 }

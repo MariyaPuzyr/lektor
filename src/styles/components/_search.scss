@@ -36,6 +36,7 @@
       height: 38px;
       border: none;
       transition: .3s;
+      flex: 0 0 auto;
       .icon {
         fill: $color_white;
         width: 16px;
@@ -43,6 +44,13 @@
       }
       &:hover {
         background: $color_underline;
+      }
+    }
+    @include adapt_to('desktop') {
+      flex-wrap: nowrap;
+      .form-control {
+        min-width: inherit;
+        width: 100%;
       }
     }
   }

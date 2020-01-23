@@ -1,0 +1,12 @@
+extends ../extends/room-layout
+block variables
+	- var title = "User room webinar"
+
+block content
+	.room
+		include ../sections/room-menu--user
+		.room-presenter
+			include ../sections/room-navbar--user
+			.room-content
+				include ../sections/room-description--user
+				include ../sections/room-sidebar--user

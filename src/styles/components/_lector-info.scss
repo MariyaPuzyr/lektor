@@ -7,8 +7,8 @@
     height: 65px;
     margin-right: 15px;
     img {
-      width: 65px;
-      height: 65px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
     }
   }
@@ -22,6 +22,11 @@
     line-height: 19px;
     color: $color_link;
     margin-bottom: 5px;
+    transition: .3s;
+    &:hover {
+      color: $color_selected;
+      text-decoration: none;
+    }
   }
   &__link {
     padding: 3px 20px;

@@ -38,3 +38,38 @@
             .col-md-12
               .registration-link У вас еще нет аккаунта?
                 a(href='registration.html') Зарегистрируйтесь
+      .modal-body.forget-pass
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          +sprite('close-ico', 'close-icon')
+        h5.modal-title Забыли пароль
+        form(action='#')
+          .row
+            .col-md-12
+              .alert-info
+                +sprite('icon', 'icon-alert-error')
+                | Такой e-mail не найден
+            .col-md-12
+              .input-group
+                .input-group-prepend
+                  .input-group-text
+                    +sprite('icon', 'icon-user')
+                input.form-control(type='text' placeholder='Введите e-mail')
+
+            .col-md-12
+              .form-link
+                button(type='submit').form-link__login Восстановить пароль
+            .col-md-12
+              .sign-social
+                .sign-social__title Или войдите с помощью соцсетей:
+                ul
+                  li
+                    a(href='#').sign-social__link
+                      .icon.icon-fa
+                      | Facebook
+                  li
+                    a(href='#').sign-social__link.google-link
+                      .icon.icon-google
+                      | Google
+            .col-md-12
+              .registration-link У вас еще нет аккаунта?
+                a(href='registration.html') Зарегистрируйтесь

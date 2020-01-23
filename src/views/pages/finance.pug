@@ -27,9 +27,9 @@ block content
                 span 24.00 грн.
               .row
                 .col-md-6
-                  a(href='#').default-green Пополнить баланс
+                  a(href='#' data-toggle="modal" data-target="#balance").default-green Пополнить баланс
                 .col-md-6
-                  a(href='#').default-blue.blue-border Вывод стредств
+                  a(href='#' data-toggle="modal" data-target="#withdraw-funds").default-blue.blue-border Вывод стредств
           .col-lg-6.col-md-12
             .your-tariff.finance-tariff
               .your-tariff__top
@@ -47,3 +47,4 @@ block content
     include ../sections/payment-history
     include ../sections/banner-slider
   include ../includes/footer
+  include ../components/modal-payment

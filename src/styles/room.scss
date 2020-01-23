@@ -1,0 +1,36 @@
+@import "libs";
+@import "utils/variables";
+@import "utils/extends";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "sections/banner";
+@import "components/lector-info";
+
+*:focus {
+  outline: none !important;
+}
+
+.room {
+  display: flex;
+  overflow: hidden;
+  &-presenter {
+    padding-left: 60px;
+    width: 100%;
+    background: url('../img/bg-room-mountain.jpg') top no-repeat;
+    background-size: cover;
+  }
+  &-content {
+    display: flex;
+    max-height: calc(100vh - 60px);
+    @include adapt_to('desktop') {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+@import "sections/room-menu";
+@import "sections/room-navbar";
+@import "sections/room-description";
+@import "sections/room-sidebar";
+@import "sections/room-presentation";

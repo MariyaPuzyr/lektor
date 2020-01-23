@@ -7,7 +7,7 @@ $(document).ready(function () {
   #
   # Copyright © w3widgets 2013 All Rights Reserved
 */
-  (function(){(function(c){var d,b,a;d=function(f,e){var g;this.$element=f;this.options=e;this.weekDays=["sun","mon","tue","wed","thu","fri","sat","sun"];this.time=new Date();this.currentYear=this.time.getFullYear();this.currentMonth=this.time.getMonth();if(this.options.time){g=this.splitDateString(this.options.time);this.currentYear=g.year;this.currentMonth=g.month}this.initialDraw();return null};d.prototype={addLeadingZero:function(e){if(e<10){return"0"+e}else{return""+e}},applyTransition:function(e,f){e.css("transition",f);e.css("-ms-transition","-ms-"+f);e.css("-moz-transition","-moz-"+f);return e.css("-webkit-transition","-webkit-"+f)},applyBackfaceVisibility:function(e){e.css("backface-visibility","hidden");e.css("-ms-backface-visibility","hidden");e.css("-moz-backface-visibility","hidden");return e.css("-webkit-backface-visibility","hidden")},applyTransform:function(f,e){f.css("transform",e);f.css("-ms-transform",e);f.css("-moz-transform",e);return f.css("-webkit-transform",e)},splitDateString:function(g){var e,i,h,f;h=g.split("-");f=parseInt(h[0]);i=parseInt(h[1]-1);e=parseInt(h[2]);return h={year:f,month:i,day:e}},initialDraw:function(){return this.drawDays(this.currentYear,this.currentMonth)},editDays:function(g){var h,f,j,i,e;e=[];for(h in g){j=g[h];this.options.events[h]=g[h];i=this.splitDateString(h);f=this.$element.find('[data-year="'+i.year+'"][data-month="'+(i.month+1)+'"][data-day="'+i.day+'"]').parent(".day");f.removeClass("active");f.find(".badge").remove();f.find("a").removeAttr("href");if(this.currentMonth===i.month||this.options.activateNonCurrentMonths){e.push(this.makeActive(f,j))}else{e.push(void 0)}}return e},clearDays:function(k){var h,g,j,i,f,e;e=[];for(i=0,f=k.length;i<f;i++){h=k[i];delete this.options.events[h];j=this.splitDateString(h);g=this.$element.find('[data-year="'+j.year+'"][data-month="'+(j.month+1)+'"][data-day="'+j.day+'"]').parent(".day");g.removeClass("active");g.find(".badge").remove();e.push(g.find("a").removeAttr("href"))}return e},clearAll:function(){var g,k,h,j,f,e;this.options.events={};k=this.$element.find('[data-group="days"] .day');e=[];for(h=j=0,f=k.length;j<f;h=++j){g=k[h];c(g).removeClass("active");c(g).find(".badge").remove();e.push(c(g).find("a").removeAttr("href"))}return e},setMonthYear:function(e){var f;f=this.splitDateString(e);this.currentMonth=this.drawDays(f.year,f.month);return this.currentYear=f.year},prev:function(){if(this.currentMonth-1<0){this.currentYear=this.currentYear-1;this.currentMonth=11}else{this.currentMonth=this.currentMonth-1}this.drawDays(this.currentYear,this.currentMonth);if(this.options.onMonthChange){this.options.onMonthChange.call(this)}return null},next:function(){if(this.currentMonth+1>11){this.currentYear=this.currentYear+1;this.currentMonth=0}else{this.currentMonth=this.currentMonth+1}this.drawDays(this.currentYear,this.currentMonth);if(this.options.onMonthChange){this.options.onMonthChange.call(this)}return null},curr:function(){this.currentYear=this.time.getFullYear();this.currentMonth=this.time.getMonth();this.drawDays(this.currentYear,this.currentMonth);if(this.options.onMonthChange){this.options.onMonthChange.call(this)}return null},addOthers:function(f,g){var e;if(typeof g==="object"){if(g.number!=null){e=c("<span></span>").html(g.number).addClass("badge");if(g.badgeClass!=null){e.addClass(g.badgeClass)}f.append(e)}if(g.url){f.find("a").attr("href",g.url)}}return f},makeActive:function(f,k){var h,l,g,j,e;if(k){if(k["class"]){h=k["class"].split(" ");for(g=j=0,e=h.length;j<e;g=++j){l=h[g];f.addClass(l)}}else{f.addClass("active")}f=this.addOthers(f,k)}return f},getDaysInMonth:function(e,f){return new Date(e,f+1,0).getDate()},drawDay:function(o,p,j,f,h){var n,k,m,l,e,g;l=c("<div></div>").addClass("day");k=new Date();k.setHours(0,0,0,0);e=new Date(p,j-1,f);if(e.getTime()<k.getTime()){g="past"}else{if(e.getTime()===k.getTime()){g="today"}else{g="future"}}l.addClass(this.weekDays[h%7]);l.addClass(g);m=p+"-"+this.addLeadingZero(j)+"-"+this.addLeadingZero(f);if(f<=0||f>o){n=new Date(p,j-1,f);f=n.getDate();j=n.getMonth()+1;p=n.getFullYear();l.addClass("not-current").addClass(g);if(this.options.activateNonCurrentMonths){m=p+"-"+this.addLeadingZero(j)+"-"+this.addLeadingZero(f)}}l.append(c("<a>"+f+"</a>").attr("data-day",f).attr("data-month",j).attr("data-year",p));if(this.options.monthChangeAnimation){this.applyTransform(l,"rotateY(180deg)");this.applyBackfaceVisibility(l)}l=this.makeActive(l,this.options.events[m]);return this.$element.find('[data-group="days"]').append(l)},drawDays:function(o,u){var p,s,f,j,w,n,r,t,h,x,y,l,q,k,m,e,g,v;q=this;k=new Date(o,u);p=k.getMonth();y=k.getMonth()+1;e=k.getFullYear();k.setDate(1);r=this.options.startFromSunday?k.getDay()+1:k.getDay()||7;h=this.getDaysInMonth(o,u);m=0;if(this.options.monthChangeAnimation){j=this.$element.find('[data-group="days"] .day');for(t=g=0,v=j.length;g<v;t=++g){s=j[t];w=t*0.01;this.applyTransition(c(s),"transform .5s ease "+w+"s");this.applyTransform(c(s),"rotateY(180deg)");this.applyBackfaceVisibility(c(s));m=(w+0.1)*1000}}f=2;if(this.options.allRows){x=42}else{l=Math.ceil((r-(f-1)+h)/7);x=l*7}this.$element.find("[data-head-year]").html(k.getFullYear());this.$element.find("[data-head-month]").html(this.options.translateMonths[k.getMonth()]);n=function(){var z,i;q.$element.find('[data-group="days"]').empty();z=f-r;t=q.options.startFromSunday?0:1;while(z<x-r+f){q.drawDay(h,e,y,z,t);z=z+1;t=t+1}i=function(){var B,A;j=q.$element.find('[data-group="days"] .day');for(t=B=0,A=j.length;B<A;t=++B){s=j[t];q.applyTransition(c(s),"transform .5s ease "+(t*0.01)+"s");q.applyTransform(c(s),"rotateY(0deg)")}if(q.options.onDayClick){q.$element.find('[data-group="days"] .day a').click(function(){return q.options.onDayClick.call(this,q.options.events)})}if(q.options.onDayHover){q.$element.find('[data-group="days"] .day a').hover(function(){return q.options.onDayHover.call(this,q.options.events)})}if(q.options.onActiveDayClick){q.$element.find('[data-group="days"] .day.active a').click(function(){return q.options.onActiveDayClick.call(this,q.options.events)})}if(q.options.onActiveDayHover){return q.$element.find('[data-group="days"] .day.active a').hover(function(){return q.options.onActiveDayHover.call(this,q.options.events)})}};return setTimeout(i,0)};setTimeout(n,m);return p}};c.fn.responsiveCalendar=function(g,i){var h,f,e;f=c.extend({},c.fn.responsiveCalendar.defaults,typeof g==="object"&&g);e={next:"next",prev:"prev",edit:"editDays",clear:"clearDays",clearAll:"clearAll",getYearMonth:"getYearMonth",jump:"jump",curr:"curr"};h=function(k){var j;f=c.metadata?c.extend({},f,k.metadata()):f;k.data("calendar",(j=new d(k,f)));if(f.onInit){f.onInit.call(j)}return k.find("[data-go]").click(function(){if(c(this).data("go")==="prev"){j.prev()}if(c(this).data("go")==="next"){return j.next()}})};return this.each(function(){var k,j;k=c(this);j=k.data("calendar");if(!j){h(k)}else{if(typeof g==="string"){if(e[g]!=null){j[e[g]](i)}else{j.setMonthYear(g)}}else{if(typeof g==="number"){j.jump(Math.abs(g)+1)}}}return null})};c.fn.responsiveCalendar.defaults={translateMonths:["January","February","March","April","May","June","July","August","September","October","November","December"],events:{},time:void 0,allRows:true,startFromSunday:false,activateNonCurrentMonths:false,monthChangeAnimation:true,onInit:void 0,onDayClick:void 0,onDayHover:void 0,onActiveDayClick:void 0,onActiveDayHover:void 0,onMonthChange:void 0};a=c('[data-spy="responsive-calendar"]');if(a.length){b={};if((a.data("translate-months"))!=null){b.translateMonths=a.data("translate-months").split(",")}if((a.data("time"))!=null){b.time=a.data("time")}if((a.data("all-rows"))!=null){b.allRows=a.data("all-rows")}if((a.data("start-from-sunday"))!=null){b.startFromSunday=a.data("start-from-sunday")}if((a.data("activate-non-current-months"))!=null){b.activateNonCurrentMonths=a.data("activate-non-current-months")}if((a.data("month-change-animation"))!=null){b.monthChangeAnimation=a.data("month-change-animation")}return a.responsiveCalendar(b)}})(jQuery)}).call(this);
+  (function(){(function(c){var d,b,a;d=function(f,e){var g;this.$element=f;this.options=e;this.weekDays=["sun","mon","tue","wed","thu","fri","sat","sun"];this.time=new Date();this.currentYear=this.time.getFullYear();this.currentMonth=this.time.getMonth();if(this.options.time){g=this.splitDateString(this.options.time);this.currentYear=g.year;this.currentMonth=g.month}this.initialDraw();return null};d.prototype={addLeadingZero:function(e){if(e<10){return"0"+e}else{return""+e}},applyTransition:function(e,f){e.css("transition",f);e.css("-ms-transition","-ms-"+f);e.css("-moz-transition","-moz-"+f);return e.css("-webkit-transition","-webkit-"+f)},applyBackfaceVisibility:function(e){e.css("backface-visibility","hidden");e.css("-ms-backface-visibility","hidden");e.css("-moz-backface-visibility","hidden");return e.css("-webkit-backface-visibility","hidden")},applyTransform:function(f,e){f.css("transform",e);f.css("-ms-transform",e);f.css("-moz-transform",e);return f.css("-webkit-transform",e)},splitDateString:function(g){var e,i,h,f;h=g.split("-");f=parseInt(h[0]);i=parseInt(h[1]-1);e=parseInt(h[2]);return h={year:f,month:i,day:e}},initialDraw:function(){return this.drawDays(this.currentYear,this.currentMonth)},editDays:function(g){var h,f,j,i,e;e=[];for(h in g){j=g[h];this.options.events[h]=g[h];i=this.splitDateString(h);f=this.$element.find('[data-year="'+i.year+'"][data-month="'+(i.month+1)+'"][data-day="'+i.day+'"]').parent(".day");f.removeClass("active");f.find(".badge").remove();f.find("a").removeAttr("href");if(this.currentMonth===i.month||this.options.activateNonCurrentMonths){e.push(this.makeActive(f,j))}else{e.push(void 0)}}return e},clearDays:function(k){var h,g,j,i,f,e;e=[];for(i=0,f=k.length;i<f;i++){h=k[i];delete this.options.events[h];j=this.splitDateString(h);g=this.$element.find('[data-year="'+j.year+'"][data-month="'+(j.month+1)+'"][data-day="'+j.day+'"]').parent(".day");g.removeClass("active");g.find(".badge").remove();e.push(g.find("a").removeAttr("href"))}return e},clearAll:function(){var g,k,h,j,f,e;this.options.events={};k=this.$element.find('[data-group="days"] .day');e=[];for(h=j=0,f=k.length;j<f;h=++j){g=k[h];c(g).removeClass("active");c(g).find(".badge").remove();e.push(c(g).find("a").removeAttr("href"))}return e},setMonthYear:function(e){var f;f=this.splitDateString(e);this.currentMonth=this.drawDays(f.year,f.month);return this.currentYear=f.year},prev:function(){if(this.currentMonth-1<0){this.currentYear=this.currentYear-1;this.currentMonth=11}else{this.currentMonth=this.currentMonth-1}this.drawDays(this.currentYear,this.currentMonth);if(this.options.onMonthChange){this.options.onMonthChange.call(this)}return null},next:function(){if(this.currentMonth+1>11){this.currentYear=this.currentYear+1;this.currentMonth=0}else{this.currentMonth=this.currentMonth+1}this.drawDays(this.currentYear,this.currentMonth);if(this.options.onMonthChange){this.options.onMonthChange.call(this)}return null},curr:function(){this.currentYear=this.time.getFullYear();this.currentMonth=this.time.getMonth();this.drawDays(this.currentYear,this.currentMonth);if(this.options.onMonthChange){this.options.onMonthChange.call(this)}return null},addOthers:function(f,g){var e;if(typeof g==="object"){if(g.number!=null){e=c("<span></span>").html(g.number).addClass("badge");if(g.badgeClass!=null){e.addClass(g.badgeClass)}f.append(e)}if(g.url){f.find("a").attr("href",g.url)}}return f},makeActive:function(f,k){var h,l,g,j,e;if(k){if(k["class"]){h=k["class"].split(" ");for(g=j=0,e=h.length;j<e;g=++j){l=h[g];f.addClass(l)}}else{f.addClass("active")}f=this.addOthers(f,k)}return f},getDaysInMonth:function(e,f){return new Date(e,f+1,0).getDate()},drawDay:function(o,p,j,f,h){var n,k,m,l,e,g;l=c("<div></div>").addClass("day");k=new Date();k.setHours(0,0,0,0);e=new Date(p,j-1,f);if(e.getTime()<k.getTime()){g="past"}else{if(e.getTime()===k.getTime()){g="today"}else{g="future"}}l.addClass(this.weekDays[h%7]);l.addClass(g);m=p+"-"+this.addLeadingZero(j)+"-"+this.addLeadingZero(f);if(f<=0||f>o){n=new Date(p,j-1,f);f=n.getDate();j=n.getMonth()+1;p=n.getFullYear();l.addClass("not-current").addClass(g);if(this.options.activateNonCurrentMonths){m=p+"-"+this.addLeadingZero(j)+"-"+this.addLeadingZero(f)}}l.append(c("<a>"+f+"</a>").attr("data-day",f).attr("data-month",j).attr("data-year",p));if(this.options.monthChangeAnimation){this.applyTransform(l,"");this.applyBackfaceVisibility(l)}l=this.makeActive(l,this.options.events[m]);return this.$element.find('[data-group="days"]').append(l)},drawDays:function(o,u){var p,s,f,j,w,n,r,t,h,x,y,l,q,k,m,e,g,v;q=this;k=new Date(o,u);p=k.getMonth();y=k.getMonth()+1;e=k.getFullYear();k.setDate(1);r=this.options.startFromSunday?k.getDay()+1:k.getDay()||7;h=this.getDaysInMonth(o,u);m=0;if(this.options.monthChangeAnimation){j=this.$element.find('[data-group="days"] .day');for(t=g=0,v=j.length;g<v;t=++g){s=j[t];w=t*0.01;this.applyTransition(c(s),"transform .5s ease "+w+"s");this.applyTransform(c(s),"");this.applyBackfaceVisibility(c(s));m=(w+0.1)*1000}}f=2;if(this.options.allRows){x=42}else{l=Math.ceil((r-(f-1)+h)/7);x=l*7}this.$element.find("[data-head-year]").html(k.getFullYear());this.$element.find("[data-head-month]").html(this.options.translateMonths[k.getMonth()]);n=function(){var z,i;q.$element.find('[data-group="days"]').empty();z=f-r;t=q.options.startFromSunday?0:1;while(z<x-r+f){q.drawDay(h,e,y,z,t);z=z+1;t=t+1}i=function(){var B,A;j=q.$element.find('[data-group="days"] .day');for(t=B=0,A=j.length;B<A;t=++B){s=j[t];q.applyTransition(c(s),"transform .5s ease "+(t*0.01)+"s");q.applyTransform(c(s),"rotateY(0deg)")}if(q.options.onDayClick){q.$element.find('[data-group="days"] .day a').click(function(){return q.options.onDayClick.call(this,q.options.events)})}if(q.options.onDayHover){q.$element.find('[data-group="days"] .day a').hover(function(){return q.options.onDayHover.call(this,q.options.events)})}if(q.options.onActiveDayClick){q.$element.find('[data-group="days"] .day.active a').click(function(){return q.options.onActiveDayClick.call(this,q.options.events)})}if(q.options.onActiveDayHover){return q.$element.find('[data-group="days"] .day.active a').hover(function(){return q.options.onActiveDayHover.call(this,q.options.events)})}};return setTimeout(i,0)};setTimeout(n,m);return p}};c.fn.responsiveCalendar=function(g,i){var h,f,e;f=c.extend({},c.fn.responsiveCalendar.defaults,typeof g==="object"&&g);e={next:"next",prev:"prev",edit:"editDays",clear:"clearDays",clearAll:"clearAll",getYearMonth:"getYearMonth",jump:"jump",curr:"curr"};h=function(k){var j;f=c.metadata?c.extend({},f,k.metadata()):f;k.data("calendar",(j=new d(k,f)));if(f.onInit){f.onInit.call(j)}return k.find("[data-go]").click(function(){if(c(this).data("go")==="prev"){j.prev()}if(c(this).data("go")==="next"){return j.next()}})};return this.each(function(){var k,j;k=c(this);j=k.data("calendar");if(!j){h(k)}else{if(typeof g==="string"){if(e[g]!=null){j[e[g]](i)}else{j.setMonthYear(g)}}else{if(typeof g==="number"){j.jump(Math.abs(g)+1)}}}return null})};c.fn.responsiveCalendar.defaults={translateMonths:["January","February","March","April","May","June","July","August","September","October","November","December"],events:{},time:void 0,allRows:true,startFromSunday:false,activateNonCurrentMonths:false,monthChangeAnimation:true,onInit:void 0,onDayClick:void 0,onDayHover:void 0,onActiveDayClick:void 0,onActiveDayHover:void 0,onMonthChange:void 0};a=c('[data-spy="responsive-calendar"]');if(a.length){b={};if((a.data("translate-months"))!=null){b.translateMonths=a.data("translate-months").split(",")}if((a.data("time"))!=null){b.time=a.data("time")}if((a.data("all-rows"))!=null){b.allRows=a.data("all-rows")}if((a.data("start-from-sunday"))!=null){b.startFromSunday=a.data("start-from-sunday")}if((a.data("activate-non-current-months"))!=null){b.activateNonCurrentMonths=a.data("activate-non-current-months")}if((a.data("month-change-animation"))!=null){b.monthChangeAnimation=a.data("month-change-animation")}return a.responsiveCalendar(b)}})(jQuery)}).call(this);
 
   /* slider */
   if ($(".single-item").length > 0) {
@@ -40,62 +40,55 @@ $(document).ready(function () {
     });
   }
   /* countdown end*/
-
   /* calendar */
   if ($(".training-list__calendar").length > 0) {
-    $(".training-list__calendar").responsiveCalendar({
-      time: '2019-07',
-      translateMonths: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
-      events: {
-        "2019-07-15": {
-          "number": 245,
-          "dayEvents": [
-            {
-              "name": "Important meeting",
-              "hour": "17:30"
-            },
-            {
-              "name": "Morning meeting at coffee house",
-              "hour": "08:15"
-            }
-          ]
-        },
-        "2019-07-30": {
-          "number": 2,
-          "dayEvents": [
-            {
-              "name": "Important meeting",
-              "hour": "17:30"
-            },
-            {
-              "name": "Morning meeting at coffee house",
-              "hour": "08:15"
-            }
-          ]
-        },
-        "2019-08-02": {
-          "number": 3,
-          "dayEvents": [
-            {
-              "name": "Important meeting",
-              "hour": "17:30"
-            },
-            {
-              "name": "Morning meeting at coffee house",
-              "hour": "08:15"
-            },
-            {
-              "name": "Morning meeting at coffee house",
-              "hour": "08:15"
-            }
-          ]
-        }
+    $(".training-list__calendar").responsiveCalendar('edit', {
+      "2019-07-15": {
+        "number": 245,
+        "dayEvents": [
+          {
+            "name": "Important meeting",
+            "hour": "17:30"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          }
+        ]
       },
-      monthChangeAnimation: false
+      "2019-07-30": {
+        "number": 2,
+        "dayEvents": [
+          {
+            "name": "Important meeting",
+            "hour": "17:30"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          }
+        ]
+      },
+      "2019-08-02": {
+        "number": 3,
+        "dayEvents": [
+          {
+            "name": "Important meeting",
+            "hour": "17:30"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          },
+          {
+            "name": "Morning meeting at coffee house",
+            "hour": "08:15"
+          }
+        ]
+      }
     });
   }
   /* calendar end*/
-
   /* calendar slider */
   if ($(".training-list__slider").length > 0) {
     $('.training-list__slider').slick({
@@ -109,6 +102,28 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
+  if ($(".event-popular-slider").length > 0) {
+    $('.event-popular-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      centerMode: false,
+      responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
           }
         }
       ]
@@ -205,8 +220,9 @@ $(document).ready(function () {
     /* get day value and put in to day-input */
     $(document).on('click', '.day a', function () {
       var association = this.dataset.day + "/" + this.dataset.month + "/" + this.dataset.year ;
-      var resultText = document.getElementsByClassName('select-date')[0];
-      resultText.innerHTML = association;
+      // var resultText = document.getElementsByClassName('select-date')[0];
+      // resultText.innerHTML = association;
+      $('.dropdown-menu').hide();
     });
     /* get day value and put in to day-input end*/
   }
@@ -285,13 +301,120 @@ $(document).ready(function () {
       var $this = $(this);
       if ($this[0].checked) {
         $this.parents('.recurring-event').next().addClass('active');
-        $('.add-webinar__add-date').parents('.col-md-12').hide();
+        // $('.add-webinar__add-date').parents('.col-md-12').hide();
+        $('.end-date-row').show();
       }
       else {
-        $('.add-webinar__add-date').parents('.col-md-12').show();
+        // $('.add-webinar__add-date').parents('.col-md-12').show();
         $('.week-list').removeClass('active');
+        $('.end-date-row').hide();
       }
     });
   }
   /* check if recurring-event label is checked end */
+
+  /* show/hide text description on webinar page */
+  if ($(".conference-title").length > 0) {
+    $('.conference-title').click(function () {
+      $(this).parents('.room-description__text').find('.detail-info').toggle();
+      $(this).parents('.room-description__text').find('.room-description__text-item').toggle();
+    });
+  }
+  /* show/hide text description on webinar page end */
+  if ($(".room").length > 0) {
+    /* init player lib */
+    const player = new Plyr('#player');
+    /* init player lib end */
+
+    /* hide presentation photo list */
+    $('.presentation-close').click(function () {
+      $(this).parents('.tab-pane').removeClass('active');
+    });
+    /* hide presentation photo list end*/
+
+    /* function show full description tab */
+    function showDescription() {
+      if($('.description').hasClass( "active" )) {
+        $('.presentation-list').addClass('full-description');
+        $('.presentation-img-wrap').hide();
+      }
+    }
+    showDescription();
+
+    /* function show full description tab end*/
+
+    /* hide description */
+    function hideDescription() {
+      if($('.description').hasClass( "active" )) {
+        $('.presentation-img-wrap').show();
+        $('.presentation-list').removeClass('full-description');
+      }
+    }
+    /* hide description end */
+
+    $(document).on('click', '.room-menu__list a', function () {
+      var link = document.getElementById('clear-tab');
+      if($(link).hasClass( "active" )) {
+        $('.presentation-img-wrap').hide();
+        $('.presentation-list').addClass('full-description');
+      } else {
+        hideDescription();
+        $('.presentation-img-wrap').show();
+        $('.presentation-list').removeClass('full-description');
+      }
+    });
+    $('.room-menu__list a').click(function () {
+      $('.presentation-list .tab-pane').removeClass('active');
+      var menuLabel = $(this).attr('id');
+      var tabPane = document.getElementsByClassName(menuLabel)[0];
+      if (!($(tabPane).hasClass('active'))) {
+        $(tabPane).addClass('active');
+      }
+    });
+
+    /* get presentation image on click */
+    $('.presentation-list--item').click(function () {
+      presentationImage = $(this).data('image');
+      var presentationBgImage = $('.presentation-background-img');
+      var presentationBtn = $('.presentation-img--btn');
+      $(presentationBgImage).show();
+      $(presentationBtn).show();
+      $(presentationBgImage).attr('src', presentationImage);
+      if(presentationBgImage.is(":hidden")) {
+        $(this).parents('.presentation-list').prev('.presentation-img-wrap').css('background', '#eaeff3');
+      }
+    });
+    /* get presentation image on click end */
+
+    /* hide presentation-list by click on presentation-img--btn*/
+    $('.presentation-img--btn').click(function () {
+      $(this).parents('.presentation-img-wrap').children().hide();
+      $(this).parents('.presentation-img-wrap').css('background', 'transparent');
+    });
+    /* hide presentation-list by click on presentation-img--btn end */
+
+    /* show tabs on mobile */
+    $('.nav-link').click(function () {
+      if($(this).hasClass('active')) {
+        $(this).parents('.room-sidebar__panel').toggleClass('active-tab');
+      }
+    });
+    /* show tabs on mobile end */
+
+    /* show/hide sidebar menu */
+    $('.show-video').click(function () {
+      $(this).parents('.room-sidebar__video-item').toggleClass('hide-video');
+    });
+    /* show/hide sidebar menu end */
+  }
+  if ($(".modal-login").length > 0) {
+    $('.form-link__forgot-pass').click(function () {
+      $(this).parents('.modal-body').hide();
+      $(this).parents('.modal-body').next().show();
+    });
+    $('.close-ico').click(function () {
+      $('.modal-body').show();
+      $('.forget-pass').hide();
+    })
+  }
 });

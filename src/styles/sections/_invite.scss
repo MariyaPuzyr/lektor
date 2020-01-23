@@ -15,6 +15,10 @@
         border-bottom: 2px solid $color_underline;
         color: $color_underline;
       }
+      @include adapt_to('large-phone') {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   .tab-content {
@@ -41,6 +45,70 @@
     }
     .registration-form-control {
       margin-bottom: 30px;
+    }
+  }
+  &-item {
+    &__list {
+      width: 100%;
+      max-height: 260px;
+      overflow: auto;
+      display: flex;
+      border: 1px solid $color_border;
+      border-radius: 4px;
+      background: $color_white;
+      padding: 15px 5px 5px 15px;
+      margin-bottom: 10px;
+      &-item {
+        display: inline-flex;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background: $color_blue;
+        border-radius: 4px;
+        font-size: $size_link_font;
+        line-height: 19px;
+        color: $color_link;
+        padding: 3px 10px;
+        .close {
+          mask: url('../img/svg/icon-delete.svg') no-repeat center;
+          width: 24px;
+          height: 24px;
+          background: $color_description;
+          margin-left: 10px;
+          cursor: pointer;
+          opacity: 1;
+          text-shadow: none;
+          &:hover {
+            opacity: 1;
+            background: $color_link;
+          }
+        }
+      }
+    }
+    &__bottom a {
+      color: $color_link;
+    }
+    .registration-form__checkbox {
+      background: $color_white;
+      border: 1px solid $color_border;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      padding: 15px;
+      align-items: flex-start;
+      width: 100%;
+      input[type="checkbox"] {
+        margin-right: 15px;
+      }
+    }
+  }
+  &-lection {
+    &-name {
+      color: $color_darkblue;
+      font-family: $font_bold;
+    }
+    &-date {
+      margin-top: 5px;
+      color: $color_link;
+      font-family: $font_main;
     }
   }
 }

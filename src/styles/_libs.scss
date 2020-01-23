@@ -2,4 +2,22 @@
 @import "../../node_modules/clockpicker/dist/bootstrap-clockpicker.min";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "utils/slick-theme";
+@import "utils/plyr";
+@import "../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar";
 
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #bac1cc;
+  margin: 0 0 0 auto;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+.mCustomScrollBox {
+  width: 100%;
+}

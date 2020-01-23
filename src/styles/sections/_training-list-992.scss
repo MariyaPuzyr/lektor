@@ -8,7 +8,7 @@
     flex-direction: row;
   }
   &__slider-item {
-    width: 60%;
+    width: calc(100% - 33.33333%);
     margin-top: 0;
     .slick-arrow {
       top: -98px;

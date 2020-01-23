@@ -1,5 +1,6 @@
 .training-list {
   background: url('../img/svg/bg.svg') no-repeat top left;
+  background-size: contain;
   position: relative;
   z-index: 1;
   &__title {
@@ -30,7 +31,7 @@
   }
   &__slider-item {
     width: 100%;
-    //flex: 1 0 60%;
+    //flex: 0 0 auto;
     margin-top: 70px;
     .slick-slide {
       padding: 0 5px;
@@ -78,7 +79,6 @@
   }
   .training-item {
     font-family: $font_main;
-    width: 100%;
     &__link {
       margin-bottom: 15px;
       display: block;

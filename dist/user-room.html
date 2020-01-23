@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User room webinar</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/room.min.css">
+  </head>
+  <body>
+    <div class="room">
+      <div class="room-menu"><a class="room-menu__link" href="/"><img src="./img/svg/white-logo.svg"></a>
+        <ul class="room-menu__list nav nav-tabs" role="tablist">
+          <li><a id="description-tab" href="#description" data-toggle="tab" role="tab" aria-controls="description" aria-selected="true" title="description">
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#img-icon"></use>
+              </svg></a></li>
+          <li><a id="video-tab" href="#video" data-toggle="tab" role="tab" aria-controls="video" aria-selected="false" title="video">
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#icon-video"></use>
+              </svg></a></li>
+          <li><a id="documents-tab" href="#documents" data-toggle="tab" role="tab" aria-controls="documents" aria-selected="false" title="documents">
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+              </svg></a></li>
+          <li><a id="presentation-tab" href="#presentation" data-toggle="tab" role="tab" aria-controls="presentation" aria-selected="false" title="presentation">
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#icon-presentation"></use>
+              </svg></a></li>
+          <li><a class="download-all" href="#" title="download all">
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#icon-access-documents2"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <div class="room-presenter">
+        <div class="room-navbar">
+          <div class="room-navbar__title"><a href="#">
+              <svg class="icon-arrow">
+                <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
+              </svg></a>Слоненок с мячиком. Мягкая игрушка связана спицами</div>
+          <div class="room-navbar__start-lection ml-auto">
+            <div class="timer">00 : 00 : 00</div>
+            <div class="room-navbar__start-lection--users">
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#icon-user-confirmed"></use>
+              </svg><span>120<span class="online">онлайн</span></span>
+            </div><a class="default-blue room-navbar__get-question" href="#">Задать вопрос голосом</a>
+          </div>
+        </div>
+        <div class="room-content">
+          <div class="room-description">
+            <div class="presentation-item">
+              <div class="presentation-img-wrap"><img class="presentation-background-img" src="https://images.unsplash.com/photo-1569202809807-32b9de0979fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1363&amp;q=80"></div>
+              <div class="presentation-list">
+                <div class="tab-content">
+                  <div class="tab-pane description active clear-tab" id="clear" role="tabpanel" aria-labelledby="clear-tab">
+                    <div class="banner-slider__items">
+                      <div class="banner-slider__item">
+                        <div class="row w-100 banner-slider__item--info">
+                          <div class="col-md-3"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                          <div class="col-md-9"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                            <div class="lector-info">
+                              <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                              <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-description__text">
+                      <div class="conference-title detail-info">Подробнее о конференции</div>
+                      <div class="room-description__text-item">
+                        <p>Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени. Вебинар - это модно, современно, доступно, просто, удобно. Вебинар, или онлайн-семинар, - набирающий популярность вид обучения в реальном времени с использованием Интернет-технологий.<br><br>Данная технология позволяет за считанные секунды организовать встречу людей из разных уголков земного шара, в любое удобное время, не имея привязки к транспорту, что существенно экономит средства.</p>
+                        <div class="conference-title">Скрыть подробности</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane description-tab" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <h2 class="presentation-list--title">Фото</h2>
+                    <div class="presentation-close"></div>
+                    <div class="presentation-list--item-wrap mCustomScrollbar">
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1569202809807-32b9de0979fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1363&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1569202809807-32b9de0979fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1363&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1528027575047-56782a87e021?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1528027575047-56782a87e021?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/9/sander-zelhem-green-passage.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1370&amp;q=80&quot;)" data-image="https://images.unsplash.com/9/sander-zelhem-green-passage.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1370&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1465125955720-142b5f936d95?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1465125955720-142b5f936d95?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1478733672327-ce27bc999503?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1478733672327-ce27bc999503?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1485841938031-1bf81239b815?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1485841938031-1bf81239b815?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1482&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1482&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1445586831130-7f00f5eac0f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1445586831130-7f00f5eac0f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video tab-pane video-tab" id="video" role="tabpanel" aria-labelledby="video-tab">
+                    <h2 class="presentation-list--title">Видео</h2>
+                    <div class="presentation-close"></div>
+                    <div class="presentation-list--item-wrap mCustomScrollbar">
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1569202809807-32b9de0979fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1363&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1569202809807-32b9de0979fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1363&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1528027575047-56782a87e021?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1528027575047-56782a87e021?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/9/sander-zelhem-green-passage.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1370&amp;q=80&quot;)" data-image="https://images.unsplash.com/9/sander-zelhem-green-passage.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1370&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1465125955720-142b5f936d95?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1465125955720-142b5f936d95?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1478733672327-ce27bc999503?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1478733672327-ce27bc999503?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1485841938031-1bf81239b815?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&quot;)" data-image="https://images.unsplash.com/photo-1485841938031-1bf81239b815?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1482&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1482&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                      <div class="presentation-list--item" style="background-image: url(&quot;https://images.unsplash.com/photo-1445586831130-7f00f5eac0f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80&quot;)" data-image="https://images.unsplash.com/photo-1445586831130-7f00f5eac0f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
+                        <div class="presentation-list--btn user-download">Скачать</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="documents tab-pane documents-tab" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+                    <h2 class="presentation-list--title">Документы</h2>
+                    <div class="presentation-close"></div>
+                    <div class="presentation-list--item-wrap document-list--item-wrap mCustomScrollbar">
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn hide-btn">Скрыть</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="presentation tab-pane presentation-tab" id="presentation" role="tabpanel" aria-labelledby="presentation-tab">
+                    <h2 class="presentation-list--title">Презентации</h2>
+                    <div class="presentation-close"></div>
+                    <div class="presentation-list--item-wrap document-list--item-wrap mCustomScrollbar">
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn hide-btn">Скрыть</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                      <div class="document-list--item">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <div class="document-list--item__name">477179_353811051326479_413395789_o.doc</div>
+                        <div class="document-list--item__btn">Показать</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-sidebar">
+            <div class="room-sidebar__lektor-info">
+              <div class="lector-info">
+                <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
+                <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
+              </div>
+            </div>
+            <div class="room-sidebar__video-item">
+              <div class="show-lector"><img src="./img/avatar.jpg" alt=""></div>
+              <div class="show-video"></div>
+              <svg class="icon">
+                <use xlink:href="./img/sprites/sprite.svg#user"></use>
+              </svg>
+            </div>
+            <div class="room-sidebar__panel room-sidebar__panel-user">
+              <div class="tab-content">
+                <div class="tab-pane active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+                  <div class="chat">
+                    <div class="top">
+                      <div class="title">Чат</div>
+                    </div>
+                    <div class="chat-body mCustomScrollbar">
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать ?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать фирменный стиль и цвета нового сайта?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                      <div class="chat-item">
+                        <div class="chat-item--top">
+                          <svg class="avatar">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                          </svg><a class="user-name" href="personal.html">Василий Фамилияпомощь</a>
+                        </div>
+                        <div class="chat-message">
+                          <p>Неообходи мо ли переделать =====?</p>
+                          <div class="sent-date">отправлено 17:46:59</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-footer">
+                      <form class="chat-footer--add-message" action="">
+                        <textarea placeholder="Введите сообщение"></textarea>
+                        <button class="chat-send-btn" type="submit">
+                          <svg class="icon">
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-select"></use>
+                          </svg>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main-libs.min.js"></script>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    <script src="./js/plyr.js"></script>
+  </body>
+</html>

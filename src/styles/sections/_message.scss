@@ -16,6 +16,11 @@
     &.active {
       display: block;
     }
+    @include adapt_to('large-phone') {
+      .default-green {
+        margin-bottom: 10px;
+      }
+    }
   }
   .success-info {
     align-items: center;
@@ -62,6 +67,8 @@
       padding: 20px 30px;
       display: flex;
       align-items: center;
+      overflow: auto;
+      width: 100%;
     }
     &__message-content {
       padding: 0 30px 20px;

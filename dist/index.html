@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles/main.min.css">
     <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
     <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
-    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -47,7 +46,7 @@
                 <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
                 <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
                 <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
-                <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+                <li class="nav-item"><a class="nav-link" href="article-list.html">Статьи</a></li>
               </ul>
             </div>
           </div>
@@ -106,7 +105,7 @@
         <div class="container">
           <h2 class="training-list__title">Запланировано на сегодня<span>245 тренингов</span></h2>
           <div class="training-list__item">
-            <div class="training-list__calendar">
+            <div class="training-list__calendar" data-spy="responsive-calendar" data-time="2019-08" data-translate-months="Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь">
               <div class="controls"><a class="pull-left calendar-control" data-go="prev"></a>
                 <h4><span data-head-month=""></span><span data-head-year=""></span></h4><a class="pull-right calendar-control" data-go="next"></a>
               </div>
@@ -379,11 +378,63 @@
               </div>
             </form>
           </div>
+          <div class="modal-body forget-pass">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <svg class="close-ico">
+                <use xlink:href="./img/sprites/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+            <h5 class="modal-title">Забыли пароль</h5>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="alert-info">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprites/sprite.svg#icon-alert-error"></use>
+                    </svg>Такой e-mail не найден
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Введите e-mail">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-link">
+                    <button class="form-link__login" type="submit">Восстановить пароль</button>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="sign-social">
+                    <div class="sign-social__title">Или войдите с помощью соцсетей:</div>
+                    <ul>
+                      <li><a class="sign-social__link" href="#">
+                          <div class="icon icon-fa"></div>Facebook</a></li>
+                      <li><a class="sign-social__link google-link" href="#">
+                          <div class="icon icon-google"></div>Google</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="registration-link">У вас еще нет аккаунта?<a href="registration.html">Зарегистрируйтесь</a></div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+    <script src="./js/main-libs.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    <script src="./js/plyr.js"></script>
   </body>
 </html>

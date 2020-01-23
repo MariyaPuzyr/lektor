@@ -11,8 +11,88 @@
           .row
             .col-md-6
               .invite-item
-                .invite-item__label Кому:
-                input(type='text' value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput").invite-item__field
+                .profile-user-edit
+                  h4.mt-0 Кому:
+                .invite-item__list.mCustomScrollbar
+                  .invite-item__list-item
+                    span usermail@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span user1478@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span user@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span longlongusername@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span usernamemail@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span 145@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span usermail@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span user1478@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span user@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span longlongusername@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span usernamemail@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span 145@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span usermail@gmail.com
+                    .close
+                  .invite-item__list-item
+                    span user1478@gmail.com
+                    .close
+
+                .invite-item__bottom.row
+                  .col-auto
+                    a(href='#').border-link.blue-border.mt-0.refferal-link Рефералы
+                  .col-auto
+                    a(href='#').border-link.blue-border.mt-0.attended-lectures Посетившие лекции
+            .col-md-6
+              .profile-user-edit
+                h4.mt-0 Список конференций:
+              .invite-item
+                .registration-form__checkbox.mt-0
+                  input(type='checkbox')
+                  .invite-lection-name Слоненок с мячиком. Мягкая игрушка связана спицами
+                    .invite-lection-date 31 ноября 2019, 15:00
+                .registration-form__checkbox.mt-0
+                  input(type='checkbox')
+                  .invite-lection-name Слоненок с мячиком. Мягкая игрушка связана спицами
+                    .invite-lection-date 31 ноября 2019, 15:00
+                .invite-item__bottom.row
+                  .col-auto
+                    a(href='#').border-link.blue-border.mt-0.add-conference Добавить конференцию
+                  .col-auto
+                    a(href='#').border-link.mt-0.remove-selected Удалить выбранные
+          .row
+            .col-md-12
+              .profile-user-edit
+                h4 Приглашение:
+              .registration-form__group
+                .placeholder Тема
+                  span *
+                input.registration-form-control(type='text')
+              .registration-form__group
+                .placeholder Текст
+                  span *
+                textarea.registration-form-control(rows='5')
+              .registration-form__link
+                button(type='submit').registration-form__link-registration Отправить приглашения
       #invite-ref.tab-pane.fade(role='tabpanel' aria-labelledby='invite-ref-tab')
         #faq.faq
           .row

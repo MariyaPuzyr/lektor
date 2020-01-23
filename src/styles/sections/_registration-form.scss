@@ -72,9 +72,12 @@
       margin-bottom: 25px;
       display: flex;
       align-items: flex-start;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       .invalid-feedback {
         position: absolute;
         bottom: -20px;
+        font-size: 11px;
       }
       .placeholder {
         position: absolute;
@@ -141,6 +144,9 @@
       line-height: 19px;
       cursor: pointer;
       word-break: break-word;
+      @include adapt_to('large-phone') {
+        margin-bottom: 15px;
+      }
       a {
         color: $color_underline;
         margin-left: 3px;
@@ -159,6 +165,9 @@
         background-color: $color_white;
         margin-right: 20px;
         flex: 0 0 30px;
+        @include adapt_to('large-phone') {
+          margin-right: 15px;
+        }
         &::after {
           content: '';
           width: 30px;
@@ -179,6 +188,7 @@
       align-items: center;
       flex-direction: column;
       margin-bottom: 30px;
+      flex-wrap: wrap;
       &-registration {
         padding: 9px 45px;
         background: $color_selected;
@@ -217,4 +227,8 @@
       display: block;
     }
   }
+}
+
+.reset-password {
+  max-width: 350px;
 }

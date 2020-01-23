@@ -1,0 +1,34 @@
+.event-info__item
+  .container
+    .row
+      .col-lg-6
+        .event-info
+          +lector-info
+          .event-info__date 31 ноября 2019 года, 15:00
+          p Онлайн-семинар (веб-конференция, вебинар, англ. webinar) — разновидность веб-конференции, проведение онлайн-встреч или презентаций через Интернет в режиме реального времени.
+            |Вебинар - это модно, современно, доступно, просто, удобно.
+            |Вебинар, или онлайн-семинар, - набирающий популярность вид обучения в реальном времени с использованием Интернет-технологий.
+            |Данная технология позволяет за считанные секунды организовать встречу людей из разных уголков земного шара, в любое удобное время, не имея привязки к транспорту, что существенно экономит средства.
+      .col-lg-6
+        .event-info.price-info
+          .event-price Стоимость:
+            span.free-price 1000 грн
+          .event-price Скачивание медиаматериалов:
+            span Бесплатно
+          form(action='#')
+            .row.event-form
+              .col-md-12
+                .event-notice Для получения пригласительной ссылки, заполните данные
+              .col-md-6
+                .registration-form__group
+                  .placeholder Ваше имя
+                    span *
+                  input.registration-form-control(type='text')
+              .col-md-6
+                .registration-form__group
+                  .placeholder E-mail
+                    span *
+                  input.registration-form-control(type='text')
+            .row
+              .col-md-6.col-lg-4
+                button(type='submit').default-green.get-sign-in Записаться

@@ -17,12 +17,12 @@ mixin trending-archive-list
   .col-lg-4.col-md-6.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
-        a(href='#').coming-events-soon__img-info--link
+        a(href='event-detail.html').coming-events-soon__img-info--link
           img(src='./img/event-1.jpg').img-fluid
         a(href='#').archive-tag-link Архив
       .coming-events-soon__info
         +lector-info
-        a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+        a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
         p Прошла 31 ноября 2019 года, 15:00
         .price-lections
           +sprite('icon', 'icon-access-documents2')
@@ -38,12 +38,12 @@ mixin trending-archive-list__with-price
   .col-lg-4.col-md-6.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
-        a(href='#').coming-events-soon__img-info--link
+        a(href='event-detail.html').coming-events-soon__img-info--link
           img(src='./img/event-1.jpg').img-fluid
         a(href='#').archive-tag-link Архив
       .coming-events-soon__info
         +lector-info
-        a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+        a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
         p Прошла 31 ноября 2019 года, 15:00
         .price-lections
           +sprite('icon', 'icon-access-documents2')
@@ -58,12 +58,12 @@ mixin trending-archive-list__no-img
   .col-lg-4.col-md-6.d-flex
     .trending-archive-list
       .coming-events-soon__img-info
-        a(href='#').coming-events-soon__img-info--link.no-img
-          +sprite('icon', 'img-icon')
+        a(href='event-detail.html').coming-events-soon__img-info--link.no-img
+          +sprite('icon', 'no-img')
         a(href='#').archive-tag-link Архив
       .coming-events-soon__info
         +lector-info
-        a(href='#').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+        a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
         p Прошла 31 ноября 2019 года, 15:00
         .price-lections
           +sprite('icon', 'icon-access-documents2')
@@ -73,6 +73,50 @@ mixin trending-archive-list__no-img
             a(href='#').default-green Скачать видео
           .col-md-6
             a(href='#').default-blue Скачать архив
+
+mixin invitation-list__with-price(newInvitation)
+  .col-lg-4.col-md-6.d-flex
+    .trending-archive-list
+      .coming-events-soon__img-info
+        a(href='event-detail.html').coming-events-soon__img-info--link
+          img(src='./img/event-1.jpg').img-fluid
+        a(href='#').archive-new-invitation= newInvitation
+      .coming-events-soon__info
+        +lector-info
+        a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+        p До начала 2 часа 15 минут
+        .d-flex.flex-wrap
+          .price-lections.mr-4
+            +sprite('icon', 'icon-user-confirmed')
+            span 1000 грн.
+          .price-lections
+            +sprite('icon', 'icon-access-documents2')
+            span 150 грн.
+        .row
+          .col-md-6
+            a(href='#').default-blue Принять
+
+mixin invitation-list__no-img(newInvitation)
+  .col-lg-4.col-md-6.d-flex
+    .trending-archive-list
+      .coming-events-soon__img-info
+        a(href='event-detail.html').coming-events-soon__img-info--link.no-img
+          +sprite('icon', 'no-img')
+        a(href='#').archive-new-invitation= newInvitation
+      .coming-events-soon__info
+        +lector-info
+        a(href='event-detail.html').coming-events-soon__info--title Слоненок с мячиком. Мягкая игрушка связана спицами
+        p До начала 2 часа 15 минут
+        .d-flex.flex-wrap
+          .price-lections.mr-4
+            +sprite('icon', 'icon-user-confirmed')
+            span 1000 грн.
+          .price-lections
+            +sprite('icon', 'icon-access-documents2')
+            span 150 грн.
+        .row
+          .col-md-6
+            a(href='#').default-blue Принять
 
 
 mixin pagination
@@ -89,3 +133,40 @@ mixin pagination
     li
       a.page-link(href='#')
         +sprite('icon arrow-right', 'arrow-select')
+
+mixin chat(message)
+  .chat-item
+    .chat-item--top
+      +sprite('avatar', 'icon-user')
+      a(href='personal.html').user-name Василий Фамилияпомощь
+    .chat-message
+      p= message
+      .sent-date отправлено 17:46:59
+
+mixin visitor
+  .visitors-list__item
+    .visitors-list__item--user-info
+      img(src='./img/avatar.jpg')
+      .visitors-list__item--user-info--name
+        a(href='#').user-name Василий Оченьдлиннаяфамилия
+        a(href='mailto:antonio.tester17@gmail.com').user-email antonio.tester17@gmail.com
+    .visitors-list__item--settings
+      a(href='#').default-blue.invite-again Пригласить еще раз
+      a(href='#').user-edit
+        +sprite('icon', 'icon-edit')
+      a(href='#').user-delete
+        +sprite('icon', 'icon-delete')
+
+mixin visitorEvent
+  .visitors-list__item
+    .visitors-list__item--user-info
+      .date 17.05.2019
+      .lection-info
+        .lection-preview(style='background-image: url("./img/slider-image.jpg")')
+        a(href='#').lection-link Слоненок с мячиком. Мягкая игрушка связана спицами
+    .d-flex.w-100
+      .avatar-icon
+        img(src='./img/svg/default-avatar.svg')
+      .visitors-list__item--user-info--name
+        a(href='#').user-name Василий Оченьдлиннаяфамилия
+        a(href='mailto:antonio.tester17@gmail.com').user-email antonio.tester17@gmail.com

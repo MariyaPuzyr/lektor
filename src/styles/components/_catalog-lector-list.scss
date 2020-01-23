@@ -1,0 +1,76 @@
+.catalog-lector-list {
+  .catalog {
+    &-list {
+      width: 100%;
+      flex-flow: row wrap;
+      a {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: $size_link_font;
+        line-height: 19px;
+        font-family: $font_main;
+        background: $color_white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        color: $color_description;
+        border: 1px solid $color_border;
+        border-radius: 4px;
+        transition: .3s;
+        &:hover {
+          text-decoration: none;
+          cursor: default;
+        }
+        &.catalog-link {
+          border-color: $color_underline;
+          color: $color_link;
+          &:hover {
+            background: $color_underline;
+            color: $color_white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    border: 1px solid $color_selected;
+    padding: 5px 10px;
+    color: $color_link;
+    font-size: $size_link_font;
+    line-height: 19px;
+    font-family: $font_light;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s;
+    span {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: '';
+        mask: url("../img/svg/arrow-down.svg") no-repeat center;
+        background: $color_link;
+        width: 12px;
+        height: 12px;
+        margin-left: 3px;
+        transition: .3s;
+        transform: rotate(180deg);
+      }
+    }
+    &:hover, &:active {
+      background: $color_selected;
+      color: $color_white;
+      span::after {
+        background: $color_white;
+      }
+    }
+    &.collapsed span::after {
+      transform: rotate(0deg);
+    }
+  }
+}

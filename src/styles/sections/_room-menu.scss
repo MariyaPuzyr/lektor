@@ -1,0 +1,49 @@
+.room-menu {
+  background: $color_darkblue;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  z-index: 2;
+  &__link {
+    width: 45px;
+    height: 41px;
+    margin: 8px;
+    display: block;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    li {
+      width: 100%;
+    }
+    .icon {
+      fill: $color_white;
+      width: 30px;
+      height: 30px;
+    }
+    a {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 2px solid transparent;
+      transition: .3s;
+      &:hover {
+        background: $color_dark;
+        border-left-color: $color_underline;
+      }
+    }
+    .download-all {
+      background: $color_selected;
+    }
+    .active {
+      background: $color_dark;
+      border-left-color: $color_underline;
+    }
+  }
+}

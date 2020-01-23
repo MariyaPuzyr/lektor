@@ -1,0 +1,76 @@
+.catalog-lectors {
+  &--title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: $font_light;
+    font-size: $size_title_description_font;
+    line-height: 37px;
+    color: $color_link;
+  }
+  .lector {
+    &-info {
+      margin-bottom: 40px;
+      &__avatar {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        flex: 0 0 auto;
+        background: #bac1cc;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          border-radius: 0;
+        }
+        .small-ico {
+          width: auto;
+          height: auto;
+        }
+      }
+      &__name {
+        font-size: $size_title_font;
+        line-height: 24px;
+        font-family: $font_semibold;
+        color: $color_darkblue;
+      }
+    }
+    &-position {
+      font-size: $size_link_font;
+      line-height: 19px;
+      font-family: $font_main;
+      color: $color_description;
+    }
+  }
+  .lections-items {
+    margin-top: 10px;
+    display: flex;
+    font-size: $size_title_font;
+    line-height: 24px;
+    font-family: $font_light;
+    color: $color_link;
+    flex-flow: row wrap;
+    span {
+      margin-right: 20px;
+    }
+  }
+  .all-lectors {
+    color: $color_link;
+    margin-top: 0;
+    margin-bottom: 70px;
+    &:hover {
+      color: $color_white;
+    }
+  }
+}
+
+@include adapt_to('large-phone') {
+  .catalog-lectors .lector-info {
+    flex-direction: column;
+    &__avatar {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.lector-detail {
+  .follow-back {
+    margin-bottom: 20px;
+  }
+  .lector-avatar {
+    background: #bac1cc;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    @include adapt_to('large-phone') {
+      max-width: 160px;
+      margin: auto auto 15px;
+    }
+  }
+  .catalog-lectors {
+    .lector-position {
+      span {
+        margin-right: 30px;
+      }
+      @include adapt_to('large-phone') {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .lections-items {
+      margin-top: 15px;
+    }
+  }
+  .share-items {
+    margin-top: 20px;
+  }
+  &s--about {
+    h4 {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: $size_title_font;
+      line-height: 24px;
+      font-family: $font_light;
+      color: $color_link;
+    }
+    p {
+      font-family: $font_main;
+      font-size: $size_link_font;
+      line-height: 24px;
+      color: $color_description;
+      margin-bottom: 45px;
+    }
+  }
+}

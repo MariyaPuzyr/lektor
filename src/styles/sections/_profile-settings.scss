@@ -19,6 +19,9 @@
         line-height: 19px;
         transition: .3s;
         position: relative;
+        @include adapt_to('large-phone') {
+          padding: 15px 0 5px;
+        }
         &::after {
           content: "";
           bottom: 0;
@@ -122,6 +125,9 @@
             margin: 0 auto auto 25px;
             display: flex;
             align-items: center;
+            @include adapt_to('large-phone') {
+              margin: 0 10px 0 0;
+            }
             &:hover {
               text-decoration: none;
             }
@@ -143,6 +149,9 @@
                 line-height: 19px;
                 font-family: $font_main;
                 display: flex;
+                @include adapt_to('large-phone') {
+                  margin-left: 0;
+                }
               }
             }
           }
@@ -172,6 +181,10 @@
       flex-wrap: wrap;
       align-items: center;
       position: relative;
+      @include adapt_to('large-phone') {
+        font-size: $size_title_font;
+        margin-bottom: 30px;
+      }
       &::after {
         content: '';
         width: 85px;
@@ -242,10 +255,15 @@
     }
   }
 }
+
 .count-value {
   font-size: $size_main_font;
   line-height: 17px;
   color: $color_description;
+  @include adapt_to('large-phone') {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   span {
     margin-left: 3px;
     color: $color_selected;

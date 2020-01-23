@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles/main.min.css">
     <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
     <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
-    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -47,7 +46,7 @@
                 <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
                 <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
                 <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
-                <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+                <li class="nav-item"><a class="nav-link" href="article-list.html">Статьи</a></li>
               </ul>
             </div>
           </div>
@@ -140,25 +139,25 @@
                     <input type="checkbox"><span>Повторяющееся событие</span>
                   </label>
                   <div class="week-list">
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Пн</span>
                     </label>
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Вт</span>
                     </label>
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Ср</span>
                     </label>
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Чт</span>
                     </label>
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Пт</span>
                     </label>
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Сб</span>
                     </label>
-                    <label class="registration-form__checkbox mt-0 recurring-event">
+                    <label class="registration-form__checkbox mt-0">
                       <input type="checkbox"><span>Вс</span>
                     </label>
                   </div>
@@ -171,7 +170,7 @@
                           </svg><span class="select-date">Дата *</span>
                         </div>
                         <div class="dropdown-menu">
-                          <div class="training-list__calendar">
+                          <div class="training-list__calendar" data-spy="responsive-calendar" data-time="2019-08" data-translate-months="Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь">
                             <div class="controls"><a class="pull-left calendar-control" data-go="prev"></a>
                               <h4><span data-head-month=""></span><span data-head-year=""></span></h4><a class="pull-right calendar-control" data-go="next"></a>
                             </div>
@@ -214,10 +213,10 @@
                   <h4>Превью</h4>
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="preview-img"><img src="/img/svg/img-icon.svg"></div>
+                      <div class="preview-img"><img src="/img/svg/icon-preview.svg"></div>
                     </div>
                     <div class="col-md-6">
-                      <div class="preview-btns mt-2 mt-md-0"><a class="training-list__all-training" href="#">Выбрать</a><a class="training-list__all-training defaul-grey" href="#">Удалить</a></div>
+                      <div class="preview-btns mt-2 mt-md-0"><a class="training-list__all-training" href="#">Выбрать</a><a class="training-list__all-training default-grey" href="#">Удалить</a></div>
                     </div>
                   </div>
                 </div>
@@ -287,14 +286,14 @@
             <div class="banner-slider__items">
               <div class="banner-slider__item">
                 <div class="row banner-slider__item--info">
-                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
-                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <div class="col-lg-2 col-md-5"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-lg-4 col-md-7"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
                     <div class="lector-info">
                       <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
                       <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="banner-slider__item--sign-up">
                       <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
                     </div>
@@ -305,14 +304,14 @@
             <div class="banner-slider__items">
               <div class="banner-slider__item">
                 <div class="row banner-slider__item--info">
-                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
-                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <div class="col-lg-2 col-md-5"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-lg-4 col-md-7"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
                     <div class="lector-info">
                       <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
                       <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="banner-slider__item--sign-up">
                       <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
                     </div>
@@ -359,8 +358,10 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main-libs.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    <script src="./js/plyr.js"></script>
   </body>
 </html>

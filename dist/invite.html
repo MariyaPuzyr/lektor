@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles/main.min.css">
     <link rel="stylesheet" href="./styles/styles-767.min.css" media="all and (max-width: 991px)">
     <link rel="stylesheet" href="./styles/styles-992.min.css" media="all and (min-width: 992px)">
-    <link rel="stylesheet" href="./styles/styles-1280.min.css" media="all and (min-width: 1280px)">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -47,7 +46,7 @@
                 <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог Лекторов</a></li>
                 <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
                 <li class="nav-item"><a class="nav-link" href="tariff.html">Тарифы</a></li>
-                <li class="nav-item"><a class="nav-link" href="articles.html">Статьи</a></li>
+                <li class="nav-item"><a class="nav-link" href="article-list.html">Статьи</a></li>
               </ul>
             </div>
           </div>
@@ -109,8 +108,98 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="invite-item">
-                      <div class="invite-item__label">Кому:</div>
-                      <input class="invite-item__field" type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
+                      <div class="profile-user-edit">
+                        <h4 class="mt-0">Кому:</h4>
+                      </div>
+                      <div class="invite-item__list mCustomScrollbar">
+                        <div class="invite-item__list-item"><span>usermail@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>user1478@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>user@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>longlongusername@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>usernamemail@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>145@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>usermail@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>user1478@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>user@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>longlongusername@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>usernamemail@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>145@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>usermail@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                        <div class="invite-item__list-item"><span>user1478@gmail.com</span>
+                          <div class="close"></div>
+                        </div>
+                      </div>
+                      <div class="invite-item__bottom row">
+                        <div class="col-auto"><a class="border-link blue-border mt-0 refferal-link" href="#">Рефералы</a></div>
+                        <div class="col-auto"><a class="border-link blue-border mt-0 attended-lectures" href="#">Посетившие лекции</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="profile-user-edit">
+                      <h4 class="mt-0">Список конференций:</h4>
+                    </div>
+                    <div class="invite-item">
+                      <div class="registration-form__checkbox mt-0">
+                        <input type="checkbox">
+                        <div class="invite-lection-name">Слоненок с мячиком. Мягкая игрушка связана спицами
+                          <div class="invite-lection-date">31 ноября 2019, 15:00</div>
+                        </div>
+                      </div>
+                      <div class="registration-form__checkbox mt-0">
+                        <input type="checkbox">
+                        <div class="invite-lection-name">Слоненок с мячиком. Мягкая игрушка связана спицами
+                          <div class="invite-lection-date">31 ноября 2019, 15:00</div>
+                        </div>
+                      </div>
+                      <div class="invite-item__bottom row">
+                        <div class="col-auto"><a class="border-link blue-border mt-0 add-conference" href="#">Добавить конференцию</a></div>
+                        <div class="col-auto"><a class="border-link mt-0 remove-selected" href="#">Удалить выбранные</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="profile-user-edit">
+                      <h4>Приглашение:</h4>
+                    </div>
+                    <div class="registration-form__group">
+                      <div class="placeholder">Тема<span>*</span></div>
+                      <input class="registration-form-control" type="text">
+                    </div>
+                    <div class="registration-form__group">
+                      <div class="placeholder">Текст<span>*</span></div>
+                      <textarea class="registration-form-control" rows="5"></textarea>
+                    </div>
+                    <div class="registration-form__link">
+                      <button class="registration-form__link-registration" type="submit">Отправить приглашения</button>
                     </div>
                   </div>
                 </div>
@@ -332,14 +421,14 @@
             <div class="banner-slider__items">
               <div class="banner-slider__item">
                 <div class="row banner-slider__item--info">
-                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
-                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <div class="col-lg-2 col-md-5"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-lg-4 col-md-7"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
                     <div class="lector-info">
                       <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
                       <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="banner-slider__item--sign-up">
                       <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
                     </div>
@@ -350,14 +439,14 @@
             <div class="banner-slider__items">
               <div class="banner-slider__item">
                 <div class="row banner-slider__item--info">
-                  <div class="col-md-2"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
-                  <div class="col-md-4"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
+                  <div class="col-lg-2 col-md-5"><a class="banner-slider__item--info__link" href="#"><img class="img-fluid" src="./img/slider-image.jpg" alt=""></a></div>
+                  <div class="col-lg-4 col-md-7"><a class="banner-slider__item--info__title" href="#">Слоненок с мячиком. Мягкая игрушка связана спицами</a>
                     <div class="lector-info">
                       <div class="lector-info__avatar"><img src="./img/avatar.jpg" alt=""/></div>
                       <div class="lector-info__info"><a class="lector-info__name" href="#">Василий Фамимлмялектора</a><a class="lector-info__link" href="#">Архив лектора</a></div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="banner-slider__item--sign-up">
                       <div class="countdown" data-countdown="2019-09-21"></div><a class="banner-slider__item--link default-blue col-md-2 px-0" href="#">Записаться</a>
                     </div>
@@ -404,8 +493,10 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main-libs.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    <script src="./js/plyr.js"></script>
   </body>
 </html>

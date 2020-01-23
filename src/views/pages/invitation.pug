@@ -1,0 +1,45 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor invitation list"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/profile-user-info
+    .profile-user-edit
+      .container
+        h2.profile-user-edit__title Приглашения
+          span(data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') ?
+    .archive-items.page-item
+      .container
+        .row
+          .col-md-12.col-lg-8
+            include ../components/search
+          .col-md-12.col-lg-4
+            .archive-item
+              label.archive-item--label Выбрать по дате:
+              .archive-item__dropdown
+                +sprite('icon','icon-date-16')
+                span.select-date Дата
+              .dropdown-menu
+                include ../components/data-select
+        .row
+          +invitation-list__with-price('Новое')
+          +invitation-list__no-img('Новое')
+          +invitation-list__with-price('Новое')
+          +invitation-list__with-price
+          +invitation-list__with-price
+          +invitation-list__no-img
+          +invitation-list__with-price
+          +invitation-list__with-price
+          +invitation-list__with-price
+          +invitation-list__with-price
+          +invitation-list__no-img
+          +invitation-list__with-price
+          +invitation-list__with-price
+          +invitation-list__no-img
+        .row
+          .col-md-12
+            +pagination
+    include ../sections/banner-slider
+  include ../includes/footer

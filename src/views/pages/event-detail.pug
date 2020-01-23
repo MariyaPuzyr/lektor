@@ -1,0 +1,12 @@
+extends ../extends/layout
+block variables
+  - var title = "Lektor - Event detail"
+
+block content
+  include ../includes/header-user
+  main
+    include ../sections/event-detail-item
+    include ../sections/event-popular
+    include ../sections/banner-slider
+    include ../sections/articles
+  include ../includes/footer

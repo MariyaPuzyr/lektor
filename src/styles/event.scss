@@ -1,0 +1,31 @@
+@import "libs";
+@import "utils/variables";
+@import "utils/extends";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "includes/header";
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    background: url('../img/bg-head.png') no-repeat top right;
+  }
+}
+@import "sections/main-slider";
+@import "components/countdown";
+@import "sections/registration-form";
+@import "components/moda-login";
+@import "components/lector-info";
+
+@import "sections/events";

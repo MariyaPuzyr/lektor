@@ -1,0 +1,31 @@
+.modal-payment {
+  &.modal-dialog {
+    max-width: 460px;
+  }
+  .css-radio {
+    display: none;
+    & + .css-label {
+      &:hover {
+        border: 1px solid $color_underline;
+      }
+    }
+    &:checked + .css-label {
+      border: 1px solid $color_underline;
+    }
+  }
+  .css-label {
+    transition: .3s;
+    user-select: none;
+    cursor: pointer;
+    border: 1px dashed $color_border;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-user-edit h4 {
+    margin-top: 0;
+  }
+}
